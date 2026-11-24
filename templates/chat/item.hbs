@@ -1,6 +1,25 @@
 <div class="blueholme-card item-card">
-  <header class="card-title"><img src="{{item.img}}" alt=""> {{item.name}}{{#if cast}} <span class="sub">cast</span>{{/if}}</header>
-  {{#if isSpell}}<p class="small">{{listLabel}} {{item.system.level}} · Range {{item.system.range}} · Duration {{item.system.duration}}{{#if item.system.reverseOf}} · reverse of {{item.system.reverseOf}}{{/if}}</p>{{/if}}
-  <div class="card-desc">{{{description}}}</div>
-  {{#if hasRoll}}<div class="card-buttons"><button type="button" data-card-action="dice"><i class="fa-solid fa-dice"></i> {{rollLabel}}: {{item.system.roll.formula}}</button></div>{{/if}}
+  <header class="card-title"><img src="{{item.img}}" alt=""> {{item.name}}{{#if cast}} <span class="sub">cast{{#if level}} at level {{level}}{{/if}}</span>{{/if}}</header>
+  {{#if isSpell}}<p class="small">{{listLabel}} {{item.system.level}} · Range {{range}} · Duration {{duration}}{{#if item.system.reverseOf}} · reverse of {{item.system.reverseOf}}{{/if}}</p>{{/if}}
+  {{#if results.length}}
+  <ul class="results">
+    {{#each results}}
+    <li>
+      <div class="res-line"><span class="res-label">{{label}}</span><span class="res-total">{{total}}</span></div>
+      {{#if text}}<div class="res-text">{{text}}</div>{{/if}}
+      <div class="res-sub">{{formula}}{{#if save}} · {{save}}{{/if}}</div>
+      {{#if isDmg}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="dmg" data-index="{{index}}"><i class="fa-solid fa-heart-crack"></i> Apply</button><button type="button" data-card-action="apply" data-mode="half" data-index="{{index}}">½</button></div>{{/if}}
+      {{#if isHeal}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="heal" data-index="{{index}}"><i class="fa-solid fa-heart"></i> Apply healing</button></div>{{/if}}
+      {{#if isHealAllBut}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="healAllBut" data-index="{{index}}"><i class="fa-solid fa-heart"></i> Heal all but {{total}}</button></div>{{/if}}
+      {{#if isHpLeft}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="hpLeft" data-index="{{index}}"><i class="fa-solid fa-skull"></i> Reduce to {{total}} hp</button></div>{{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  <details class="card-desc-wrap" {{#unless cast}}open{{/unless}}><summary>Description</summary><div class="card-desc">{{{description}}}</div></details>
+  {{#if options.length}}
+  <div class="card-buttons options">
+    {{#each options}}<button type="button" data-card-action="dice" data-index="{{index}}"><i class="fa-solid fa-dice"></i> {{label}}: {{formula}}</button>{{/each}}
+  </div>
+  {{/if}}
 </div>

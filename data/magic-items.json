@@ -21,7 +21,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -47,7 +49,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -73,7 +77,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -99,7 +105,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -125,7 +133,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -151,7 +161,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -177,7 +189,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -204,7 +218,9 @@
    "quantity": 1,
    "weight": 0,
    "cost": 0,
-   "noArmour": true
+   "noArmour": true,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -230,7 +246,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -256,7 +274,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -282,7 +302,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -308,7 +330,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -334,7 +358,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -360,7 +386,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -388,7 +416,9 @@
    "weight": 0,
    "cost": 0,
    "acBonus": 2,
-   "saveBonus": 2
+   "saveBonus": 2,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -414,7 +444,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -440,7 +472,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -466,7 +500,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Weapon damage",
+     "formula": "1d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Bare-handed",
+     "formula": "1d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -492,7 +547,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -518,7 +575,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -544,7 +603,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -570,7 +631,37 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Weapon damage",
+     "formula": "2d8",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fists",
+     "formula": "1d8",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Thrown rock (10' radius)",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -596,7 +687,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -622,7 +715,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -648,7 +743,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -674,7 +771,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -700,7 +799,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -726,7 +827,82 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "3d6 bead",
+     "formula": "3d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "4d6 bead",
+     "formula": "4d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "5d6 bead",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "6d6 bead",
+     "formula": "6d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "7d6 bead",
+     "formula": "7d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "8d6 bead",
+     "formula": "8d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "9d6 bead",
+     "formula": "9d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "10d6 bead",
+     "formula": "10d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -752,7 +928,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Turns until strangled",
+     "formula": "1d4+1",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -778,7 +966,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -804,7 +994,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -830,7 +1022,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -856,7 +1050,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -882,7 +1078,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -908,7 +1106,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -935,7 +1135,9 @@
    "quantity": 1,
    "weight": 0,
    "cost": 0,
-   "saveBonus": 4
+   "saveBonus": 4,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -961,7 +1163,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Accoutrements"
  },
@@ -987,7 +1191,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1013,7 +1219,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1039,7 +1247,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "When put on (20: Dexterity +2; otherwise −4)",
+     "formula": "1d20",
+     "kind": "info",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1065,7 +1285,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1091,7 +1313,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1117,7 +1341,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1143,7 +1369,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1169,7 +1397,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1195,7 +1425,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1221,7 +1453,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1247,7 +1481,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1273,7 +1509,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1299,7 +1537,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1328,7 +1568,9 @@
    "cost": 0,
    "acBonus": 1,
    "saveBonus": 1,
-   "noArmour": true
+   "noArmour": true,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1357,7 +1599,9 @@
    "cost": 0,
    "acBonus": 2,
    "saveBonus": 2,
-   "noArmour": true
+   "noArmour": true,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1386,7 +1630,9 @@
    "cost": 0,
    "acBonus": 4,
    "saveBonus": 4,
-   "noArmour": true
+   "noArmour": true,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1412,7 +1658,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1438,7 +1686,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1464,7 +1714,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Spells stored",
+     "formula": "1d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Level of a stored spell",
+     "formula": "1d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1490,7 +1761,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Percentage of a spell reflected",
+     "formula": "1d10*10",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1516,7 +1799,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1542,7 +1827,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1568,7 +1855,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1594,7 +1883,68 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Kind of ring",
+     "formula": "1d20",
+     "kind": "table",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 8,
+       "text": "1st level spells doubled",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 13,
+       "text": "2nd level",
+       "formula": ""
+      },
+      {
+       "lo": 14,
+       "hi": 15,
+       "text": "3rd level",
+       "formula": ""
+      },
+      {
+       "lo": 16,
+       "hi": 16,
+       "text": "4th level",
+       "formula": ""
+      },
+      {
+       "lo": 17,
+       "hi": 17,
+       "text": "5th level",
+       "formula": ""
+      },
+      {
+       "lo": 18,
+       "hi": 18,
+       "text": "6th level",
+       "formula": ""
+      },
+      {
+       "lo": 19,
+       "hi": 19,
+       "text": "1st, 2nd and 3rd level",
+       "formula": ""
+      },
+      {
+       "lo": 20,
+       "hi": 20,
+       "text": "4th and 5th level",
+       "formula": ""
+      }
+     ]
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1620,7 +1970,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rings"
  },
@@ -1646,7 +1998,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1672,7 +2026,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a non-caster opening it",
+     "formula": "5d4",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Pages holding spells",
+     "formula": "3d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1698,7 +2073,62 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to others opening it",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Golem described",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 4,
+       "text": "Flesh",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 7,
+       "text": "Rock",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 9,
+       "text": "Stone",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "Iron",
+       "formula": ""
+      }
+     ]
+    },
+    {
+     "label": "Months to craft the golem",
+     "formula": "1d3",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1724,7 +2154,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a magic-user of another alignment",
+     "formula": "3d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Damage to others",
+     "formula": "2d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1750,7 +2201,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1776,7 +2229,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a spell caster",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Damage to a thief",
+     "formula": "4d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1802,7 +2276,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a non-thief",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1828,7 +2314,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a thief, magic-user or other being",
+     "formula": "4d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1854,7 +2352,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1880,7 +2380,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1906,7 +2408,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1932,7 +2436,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1958,7 +2464,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -1984,7 +2492,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2010,7 +2520,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2036,7 +2548,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2062,7 +2576,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2088,7 +2604,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2114,7 +2632,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2140,7 +2660,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2166,7 +2688,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2192,7 +2716,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2218,7 +2744,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2244,7 +2772,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2270,7 +2800,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Writings"
  },
@@ -2296,7 +2828,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage per round of exposure",
+     "formula": "1d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Total immersion, per round",
+     "formula": "10d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2322,7 +2875,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2348,7 +2903,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Turns of invisibility",
+     "formula": "5d6",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2374,7 +2941,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2400,7 +2969,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2426,7 +2997,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2452,7 +3025,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2478,7 +3053,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2504,7 +3081,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2530,7 +3109,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2549,14 +3130,26 @@
    "description": "<p>This potion or salve cures 3d6 points of damage when drunk or applied.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.101.</p>",
    "source": "Journeymanne Rules p.101",
    "roll": {
-    "formula": "3d6",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "3d6",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2582,7 +3175,37 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Weapon damage",
+     "formula": "3d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fists",
+     "formula": "1d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Thrown rock (15' radius)",
+     "formula": "3d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2608,7 +3231,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2627,14 +3252,26 @@
    "description": "<p>Heals 1d6+1 points of damage.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.101.</p>",
    "source": "Journeymanne Rules p.101",
    "roll": {
-    "formula": "1d6+1",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "1d6+1",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2660,7 +3297,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2686,7 +3325,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2712,7 +3353,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2738,7 +3381,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2764,7 +3409,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2790,7 +3437,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2816,7 +3465,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2842,7 +3493,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2868,7 +3521,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2894,7 +3549,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2920,7 +3577,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2946,7 +3605,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2972,7 +3633,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -2998,7 +3661,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Potions"
  },
@@ -3024,7 +3689,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3050,7 +3717,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3076,7 +3745,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Turns until the object is lost",
+     "formula": "1d6+6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3102,7 +3783,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3128,7 +3811,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Turns until metal turns to stone",
+     "formula": "1d6+6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3154,7 +3849,56 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Animal drawn",
+     "formula": "1d6",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Large ape",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Large bear",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Heavy horse",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Huge raptor",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Constrictor snake",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Large wolf",
+       "formula": ""
+      }
+     ]
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3180,7 +3924,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Potions held",
+     "formula": "1d4+1",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3206,7 +3962,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3232,7 +3990,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Rounds until drowned",
+     "formula": "1d4+1",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3258,7 +4028,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3284,7 +4056,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3310,7 +4084,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3336,7 +4112,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3362,7 +4140,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3388,7 +4168,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3414,7 +4196,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3440,7 +4224,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3466,7 +4252,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3492,7 +4280,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3518,7 +4308,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3544,7 +4336,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3570,7 +4364,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3596,7 +4392,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3622,7 +4420,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3648,7 +4448,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3674,7 +4476,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3700,7 +4504,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3726,7 +4532,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage (100' cone)",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3752,7 +4570,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Indoors: ceiling collapse",
+     "formula": "6d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Outdoors: rocks falling (1d3 damage each)",
+     "formula": "5d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3778,7 +4617,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Berserkers summoned",
+     "formula": "2d4",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3804,7 +4655,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3830,7 +4683,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3856,7 +4711,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3882,7 +4739,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3908,7 +4767,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Bonus to a roll",
+     "formula": "1d4",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3934,7 +4805,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3960,7 +4833,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -3986,7 +4861,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4012,7 +4889,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4038,7 +4917,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4064,7 +4945,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Normal rats (20%)",
+     "formula": "3d6*10",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Giant rats (80%)",
+     "formula": "1d6*10",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4090,7 +4992,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4116,7 +5020,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4142,7 +5048,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Rounds until victims are squeezed to death",
+     "formula": "1d4+1",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4168,7 +5086,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Human-sized victims entangled",
+     "formula": "2d4",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4194,7 +5124,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Rounds until victims are smothered",
+     "formula": "1d4+1",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4220,7 +5162,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4246,7 +5190,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4272,7 +5218,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4298,7 +5246,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4324,7 +5274,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Evil cleric touching it",
+     "formula": "5d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Others touching it",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4350,7 +5321,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage to a non-magic-user touching it",
+     "formula": "3d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4376,7 +5359,28 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Good cleric touching it",
+     "formula": "5d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Others touching it",
+     "formula": "5d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4402,7 +5406,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4428,7 +5434,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Rounds the user is blinded",
+     "formula": "4d3",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Paraphernalia"
  },
@@ -4454,7 +5472,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4480,7 +5500,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4506,7 +5528,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4532,7 +5556,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4558,7 +5584,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4584,7 +5612,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Hit dice of creatures commanded",
+     "formula": "(1d4+1)*100",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Rods"
  },
@@ -4610,7 +5650,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4636,7 +5678,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Damage on a hit",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4662,7 +5716,19 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Rounds held",
+     "formula": "1d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4688,7 +5754,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4707,14 +5775,26 @@
    "description": "<p>This staff can only be used by a cleric. It can be used to cure 1d6+1 points of damage suffered by any person it touches. There is no limit to the number of times the staff may be used, but it can only heal a specific individual once per day.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.96.</p>",
    "source": "Journeymanne Rules p.96",
    "roll": {
-    "formula": "1d6+1",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "1d6+1",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4733,14 +5813,35 @@
    "description": "<p>This staff allows the user to cast a cone of cold, fire ball or lightning bolt, each for 6d6 points of damage, by expending one of its 200 charges. It can also cast continual light at no cost, and it may be wielded as a staff of clouting.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.96.</p>",
    "source": "Journeymanne Rules p.96",
    "roll": {
-    "formula": "6d6",
-    "kind": "dmg",
-    "label": "Cone of cold, fire ball or lightning bolt"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Cone of cold, fire ball or lightning bolt",
+     "formula": "6d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Broken: total damage shared out",
+     "formula": "8*@C",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4766,7 +5867,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 0
   },
   "folder": "Staves"
  },
@@ -4785,14 +5888,26 @@
    "description": "<p>This wand holds the cone of cold spell, cast on command by a magic-user.</p><p>A wand is a thin baton that contains a single type of magic spell that can be cast on command, but only by a magic-user. The spells contained in a wand are normally cast as a 6th level caster, though some may be more or less powerful.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.95.</p>",
    "source": "Journeymanne Rules p.95",
    "roll": {
-    "formula": "6d4+6",
-    "kind": "dmg",
-    "label": "Cold damage (6th level)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Cold damage",
+     "formula": "(@L)d4+@L",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "save vs. breath for half",
+     "table": []
+    }
+   ],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4818,7 +5933,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4844,7 +5961,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4870,7 +5989,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4896,7 +6017,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4915,14 +6038,26 @@
    "description": "<p>This wand holds the fire ball spell, cast on command by a magic-user.</p><p>A wand is a thin baton that contains a single type of magic spell that can be cast on command, but only by a magic-user. The spells contained in a wand are normally cast as a 6th level caster, though some may be more or less powerful.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.95.</p>",
    "source": "Journeymanne Rules p.95",
    "roll": {
-    "formula": "6d6",
-    "kind": "dmg",
-    "label": "Fire damage (6th level)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Fire damage",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4948,7 +6083,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -4974,7 +6111,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -5000,7 +6139,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -5019,14 +6160,26 @@
    "description": "<p>This wand holds the lightning bolt spell, cast on command by a magic-user.</p><p>A wand is a thin baton that contains a single type of magic spell that can be cast on command, but only by a magic-user. The spells contained in a wand are normally cast as a 6th level caster, though some may be more or less powerful.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.95.</p>",
    "source": "Journeymanne Rules p.95",
    "roll": {
-    "formula": "6d6",
-    "kind": "dmg",
-    "label": "Electricity damage (6th level)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Electricity damage",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -5052,7 +6205,9 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },
@@ -5078,7 +6233,68 @@
    "equipped": false,
    "quantity": 1,
    "weight": 0,
-   "cost": 0
+   "cost": 0,
+   "rolls": [
+    {
+     "label": "Beam striking each target",
+     "formula": "1d8",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Red: damage",
+       "formula": "10"
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Orange: damage",
+       "formula": "20"
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Yellow: damage",
+       "formula": "40"
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Green: save vs. ray or poison or die",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Blue: save vs. gaze or turn to stone",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Indigo: save vs. wand or freeze to death",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "Violet: save vs. spell or go insane",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "Struck by two colours: roll twice more, ignoring 8",
+       "formula": ""
+      }
+     ]
+    }
+   ],
+   "casterLevel": 6
   },
   "folder": "Wands"
  },

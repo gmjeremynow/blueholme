@@ -133,9 +133,13 @@ export async function rollDamage(message) {
     { rolls: [roll], flags: { kind: "damage", amount: roll.total, targets: f.targets ?? [] } });
 }
 
-export async function applyDamage(message, factor = 1) {
+/**
+ * Apply a chat card's result to the selected tokens (or, with none selected, the tokens targeted when it was rolled).
+ * mode: "dmg" damage, "half" half damage, "heal" healing, "healAllBut" heal all but the amount, "hpLeft" reduce to the amount.
+ */
+export async function applyDamage(message, mode = "dmg", index = null) {
   const f = message.flags?.[SYSTEM_ID] ?? {};
-  const amount = Math.floor((f.amount ?? 0) * Math.abs(factor));
+  const base = index !== null && index !== undefined ? (f.results?.[Number(index)]?.total ?? 0) : (f.amount ?? 0);
   let actors = (canvas?.tokens?.controlled ?? []).map(t => t.actor).filter(Boolean);
   if (!actors.length) for (const uuid of f.targets ?? []) {
     const doc = await fromUuid(uuid);
@@ -145,7 +149,12 @@ export async function applyDamage(message, factor = 1) {
   for (const a of actors) {
     if (!a.isOwner) { ui.notifications.warn(`You do not own ${a.name}.`); continue; }
     const hp = a.system.hp;
-    const value = factor < 0 ? Math.min(hp.max, hp.value + amount) : hp.value - amount;
+    let value = hp.value;
+    if (mode === "dmg") value = hp.value - base;
+    else if (mode === "half") value = hp.value - Math.floor(base / 2);
+    else if (mode === "heal") value = Math.min(hp.max, hp.value + base);
+    else if (mode === "healAllBut") value = Math.max(hp.value, hp.max - base);
+    else if (mode === "hpLeft") value = Math.min(hp.value, base);
     await a.update({ "system.hp.value": value });
   }
 }
@@ -239,44 +248,135 @@ export async function castSpell(actor, item) {
     if (sp.cast >= sp.memorized) return ui.notifications.warn(`${item.name}: every memorised use has been cast. Study the magic books to memorise it again.`);
     await item.update({ "system.cast": sp.cast + 1 });
   }
-  return postItemCard(actor, item, { cast: true });
+  return postItemCard(actor, item, { cast: true, roll: true });
 }
 
-export async function postItemCard(actor, item, { cast = false } = {}) {
+/* ---------- dice defined on spells and magic items ----------
+   Tokens: @L caster level, @H half the caster level (rounded down),
+   @Q 2 to the power of (caster level − 8, at least 0), @C the item's charges left. */
+export function rollList(item) {
+  const s = item?.system ?? {};
+  if (s.rolls?.length) return s.rolls;
+  return s.roll?.formula ? [{ label: s.roll.label || "Roll", formula: s.roll.formula, kind: s.roll.kind || "other", auto: false, count: "", save: "", table: [] }] : [];
+}
+const needsLevel = list => list.some(r => /@[LHQ]/.test(`${r.formula} ${r.count}`));
+
+/** The caster level an item works at: a wand's own level, else the caster's level if he or she has the spell's class. */
+export function casterLevel(actor, item) {
+  if (item?.type === "magic" && item.system.casterLevel) return item.system.casterLevel;
+  if (!actor) return null;
+  if (actor.type === "monster") return Math.max(1, actor.system.hdLevel || 1);
+  const s = actor.system;
+  if (item?.type === "spell" && !s.classes?.[item.system.list] && !(s.classes?.cleric || s.classes?.magicuser)) return null;
+  return s.level ?? null;
+}
+export function resolveFormula(formula, level = 1, charges = 0) {
+  const L = Math.max(1, Number(level) || 1), H = Math.max(1, Math.floor(L / 2)), Q = 2 ** Math.max(0, L - 8);
+  return String(formula)
+    .replace(/\(@L\)d/g, `${L}d`).replace(/\(@H\)d/g, `${H}d`)
+    .replace(/@L/g, String(L)).replace(/@H/g, String(H)).replace(/@Q/g, String(Q)).replace(/@C/g, String(charges));
+}
+/** "Level x 2 turns" at 5th level becomes "Level x 2 turns (10 turns)". */
+export function scaledText(text, level) {
+  if (!text || !level) return text ?? "";
+  let m = /^Level x (\d+)\s*(.*)$/i.exec(text);
+  if (m) return `${text} (${level * Number(m[1])}${m[2] ? ` ${m[2]}` : ""})`;
+  m = /^(\d+)\s*([a-z]*)\s*per level$/i.exec(text);
+  if (m) return `${text} (${level * Number(m[1])}${m[2] ? ` ${m[2]}` : ""})`;
+  return text;
+}
+async function askLevel(title, level) {
+  const res = await DialogV2.wait({
+    window: { title }, classes: ["blueholme-dialog"], rejectClose: false,
+    content: `<div class="bh-dialog"><label class="row"><span>Caster level</span><input type="number" name="lvl" value="${level ?? 1}" min="1" max="36"></label>
+      <p class="hint">This caster has no level in the spell's class (for example, a scroll read by a thief). Enter the level the magic works at.</p></div>`,
+    buttons: [{ action: "ok", label: "Roll", default: true, callback: (e, b) => Number(form(b).lvl.value) || 1 }]
+  });
+  return res ?? null;
+}
+
+/** Roll one dice entry. Returns { results, rolls } where each result is a line on the card. */
+export async function evaluateEntry(entry, level, charges = 0) {
+  const results = [], rolls = [];
+  const base = { label: entry.label, kind: entry.kind, save: entry.save ?? "" };
+  let n = 1;
+  if (entry.count) {
+    const c = await evalRoll(resolveFormula(entry.count, level, charges));
+    n = Math.max(1, Math.min(50, c.total));
+  }
+  for (let i = 0; i < n; i++) {
+    const formula = resolveFormula(entry.formula, level, charges);
+    const r = await evalRoll(formula); rolls.push(r);
+    const res = { ...base, formula: showDice(formula), total: r.total, label: n > 1 ? `${entry.label} (${i + 1} of ${n})` : entry.label };
+    if (entry.kind === "table") {
+      const row = (entry.table ?? []).find(t => r.total >= t.lo && r.total <= t.hi);
+      res.text = row?.text ?? "";
+      if (row?.formula) {
+        const sub = await evalRoll(resolveFormula(row.formula, level, charges)); rolls.push(sub);
+        res.sub = sub.total;
+        res.text = `${row.text}: ${sub.total}`;
+        if (/damage/i.test(row.text)) { res.kind = "dmg"; res.applyAmount = sub.total; }
+      }
+    }
+    results.push(res);
+  }
+  return { results, rolls };
+}
+const showDice = f => T.showDice(f);
+const APPLY = new Set(["dmg", "heal", "healAllBut", "hpLeft"]);
+const targetUuids = () => [...(game.user?.targets ?? [])].map(t => t.document.uuid);
+function decorate(results) {
+  return results.map((r, i) => ({ ...r, index: i, isDmg: r.kind === "dmg", isHeal: r.kind === "heal", isHealAllBut: r.kind === "healAllBut", isHpLeft: r.kind === "hpLeft" }));
+}
+
+/**
+ * Post a spell or magic item to chat. With roll: true (casting, or using an item), every dice entry marked
+ * "auto" is rolled on the card; the others become buttons, for rolls that depend on the target or happen later.
+ */
+export async function postItemCard(actor, item, { cast = false, roll = false } = {}) {
   const sys = item.system;
   const TextEditor = foundry.applications.ux.TextEditor.implementation;
   const description = await TextEditor.enrichHTML(sys.description ?? "", { relativeTo: item });
-  const level = actor?.system?.level ?? 1;
+  const list = rollList(item);
+  let level = casterLevel(actor, item);
+  if (roll && level === null && needsLevel(list)) {
+    level = await askLevel(item.name, actor?.system?.level ?? 1);
+    if (level === null) return null;
+  }
+  const charges = sys.charges?.value ?? 0;
+  const results = [], rolls = [], options = [];
+  for (const [i, e] of list.entries()) {
+    if (roll && e.auto) {
+      const out = await evaluateEntry(e, level ?? 1, charges);
+      results.push(...out.results); rolls.push(...out.rolls);
+    } else options.push({ index: i, label: e.label, formula: showDice(resolveFormula(e.formula, level ?? 1, charges)) + (e.count ? ` × ${resolveFormula(e.count, level ?? 1, charges)}` : "") });
+  }
   return postCard(actor, "item", {
-    item, description, cast,
+    item, description, cast, level,
     isSpell: item.type === "spell",
     listLabel: sys.list === "cleric" ? "Cleric" : "Magic-User",
-    hasRoll: !!sys.roll?.formula, rollLabel: sys.roll?.label || "Roll", level
-  }, { flags: { kind: "item", item: item.uuid, actor: actor?.uuid ?? null, formula: sys.roll?.formula ?? "", rollKind: sys.roll?.kind ?? "", level } });
+    range: item.type === "spell" ? scaledText(sys.range, level) : "",
+    duration: item.type === "spell" ? scaledText(sys.duration, level) : "",
+    results: decorate(results), options
+  }, { rolls, flags: { kind: "item", item: item.uuid, actor: actor?.uuid ?? null, level: level ?? null, charges,
+    results: results.map(r => ({ kind: r.kind, total: r.applyAmount ?? r.total })), targets: targetUuids() } });
 }
 
-export async function rollItemDice(message) {
+/** A button on an item card: roll that entry now. */
+export async function rollItemDice(message, index) {
   const f = message.flags?.[SYSTEM_ID] ?? {};
-  if (!f.formula) return;
-  const actor = f.actor ? await fromUuid(f.actor) : null;
-  let level = f.level ?? actor?.system?.level ?? 1;
-  if (/@[LH]/.test(f.formula)) {
-    const res = await DialogV2.wait({
-      window: { title: "Caster level" }, classes: ["blueholme-dialog"], rejectClose: false,
-      content: `<div class="bh-dialog"><label class="row"><span>Caster level</span><input type="number" name="lvl" value="${level}" min="1" max="30"></label></div>`,
-      buttons: [{ action: "ok", label: "Roll", default: true, callback: (e, b) => Number(form(b).lvl.value) || 1 }]
-    });
-    if (!res) return;
-    level = res;
-  }
-  // @L = caster level, @H = half the caster level (rounded down), e.g. "(@L)d6" becomes "5d6"
-  const half = Math.floor(level / 2);
-  const formula = f.formula.replace(/\(@L\)d/g, `${level}d`).replace(/\(@H\)d/g, `${half}d`).replace(/@L/g, String(level)).replace(/@H/g, String(half));
-  const roll = await evalRoll(formula);
-  const kind = f.rollKind;
   const item = f.item ? await fromUuid(f.item) : null;
-  return postCard(actor, "dice", { title: item?.name ?? "Roll", label: item?.system?.roll?.label ?? "", formula, total: roll.total, dmg: kind === "dmg", heal: kind === "heal" },
-    { rolls: [roll], flags: { kind: "dice", amount: roll.total, targets: [...(game.user?.targets ?? [])].map(t => t.document.uuid) } });
+  const actor = f.actor ? await fromUuid(f.actor) : null;
+  const entry = rollList(item)[Number(index)];
+  if (!entry) return ui.notifications.warn("That item no longer has this roll.");
+  let level = f.level;
+  if ((level === null || level === undefined) && needsLevel([entry])) {
+    level = await askLevel(item.name, actor?.system?.level ?? 1);
+    if (level === null) return;
+  }
+  const { results, rolls } = await evaluateEntry(entry, level ?? 1, f.charges ?? 0);
+  return postCard(actor, "dice", { title: item?.name ?? "Roll", results: decorate(results) },
+    { rolls, flags: { kind: "dice", results: results.map(r => ({ kind: r.kind, total: r.applyAmount ?? r.total })), targets: targetUuids() } });
 }
 
 /** Rest: every memorised spell can be cast again. */

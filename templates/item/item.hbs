@@ -64,6 +64,7 @@
       <label class="fld narrow"><span>Qty</span><input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
       <label class="fld narrow"><span>AC bonus</span><input type="number" name="system.acBonus" value="{{system.acBonus}}" title="Improves AC while worn (rings, bracers, cloaks)"></label>
       <label class="fld narrow"><span>Save bonus</span><input type="number" name="system.saveBonus" value="{{system.saveBonus}}"></label>
+      <label class="fld narrow"><span>Caster level</span><input type="number" name="system.casterLevel" value="{{system.casterLevel}}" min="0" title="Level its spells work at (wands: 6). 0 = the user's level"></label>
       <label class="chk"><input type="checkbox" name="system.noArmour" {{bh-checked system.noArmour}}> Only without armour (bracers)</label>
       <label class="chk"><input type="checkbox" name="system.equipped" {{bh-checked system.equipped}}> Worn</label>
     {{/if}}
@@ -86,10 +87,18 @@
 
     {{#if (bh-or is_spell is_magic)}}
       <div class="roll-def wide">
-        <span class="lbl">Dice from the description</span>
-        <label class="fld"><span>Label</span><input type="text" name="system.roll.label" value="{{system.roll.label}}"></label>
-        <label class="fld narrow"><span>Formula</span><input type="text" name="system.roll.formula" value="{{system.roll.formula}}" title="@L is the caster level, @H half the caster level"></label>
-        <label class="fld narrow"><span>Kind</span><select name="system.roll.kind">{{#each rollKinds}}<option value="{{value}}" {{bh-selected value ../system.roll.kind}}>{{label}}</option>{{/each}}</select></label>
+        <span class="lbl">Dice <a data-action="rollAdd" title="Add a roll"><i class="fa-solid fa-plus"></i></a>
+          <span class="hint">Rolled when cast or used if "auto" is ticked; otherwise a button on the chat card. @L caster level, @H half the caster level, @C charges left.</span></span>
+        {{#each rollRows}}
+        <div class="roll-row">
+          <input type="text" class="r-label" value="{{label}}" data-roll-index="{{index}}" data-roll-field="label" placeholder="Label">
+          <input type="text" class="r-formula" value="{{formula}}" data-roll-index="{{index}}" data-roll-field="formula" placeholder="Formula">
+          <select data-roll-index="{{index}}" data-roll-field="kind">{{#each ../rollKinds}}<option value="{{value}}" {{bh-selected value ../kind}}>{{label}}</option>{{/each}}</select>
+          <label class="chk" title="Roll automatically when cast or used"><input type="checkbox" data-roll-index="{{index}}" data-roll-field="auto" {{bh-checked auto}}> auto</label>
+          {{#if tableRows}}<span class="hint">table, {{tableRows}} rows</span>{{/if}}
+          <a data-action="rollRemove" data-index="{{index}}"><i class="fa-solid fa-trash"></i></a>
+        </div>
+        {{/each}}
       </div>
     {{/if}}
       <label class="fld wide"><span>Source</span><input type="text" name="system.source" value="{{system.source}}"></label>

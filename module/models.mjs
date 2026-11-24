@@ -10,7 +10,12 @@ const str = (initial = "", opts = {}) => new f.StringField({ required: true, bla
 const html = () => new f.HTMLField({ required: true, blank: true, initial: "" });
 const bool = (initial = false) => new f.BooleanField({ required: true, initial });
 const ability = () => new f.SchemaField({ value: int(10, { min: 1, max: 25 }) });
-const rollField = () => new f.SchemaField({ formula: str(""), kind: str(""), label: str("") });
+const rollField = () => new f.SchemaField({ formula: str(""), kind: str(""), label: str("") });   // 0.1 single roll, kept for old items
+/** Dice a spell or magic item rolls: see rollList() in rolls.mjs. */
+const rollsField = () => new f.ArrayField(new f.SchemaField({
+  label: str("Roll"), formula: str(""), kind: str("dmg"), auto: bool(true), count: str(""), save: str(""),
+  table: new f.ArrayField(new f.SchemaField({ lo: int(1), hi: int(1), text: str(""), formula: str("") }))
+}));
 
 /* ================================================================== */
 /*  Character                                                           */
@@ -259,6 +264,7 @@ export class SpellData extends foundry.abstract.TypeDataModel {
       range: str(""), duration: str(""),
       reverseOf: str(""), reverse: str(""),
       roll: rollField(),
+      rolls: rollsField(),
       memorized: int(0, { min: 0 }),
       cast: int(0, { min: 0 }),
       known: bool(true)
@@ -279,6 +285,8 @@ export class MagicData extends foundry.abstract.TypeDataModel {
       charges: new f.SchemaField({ value: int(0, { min: 0 }), max: int(0, { min: 0 }) }),
       uses: str(""),
       roll: rollField(),
+      rolls: rollsField(),
+      casterLevel: int(0, { min: 0 }),
       acBonus: int(0), saveBonus: int(0), noArmour: bool(false),
       equipped: bool(false),
       quantity: int(1, { min: 0 })

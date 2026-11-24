@@ -8,7 +8,7 @@ import { CharacterSheet, MonsterSheet, BHItemSheet } from "./module/sheets.mjs";
 import * as Rolls from "./module/rolls.mjs";
 import * as Tables from "./module/tables.mjs";
 import * as Treasure from "./module/treasure.mjs";
-import { importCompendia, offerImport } from "./module/compendia.mjs";
+import { importCompendia, offerImport, updateOwnedDice } from "./module/compendia.mjs";
 
 const ID = Tables.SYSTEM_ID;
 
@@ -36,8 +36,10 @@ Hooks.once("init", () => {
   game.blueholme = { Rolls, Tables, Treasure, importCompendia, rollTreasure: Treasure.treasureDialog, rollSurprise: Rolls.rollSurprise };
 });
 
-Hooks.once("ready", () => {
-  if (game.user.isGM) offerImport();
+Hooks.once("ready", async () => {
+  if (!game.user.isGM) return;
+  await offerImport();
+  await updateOwnedDice();
 });
 
 /* Items sidebar: GM treasure roller */

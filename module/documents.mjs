@@ -100,10 +100,10 @@ export class BHChatMessage extends ChatMessage {
     try {
       switch (btn.dataset.cardAction) {
         case "damage": await Rolls.rollDamage(this); break;
-        case "dice": await Rolls.rollItemDice(this); break;
-        case "apply": await Rolls.applyDamage(this, 1); break;
-        case "apply-half": await Rolls.applyDamage(this, 0.5); break;
-        case "heal": await Rolls.applyDamage(this, -1); break;
+        case "dice": await Rolls.rollItemDice(this, btn.dataset.index); break;
+        case "apply": await Rolls.applyDamage(this, btn.dataset.mode ?? "dmg", btn.dataset.index ?? null); break;
+        case "apply-half": await Rolls.applyDamage(this, "half", btn.dataset.index ?? null); break;
+        case "heal": await Rolls.applyDamage(this, "heal", btn.dataset.index ?? null); break;
         case "treasure-give": await giveTreasure(this); break;
       }
     } finally { btn.disabled = false; }

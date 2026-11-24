@@ -42,7 +42,7 @@ On first launch the GM is offered the compendia. They can be rebuilt at any time
 | Saving throws | p.61 | Five columns by class and level; creatures by HD on the fighter table (or cleric/thief or magic-user), under 1d8 HD on the 0 row |
 | Thieves' skills | p.9 | Ten skills by level with species and difficulty modifiers; 96-00 always fails; open lock without picks −25% |
 | Turning undead | p.6 | 2d6 against the table, then 2d6 undead turned or destroyed and 2d6 turns of flight |
-| Spells | Part 2-3 | Slots by level for clerics and magic-users, memorise with the arrows, *Cast* uses a memorised spell, *Study Magic Books* restores them; the Spell Learning Table chance, minimum and maximum for magic-users, with a learn roll per spell |
+| Spells | Part 2-3 | Slots by level for clerics and magic-users, memorise with the arrows, *Cast* uses a memorised spell and rolls its dice at the caster's level (damage, healing, numbers affected, durations, summoning and other tables), with *Apply* buttons; rolls that depend on the target or come later (a sleep spell's numbers by HD, a wall's damage) are buttons on the card; range and duration are worked out for the caster's level; *Study Magic Books* restores memorised spells; the Spell Learning Table chance, minimum and maximum for magic-users, with a learn roll per spell |
 | Hit points | p.11 | *Roll Level HP*: class dice (fixed points past name level), averaged for combination classes, Con modifier, at least 1; optional maximum at 1st level |
 | Experience | p.52 | *Award XP* with the XP modifier, the follower's half share, and the one-level-at-a-time cap; *Rise to level* when the XP is there |
 | Armour class | p.56, p.63, p.90 | Worn armour and shield with magic bonuses, natural AC (better of natural and worn), rings of protection and bracers only without armour, cloaks and scarabs, helmet warning |
@@ -50,6 +50,7 @@ On first launch the GM is offered the compendia. They can be rebuilt at any time
 | Initiative | p.56 | Combat tracker orders combatants by Dexterity, ties broken by 1d6; creatures roll 3d6 Dexterity (plus any Dexterity modifier) for the encounter |
 | Encounters | p.55 | GM surprise roll in the combat tracker, reaction roll on creature sheets, listen roll |
 | Treasure | pp.88-90 | *Roll Treasure* (Items sidebar) and the lair / carried buttons on creature sheets: individual treasure 1-8, hoards 9-20 in lots of 500 coins, jewel values, and magic items through the "any" table and the sub-tables; *Give to selected token* adds the coins, jewels and the compendium items |
+| Magic items | Part 7 | *Use* rolls the item's dice: potions and staves of healing, wands at 6th level, bags of tricks, horns, ropes and the rest, with charges and potions counted down |
 | Token names | | Renaming a character or creature renames its prototype token and every token already placed on a scene, unless the token was given a name of its own |
 | Ability scores | p.4 | The standard 3d6 in order and the referee's optional methods, plus starting gold |
 

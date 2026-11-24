@@ -126,10 +126,10 @@ class BHActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       await it.update({ "system.charges.value": ch.value - 1 });
     } else if (["potion", "writing"].includes(it.system.category) && it.system.quantity > 0) {
       const q = it.system.quantity - 1;
-      if (q <= 0) { await Rolls.postItemCard(this.actor, it); return it.delete(); }
+      if (q <= 0) { await Rolls.postItemCard(this.actor, it, { roll: true }); return it.delete(); }
       await it.update({ "system.quantity": q });
     }
-    return Rolls.postItemCard(this.actor, it);
+    return Rolls.postItemCard(this.actor, it, { roll: true });
   }
   static async #onChargeAdjust(ev, target) {
     const it = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
@@ -334,6 +334,7 @@ export class BHItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     actions: {
       popOut: onPopOut, popIn: onPopIn,
       vsAdd: BHItemSheet.#onVsAdd, vsRemove: BHItemSheet.#onVsRemove,
+      rollAdd: BHItemSheet.#onRollAdd, rollRemove: BHItemSheet.#onRollRemove,
       chat: function () { return Rolls.postItemCard(this.item.actor ?? null, this.item); }
     }
   };
@@ -352,7 +353,9 @@ export class BHItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     ctx.bases = [{ value: "leather", label: "Leather (AC7)" }, { value: "mail", label: "Mail (AC5)" }, { value: "plate", label: "Plate (AC3)" }, { value: "shield", label: "Shield (−1 AC)" }, { value: "helmet", label: "Helmet" }];
     ctx.lists = [{ value: "cleric", label: "Cleric" }, { value: "magicuser", label: "Magic-User" }];
     ctx.magicCategories = opt(MAGIC_CATEGORIES);
-    ctx.rollKinds = [{ value: "", label: "—" }, { value: "dmg", label: "Damage" }, { value: "heal", label: "Healing" }, { value: "num", label: "Number" }, { value: "dur", label: "Duration" }, { value: "other", label: "Other" }];
+    ctx.rollKinds = [{ value: "dmg", label: "Damage" }, { value: "heal", label: "Healing" }, { value: "num", label: "Number" }, { value: "dur", label: "Duration" },
+      { value: "info", label: "Other" }, { value: "table", label: "Table" }, { value: "healAllBut", label: "Heal all but" }, { value: "hpLeft", label: "Reduce hp to" }];
+    ctx.rollRows = Rolls.rollList(it).map((r, i) => ({ ...r, index: i, tableRows: r.table?.length ?? 0 }));
     ctx.ammoTypes = [{ value: "", label: "—" }, { value: "arrow", label: "Arrows" }, { value: "quarrel", label: "Quarrels" }, { value: "stone", label: "Sling stones" }];
     ctx.levelLabel = ORD[s.level] ?? "";
     ctx.description = await TextEditor.enrichHTML(s.description ?? "", { relativeTo: it });
@@ -361,6 +364,16 @@ export class BHItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
   _onRender(context, options) {
     super._onRender(context, options);
     mountEditors(this.element, this.item, context);
+    this.element.querySelectorAll("[data-roll-index]").forEach(el => {
+      el.addEventListener("change", ev => {
+        ev.stopPropagation();
+        const list = foundry.utils.deepClone(Rolls.rollList(this.item));
+        const row = list[Number(el.dataset.rollIndex)];
+        if (!row) return;
+        row[el.dataset.rollField] = el.type === "checkbox" ? el.checked : el.value;
+        this.item.update({ "system.rolls": list });
+      });
+    });
     this.element.querySelectorAll("[data-vs-index]").forEach(el => {
       el.addEventListener("change", ev => {
         ev.stopPropagation();
@@ -371,6 +384,16 @@ export class BHItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
         this.item.update({ "system.vs": vs });
       });
     });
+  }
+  static async #onRollAdd() {
+    const list = foundry.utils.deepClone(Rolls.rollList(this.item));
+    list.push({ label: "Damage", formula: "1d6", kind: "dmg", auto: true, count: "", save: "", table: [] });
+    await this.item.update({ "system.rolls": list });
+  }
+  static async #onRollRemove(ev, t) {
+    const list = foundry.utils.deepClone(Rolls.rollList(this.item));
+    list.splice(Number(t.dataset.index), 1);
+    await this.item.update({ "system.rolls": list, "system.roll.formula": "" });
   }
   static async #onVsAdd() {
     const vs = foundry.utils.deepClone(this.item._source.system.vs ?? []);

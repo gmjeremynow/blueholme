@@ -2,7 +2,7 @@
   "id": "blueholme",
   "title": "BLUEHOLME™ Journeymanne",
   "description": "<p><strong>Requires the use of the BLUEHOLME™ Journeymanne Rules.</strong></p><p>A game system for the BLUEHOLME™ Journeymanne Rules (levels 1-20): attack and saving throw matrices, Dexterity initiative, thieves' skills, turning undead, spell slots and spell learning, combination classes, species hit dice, treasure tables, and compendia of equipment, spells, magic items and creatures with summaries and page references.</p><p>The BLUEHOLME™ Prentice Rules and the BLUEHOLME™ Journeymanne Rules are available from Dreamscape Design at https://www.drivethrurpg.com/en/publisher/3982/Dreamscape-Design and all associated logos and trademarks are copyrights of Dreamscape Design. Used with permission. Dreamscape Design makes no representation or warranty regarding the quality, viability, or suitability for purpose of this product.</p>",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -14,7 +14,7 @@
   ],
   "url": "https://github.com/gmjeremynow/blueholme",
   "manifest": "https://github.com/gmjeremynow/blueholme/releases/latest/download/system.json",
-  "download": "https://github.com/gmjeremynow/blueholme/releases/download/v0.2.5/blueholme.zip",
+  "download": "https://github.com/gmjeremynow/blueholme/releases/download/v0.2.6/blueholme.zip",
   "readme": "https://github.com/gmjeremynow/blueholme/blob/main/README.md",
   "changelog": "https://github.com/gmjeremynow/blueholme/blob/main/CHANGELOG.md",
   "bugs": "https://github.com/gmjeremynow/blueholme/issues",

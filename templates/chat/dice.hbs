@@ -1,8 +1,16 @@
 <div class="blueholme-card">
   <header class="card-title">{{title}}</header>
-  {{#if label}}<p class="small">{{label}}</p>{{/if}}
-  <div class="big-roll">{{total}}</div>
-  <p class="mods">{{formula}}</p>
-  {{#if dmg}}<div class="card-buttons"><button type="button" data-card-action="apply"><i class="fa-solid fa-heart-crack"></i> Apply</button><button type="button" data-card-action="apply-half">½ (saved)</button></div>{{/if}}
-  {{#if heal}}<div class="card-buttons"><button type="button" data-card-action="heal"><i class="fa-solid fa-heart"></i> Apply healing</button></div>{{/if}}
+  <ul class="results">
+    {{#each results}}
+    <li>
+      <div class="res-line"><span class="res-label">{{label}}</span><span class="res-total">{{total}}</span></div>
+      {{#if text}}<div class="res-text">{{text}}</div>{{/if}}
+      <div class="res-sub">{{formula}}{{#if save}} · {{save}}{{/if}}</div>
+      {{#if isDmg}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="dmg" data-index="{{index}}"><i class="fa-solid fa-heart-crack"></i> Apply</button><button type="button" data-card-action="apply" data-mode="half" data-index="{{index}}">½</button></div>{{/if}}
+      {{#if isHeal}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="heal" data-index="{{index}}"><i class="fa-solid fa-heart"></i> Apply healing</button></div>{{/if}}
+      {{#if isHealAllBut}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="healAllBut" data-index="{{index}}"><i class="fa-solid fa-heart"></i> Heal all but {{total}}</button></div>{{/if}}
+      {{#if isHpLeft}}<div class="card-buttons"><button type="button" data-card-action="apply" data-mode="hpLeft" data-index="{{index}}"><i class="fa-solid fa-skull"></i> Reduce to {{total}} hp</button></div>{{/if}}
+    </li>
+    {{/each}}
+  </ul>
 </div>

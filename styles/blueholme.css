@@ -236,3 +236,19 @@ button.bh-treasure { font-size: 12px; }
 /* game name stacked above the sheet label */
 .blueholme .title-line .record-mark { display: flex; flex-direction: column; align-items: center; line-height: 1.15; align-self: flex-end; }
 .blueholme .record-mark .brand { font-family: var(--bh-serif); font-size: 17px; letter-spacing: .14em; color: var(--rule-strong); }
+
+/* rolled results on spell and item cards */
+.blueholme-card ul.results { list-style: none; margin: 4px 0; padding: 0; }
+.blueholme-card ul.results li { border-left: 3px solid var(--cobalt-2); padding: 2px 6px; margin: 4px 0; background: rgba(255,255,255,.5); }
+.blueholme-card .res-line { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.blueholme-card .res-label { font-size: 12px; color: var(--ink-2); }
+.blueholme-card .res-total { font-family: var(--bh-body); font-weight: 700; font-size: 20px; }
+.blueholme-card .res-text { font-family: var(--bh-head); font-size: 13px; }
+.blueholme-card .res-sub { font-size: 11px; color: var(--ink-3); }
+.blueholme-card .card-buttons.options { flex-wrap: wrap; }
+.blueholme-card .card-buttons.options button { flex: 1 1 100%; text-align: left; }
+.blueholme-card details.card-desc-wrap summary { cursor: pointer; font-size: 11px; color: var(--ink-3); }
+
+.blueholme .roll-row { display: flex; gap: 6px; align-items: center; flex: 1 1 100%; }
+.blueholme .roll-row .r-label { flex: 2; }
+.blueholme .roll-row .r-formula { flex: 1; }

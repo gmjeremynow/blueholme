@@ -11,15 +11,26 @@
    "reverseOf": "",
    "reverse": "Deal Light Wounds",
    "roll": {
-    "formula": "1d6+1",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>With a touch of the caster’s hand upon a living, wounded creature, 1d6+1 points of damage are healed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.16.</p>",
-   "source": "Journeymanne Rules p.16"
+   "source": "Journeymanne Rules p.16",
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "1d6+1",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -34,15 +45,26 @@
    "reverseOf": "Cure Light Wounds",
    "reverse": "",
    "roll": {
-    "formula": "1d6+1",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The touch of the caster upon a living creature causes 1d6+1 points of damage. The victim must be unaware, helpless, surprised, running away, or otherwise unable to engage, as spells cannot be cast in melee combat.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": [
+    {
+     "label": "Damage",
+     "formula": "1d6+1",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -65,7 +87,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the presence of evil objects, as well as evil intentions or thoughts of any creature within range of the spell.</p><p>The spell also gives some idea of the degree of evil, and possibly whether the source is lawful or chaotic.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -88,7 +111,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the presence of good objects, and intentions or thoughts of any creature in range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -111,7 +135,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can detect magical auras about any creature, object or location within the range limit of the spell.</p><p>There is no visible effect; only the caster is granted the knowledge uncovered by the spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -134,7 +159,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes an object to glow like a torch, shedding bright light in a 15’ radius from any point in range. It is not equivalent to daylight.</p><p>Light cast at an area of magical darkness can dispel the latter, and vice versa, but a light taken into darkness will not illuminate it.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -157,7 +183,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes an object or point to radiate total darkness out to a 15’ radius. Non-magical light cannot illuminate the area, and even creatures with darkvision are unable to see.</p><p>The effect is immobile, but the spell can be cast on a movable object.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -180,7 +207,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell protects the caster against attacks from creatures summoned by evil-aligned casters, as well as anyone of evil alignment.</p><p>The ward moves with the caster and provides a +1 bonus to saving throws and AC against such attacks.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -203,7 +231,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell grants the caster a +1 bonus to saving throws and AC against attacks from creatures summoned by good-aligned casters, as well as anyone of good alignment.</p><p>The effect moves with the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -226,7 +255,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes 12 servings of spoiled, poisoned, or otherwise contaminated food and water suitable for eating and drinking.</p><p>The effect is permanent, thus dispel magic will not cause purified victuals to spoil again.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -249,7 +279,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell spoils 12 servings of food and water. Magically contaminated food and water can be made edible and potable again through purify comestibles, but dispel magic has no effect – once contaminated, foodstuffs are perfectly mundane in every way.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.16.</p>",
-   "source": "Journeymanne Rules p.16"
+   "source": "Journeymanne Rules p.16",
+   "rolls": []
   }
  },
  {
@@ -272,7 +303,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster instils courage in the subject, providing a saving throw bonus equal to the caster’s level against any fear effect or spell for the duration. If the subject is already under the influence of a fear effect, he can make another saving throw at the same bonus.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -295,7 +327,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes the affected creature to panic and flee from the caster for the duration. Victims have a 50% chance of dropping hand-held items.</p><p>It cannot be cast while the caster is engaged in melee combat. Remove fear counters and dispels inflict fear.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -318,7 +351,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell grants one creature limited protection from cold. The subject gains a +2 bonus to any saving throws against cold attacks and is able to shrug off ordinary – that is, non-magical – cold even down to freezing temperatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.17.</p>",
-   "source": "Journeymanne Rules p.17"
+   "source": "Journeymanne Rules p.17",
+   "rolls": []
   }
  },
  {
@@ -341,7 +375,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Bless fills the caster’s allies with courage. Each ally gains a +1 bonus on attack rolls and causes +1 damage with a successful melee or missile strike.</p><p>Bless counters bane, and vice versa.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -364,7 +399,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Bane fills the caster’s enemies with fear and doubt. Each affected creature takes a –1 penalty on attack rolls and damage.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -387,7 +423,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell affects 1HD of animals per caster level and places them entirely under the control of the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": [
+    {
+     "label": "Hit dice of animals controlled",
+     "formula": "@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -410,7 +457,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell provides the caster with exact knowledge of the alignment of any creatures within its range, it also ascertains the target’s particular leanings; e.g. whether a character is really, truly neutral or has good or evil tendencies.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -433,7 +481,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell prevents detection of the target’s alignment by any means, such as a detect alignment spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -456,7 +505,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell detects one magical or mechanical trap, or the intent to trap, within range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -479,7 +529,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell hides one magical or mechanical trap, or the intent to trap, within range, concealing it from mundane searchers except thieves with over 100% in the Remove Traps skill. The chance for a thief detecting a trap concealed with this spell is Remove Traps at a penalty of –100%.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -502,7 +553,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Up to 4 humanoid beings are paralysed and freeze in place. They remain aware and breathe normally but cannot take any actions.</p><p>There is a –1 penalty on the saving throw for every creature less than 4.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -525,7 +577,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell grants one creature limited protection from fire. The subject is able to ignore normal fire for up to 2 rounds at a time, and also gains a +2 bonus to saving throws against any fire attacks.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -548,7 +601,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Upon casting, complete silence prevails in a 15’ radius around the target point. Conversation is impossible, and no noise can be made in or heard in the area.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -571,7 +625,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>For the duration, anything or anyone making the slightest movement in a 15’ radius around the target point will make a loud racket for all to hear. A wandering monster check should be made every round that anyone remains in the area of effect. Silence and clamour dispel one another.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -594,7 +649,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster is able to comprehend and speak with animals, and can ask questions as well as understand answers. The animals will not attack the caster’s party, and they may be willing to perform some service.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -617,7 +673,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster is able to comprehend and speak with unintelligent undead like skeletons and zombies, and can ask questions as well as understand answers. The undead will not attack the caster’s party, and they may be willing to perform some favour or other service for the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.18.</p>",
-   "source": "Journeymanne Rules p.18"
+   "source": "Journeymanne Rules p.18",
+   "rolls": []
   }
  },
  {
@@ -640,7 +697,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A light, equivalent to daylight, springs forth from an object within range, illuminating a 30’ radius. It can be covered, but is unaffected by darkness.</p><p>Continual light and continual darkness temporarily cancel one another where they overlap, but they cannot be used to dispel one another.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -663,7 +721,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A 30’ radius sphere of magical dark springs forth from an object within range. Normal lights are incapable of brightening the area, and darkvision is useless. The effect is immobile, but it can be cast on a movable object; the continual darkness can be temporarily countered by covering the object.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -686,7 +745,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Dispel magic will end on-going spells that have been cast on a creature, or object; temporarily suppress the magical abilities of a magic item; end on-going spells within an area (or at least their effects); or counter another caster’s spell.</p><p>An affected spell ends as if its duration had expired.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -701,15 +761,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "2*@L",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The caster weaves a try of faintly glowing lines around a warding sigil. When the spell is completed, the glyph and tracery become nearly invisible.</p><p>The caster chooses the type of damage by inscribing the appropriate glyph (fire, lightning, cold, acid, and so forth).</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": [
+    {
+     "label": "Damage when triggered",
+     "formula": "2*@L",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -732,7 +803,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell reduces the saving throws and attack rolls of opponents within 20’ of the centre of effect. They suffer a penalty of –1 per 5 levels of the spell caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -755,7 +827,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the direction (but not distance) of a well-known or clearly visualised object. The spell can search for typical objects, locating only the nearest if more than one is within range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -778,7 +851,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Remove curse immediately removes all curses on an object or a creature. It turns a cursed shield, weapon, or suit of armour into a mundane item.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -801,7 +875,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster places a curse on the subject, such as – 6 to an ability score (cannot be reduced to less than 1); – 4 penalty on attack rolls, saves, ability checks, and skill checks; or limiting the target to a 50% chance of acting normally, otherwise taking no action.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -824,7 +899,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell cures the recipient of any form of disease, whether mundane or magical.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -847,7 +923,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell infects the victim with a magical disease. The exact effects must be determined by the referee and player in concert.</p><p>The disease cannot be cured by normal means, but must be dispelled by remove disease or dispel magic.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -870,7 +947,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to ask 3 questions of a corpse, and receive an answer to each as interpreted by the referee.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.19.</p>",
-   "source": "Journeymanne Rules p.19"
+   "source": "Journeymanne Rules p.19",
+   "rolls": []
   }
  },
  {
@@ -893,7 +971,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell generates a day’s supply of drinkable water for 12 people and their mounts. The quantity doubles for each caster level above 8th.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "People and mounts supplied for a day",
+     "formula": "12*@Q",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -916,7 +1005,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell destroys the equivalent of a day’s supply of water for 12 people and their mounts. The quantity doubles for each caster level above 8th.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "People's daily water destroyed",
+     "formula": "12*@Q",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -931,15 +1031,26 @@
    "reverseOf": "",
    "reverse": "Deal Serious Wounds",
    "roll": {
-    "formula": "4d6+4",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>With a touch of the caster’s hand upon a living, wounded creature, 4d6+4 points of damage are healed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "4d6+4",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -954,15 +1065,26 @@
    "reverseOf": "Cure Serious Wounds",
    "reverse": "",
    "roll": {
-    "formula": "4d6+4",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The touch of the caster upon a living creature causes 4d6+4 points of damage. The victim must be unaware, helpless, surprised, running away, or otherwise unable to engage, as spells cannot be cast in melee combat.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "Damage",
+     "formula": "4d6+4",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -985,7 +1107,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>By means of this spell the caster can lower the level of a water body such as a pond or river by half, e.g. a 10’ deep stream becomes 5’ deep for the duration.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1008,7 +1131,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>By means of this spell the caster can raise the level of a water body such as a pond or river by half again, e.g. a 10’ deep stream becomes 15’ deep for the duration of the spell, likely flooding the area.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1031,7 +1155,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell detoxifies any sort of venom in the creature or object touched. A poisoned creature suffers no additional effects from the poison, but the spell does not reverse effects already suffered. The creature is also immune to any poison for the next turn.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1054,7 +1179,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>When the caster lays a hand upon a living creature the target must save vs. poison or die. The victim must be unaware, helpless, surprised, running away, or otherwise unable to engage in melee (spells cannot be cast while engaged). Inject Poison does not affect the undead.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1077,7 +1203,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil- aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1100,7 +1227,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by good- aligned casters, as well as anyone of good alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1115,15 +1243,26 @@
    "reverseOf": "",
    "reverse": "Sticks to Snakes",
    "roll": {
-    "formula": "2d8",
-    "kind": "num",
-    "label": "Snakes affected"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The caster can turn 2d8 normal snakes into wooden sticks for the duration of the spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "Snakes turned to sticks",
+     "formula": "2d8",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1138,15 +1277,35 @@
    "reverseOf": "Snakes to Sticks",
    "reverse": "",
    "roll": {
-    "formula": "2d8",
-    "kind": "num",
-    "label": "Sticks turned"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The caster can turn 2d8 sticks into normal snakes under his control. The snakes are poisonous on a roll of 1-3 on 1d6, and constrictors on 4-6.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": [
+    {
+     "label": "Snakes created",
+     "formula": "2d8",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Snake type (1-3 poisonous, 4-6 constrictor)",
+     "formula": "1d6",
+     "kind": "info",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1169,7 +1328,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster is able to comprehend and speak with plants, and can ask questions as well as understand answers. The plants will not attack the caster’s party, they obey commands such as parting to allow passage to the caster, and they may agree to perform a service.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1192,7 +1352,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell grants the caster the ability to speak and understand the language of any intelligent creature within a 30’ radius.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1215,7 +1376,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell prevents the victim from speaking intelligibly or understanding the language of any intelligent creature within a 30’ radius.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
-   "source": "Journeymanne Rules p.20"
+   "source": "Journeymanne Rules p.20",
+   "rolls": []
   }
  },
  {
@@ -1238,7 +1400,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Commune allows the caster to contact a higher power and ask 3 questions, increasing to 6 questions once a year during an annual holy period. Commune may only be cast once per week at most.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1261,7 +1424,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell generates a day’s supply of wholesome food for 12 people and their mounts. The quantity doubles for each caster level above 8th.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "People and mounts fed for a day",
+     "formula": "12*@Q",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1284,7 +1458,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell destroys the equivalent of a day’s supply of food for 12 people and their mounts. The quantity doubles for each caster level above 8th.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "People's daily food destroyed",
+     "formula": "12*@Q",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1299,15 +1484,26 @@
    "reverseOf": "",
    "reverse": "Deal Critical Wounds",
    "roll": {
-    "formula": "5d6+5",
-    "kind": "heal",
-    "label": "Healing"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>With a touch of the caster’s hand upon a living, wounded creature, 5d6+5 points of damage are healed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "Healing",
+     "formula": "5d6+5",
+     "kind": "heal",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1322,15 +1518,26 @@
    "reverseOf": "Cure Critical Wounds",
    "reverse": "",
    "roll": {
-    "formula": "5d6+5",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The touch of the caster upon a living creature causes 5d6+5 points of damage. The victim must be unaware, helpless, surprised, running away, or otherwise unable to engage, as spells cannot be cast in melee combat.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "Damage",
+     "formula": "5d6+5",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1353,7 +1560,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Dispel evil ends any on-going evil spells or effects that have been cast on a creature, object or area; temporarily suppresses the magical abilities of an evil magic item; or counters another caster’s ‘evil’ spell. This spell also dispels a summoned evil creature if it fails to save vs. spells.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1376,7 +1584,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Dispel good ends on-going good spells or effects that have been cast on a creature, object or area; temporarily suppresses the magical abilities of a good magic item; or counters another caster’s ‘good’ spell. This spell also dispels a summoned good creature if it fails to save vs. spells.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1391,15 +1600,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "6d8",
-    "kind": "dmg",
-    "label": "Fire damage (each round)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A flame strike calls a 10’ diameter column of fire roaring down from above. The spell deals 6d8 points of fire damage every round within the area of effect. Half damage is taken if a target saves vs. breath.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "Fire damage this round",
+     "formula": "6d8",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "save vs. breath for half",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1422,7 +1642,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster summons a swarm of insects which fills one contiguous area of 360 square feet.</p><p>The swarm moves as directed by the caster within range of the spell, blinding all creatures within and routing those of 2HD or less.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1445,7 +1666,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A quest places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by the caster. The creature must follow the given instructions until the quest is completed, no matter how long it takes.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1468,7 +1690,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell restores life to a deceased creature. It can raise a creature that has been dead for no longer than 4 days, plus 1 day per caster level beyond 8th. Coming back from the dead is an ordeal and the subject of the spell requires 2 weeks of bed rest to fully regain his or her strength.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": [
+    {
+     "label": "Longest time dead (days)",
+     "formula": "4+max(0,@L-8)",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1491,7 +1724,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a ray which can slay one living creature within range. The target is entitled to a saving throw vs. spells to survive the attack.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.21.</p>",
-   "source": "Journeymanne Rules p.21"
+   "source": "Journeymanne Rules p.21",
+   "rolls": []
   }
  },
  {
@@ -1514,7 +1748,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell imbues inanimate objects with mobility and a semblance of life. Each such animated object attacks any target the caster designates. The spell will animate several small objects, 2 human-sized objects, or 1 large object up to twice human size.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Statue attack (every second round)",
+     "formula": "2d8",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Chair attack",
+     "formula": "1d4",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1537,7 +1791,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell turns the bones or bodies of dead creatures into animated undead skeletons or zombies under the control of the caster.</p><p>A 12th level caster creates 4HD of undead, +1 HD for every level thereafter. The undead remain active indefinitely if not destroyed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": []
   }
  },
  {
@@ -1552,15 +1807,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d6",
-    "kind": "dmg",
-    "label": "Damage passing through"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A vertical curtain of whirling blades in a ring of up to 15’ in radius springs into existence.</p><p>Any creature other than the caster attempting to pass through the blade barrier in either direction takes 1d6 points of damage per caster level. The barrier is immobile once cast, even if the caster moves.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Damage passing through",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1583,7 +1849,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons an elemental creature of air, and binds it to find one object or creature and bring the same to the caster. The servant is invisible and always achieves surprise except against creatures which can detect invisible creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": []
   }
  },
  {
@@ -1598,15 +1865,26 @@
    "reverseOf": "",
    "reverse": "Harm",
    "roll": {
-    "formula": "1d4",
-    "kind": "other",
-    "label": "Hit points of damage left (all but 1d4 cured)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Heal wipes away all injury and afflictions, including blindness, disease and feeblemind. It neutralises poison if the victim still lives. It also cures all but 1d4 hit points of damage that the target has suffered.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Damage left uncured",
+     "formula": "1d4",
+     "kind": "healAllBut",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1621,15 +1899,26 @@
    "reverseOf": "Heal",
    "reverse": "",
    "roll": {
-    "formula": "1d4",
-    "kind": "other",
-    "label": "Hit points left (all but 1d4 lost)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Harm infects the target with a disease and causes the loss of all but 1d4 hit points.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Hit points left to the target",
+     "formula": "1d4",
+     "kind": "hpLeft",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1644,15 +1933,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "6d8",
-    "kind": "dmg",
-    "label": "Lightning damage (each round)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A lightning strike calls a 30’ diameter column of lightning crackling down from above, dealing 6d8 points of lightning damage every round within the area of effect. Damage is halved on a save vs. breath.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Lightning damage this round",
+     "formula": "6d8",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "save vs. breath for half",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1675,7 +1975,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell can find the shortest, safest way out of danger. Path finder works outdoors, underground, or even inside a maze spell. Underground, path finder lasts for 6 turns plus 1 turn per caster level; outdoors it simply lasts for up to 1 day.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Duration underground (turns)",
+     "formula": "6+@L",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1698,7 +2009,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell will conceal all ways in range leading to a specific locale. Underground, path hider lasts for 6 turns plus 1 turn per caster level; outdoors it lasts for 1 day. Path finder will dispel a path hider spell, but it will not then show the shortest, safest path to the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": [
+    {
+     "label": "Duration underground (turns)",
+     "formula": "6+@L",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1721,7 +2043,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons one or more animals of up to 12HD in total, appropriate to the environment, which obey the caster for the duration and then disappear.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": []
   }
  },
  {
@@ -1744,7 +2067,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Word of recall instantly teleports the caster back to a place of sanctuary. The sanctuary must be designated beforehand, and cannot be changed thereafter except when exceptional circumstances demand it, e.g. if it is destroyed somehow.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.22.</p>",
-   "source": "Journeymanne Rules p.22"
+   "source": "Journeymanne Rules p.22",
+   "rolls": []
   }
  },
  {
@@ -1767,7 +2091,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell can change the weather in the local area. Control weather can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them, including rain, cold, heat, clouds and wind.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": []
   }
  },
  {
@@ -1790,7 +2115,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>When earthquake is cast, an intense but highly localised tremor rends the ground. The specific area of effect of an earthquake spell is 60’ x 60’. The earthquake affects all terrain, vegetation, structures, and creatures in the area.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": [
+    {
+     "label": "Creature swallowed on a 1",
+     "formula": "1d6",
+     "kind": "info",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1813,7 +2149,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>Any creature within 40’ of the caster suffers ill effects depending on its HD.</p><table class=\"bh-tbl\"><tr><th>Hit Dice</th><th>Effect</th></tr><tr><td>0-5</td><td>Killed</td></tr><tr><td>6-8</td><td>Stunned for 2d10 turns</td></tr><tr><td>9-12</td><td>Deafened for 1d6 turns</td></tr><tr><td>13+</td><td>No effect</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": [
+    {
+     "label": "Stunned (6-8 HD): turns",
+     "formula": "2d10",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Deafened (9-12 HD): turns",
+     "formula": "1d6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1836,7 +2192,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>Any creature within 40’ of the caster of the unholy word suffers ill effects depending on its HD.</p><table class=\"bh-tbl\"><tr><th>Hit Dice</th><th>Effect</th></tr><tr><td>0-5</td><td>Killed</td></tr><tr><td>6-8</td><td>Stunned for 2d10 turns</td></tr><tr><td>9-12</td><td>Deafened for 1d6 turns</td></tr><tr><td>13+</td><td>No effect</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": [
+    {
+     "label": "Stunned (6-8 HD): turns",
+     "formula": "2d10",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Deafened (9-12 HD): turns",
+     "formula": "1d6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1859,7 +2235,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a dry passage through water up to 10’ wide. The size and duration of the gap depend on caster level.</p><table class=\"bh-tbl\"><tr><th>Level</th><th>Depth</th><th>Duration</th></tr><tr><td>17</td><td>20’</td><td>12 turns</td></tr><tr><td>18</td><td>30’</td><td>18 turns</td></tr><tr><td>19</td><td>40’</td><td>24 turns</td></tr><tr><td>20</td><td>50’</td><td>36 turns</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": []
   }
  },
  {
@@ -1882,7 +2259,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster’s essence to travel in immaterial form, undetectable to other beings. If the caster’s physical body is destroyed, or the maximum distance between body and spirit given below is exceeded the projected form is lost in the astral plane forever.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": []
   }
  },
  {
@@ -1905,7 +2283,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Restoration returns 1 experience level lost by the target. Use of this spell leaves the caster debilitated and unfit to travel for 2d10 days.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": [
+    {
+     "label": "Days the caster is debilitated",
+     "formula": "2d10",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1928,7 +2317,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Energy drain reduces the target by 1 experience level and adds 1 HD (of the target’s type) to the caster’s hit points. Any hit points over the caster’s maximum disappear after 10 turns.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": []
   }
  },
  {
@@ -1951,7 +2341,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to scribe a potent rune of power upon a surface. It affects any creature hostile or of a different alignment to the caster.</p><p>A dispel magic by a caster at least 1 level higher than the original caster can negate a symbol.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": [
+    {
+     "label": "Symbol of pain: turns at −4",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -1974,7 +2375,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell alters the substance of the caster’s body to a cloudlike vapour and allows movement through the air at great speed (move 480). The caster can take one other person along, if they are touching.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.23.</p>",
-   "source": "Journeymanne Rules p.23"
+   "source": "Journeymanne Rules p.23",
+   "rolls": []
   }
  },
  {
@@ -1989,15 +2391,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "@L",
-    "kind": "dmg",
-    "label": "Fire damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A sheet of searing flame shoots from the caster’s fingertips, 30’ long and 15’ wide at its end. Any creature in the arc of the flames takes 1 point of fire damage per caster level. The burning items can be extinguished in one round by dousing, beating, smothering, etc.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": [
+    {
+     "label": "Fire damage",
+     "formula": "@L",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2020,7 +2433,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell places a single humanoid being of about human size or smaller entirely under the influence of the caster, subject to normal communication difficulties.</p><p>The victim is allowed to make repeated saving throws to throw off the charm at regular intervals determined by its Intelligence score.</p><table class=\"bh-tbl\"><tr><th>Intelligence</th><th>Saving Throw</th></tr><tr><td>0-6</td><td>Every 1 month</td></tr><tr><td>7-9</td><td>Every 3 weeks</td></tr><tr><td>10-11</td><td>Every 2 weeks</td></tr><tr><td>12-15</td><td>Every 1 week</td></tr><tr><td>16-17</td><td>Every 2 days</td></tr><tr><td>18+</td><td>Every 1 day</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": []
   }
  },
  {
@@ -2043,7 +2457,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster creates between 1 and 6 lights that resemble torches or lanterns, casting the same amount of light. The exact number of lights is chosen by the caster.</p><p>The dancing lights must stay within maximum spell range of the caster, but otherwise move as directed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": []
   }
  },
  {
@@ -2066,7 +2481,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can detect magical auras about any creature, object or location within the range limit. There is no visible effect; only the caster is granted the knowledge uncovered by the spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": []
   }
  },
  {
@@ -2089,7 +2505,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>The spell affects either a single object or human-sized creature, including anything worn or carried by said creature. The maximum volume of an object to be enlarged is limited to 12 cubic feet per caster level. Enlarged creatures do double damage when they hit a target.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": [
+    {
+     "label": "Largest object (cubic feet)",
+     "formula": "12*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2112,7 +2539,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Feather fall instantly changes the rate at which the subject falls to a mere 20’ per round, and negates damage from falling while the spell is in effect. The spell affects one or more creature or objects within a 5’ radius, weighing up to 250 pounds per caster level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": [
+    {
+     "label": "Weight affected, up to (pounds)",
+     "formula": "250*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2135,7 +2573,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a slightly concave, circular plane of force that follows the caster about and carries loads for him. The disk can hold up to 5,000 coins, or an equivalent load of up to 500 pounds in weight. The floating disk hovers at approximately waist height at all times and remains level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": []
   }
  },
  {
@@ -2150,15 +2589,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "2d6",
-    "kind": "dur",
-    "label": "Turns"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell magically welds shut a door, gate, window, shutter or similar access. Short of physically breaking through, only a knock spell or a successful dispel magic can negate a hold portal spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.25.</p>",
-   "source": "Journeymanne Rules p.25"
+   "source": "Journeymanne Rules p.25",
+   "rolls": [
+    {
+     "label": "Duration (turns)",
+     "formula": "2d6",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2181,7 +2631,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject gets the ability to jump up to 30’ in any direction. One jump may be made per caster level, and all jumps must be completed within the duration.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": [
+    {
+     "label": "Jumps",
+     "formula": "@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2204,7 +2665,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes an object to glow like a torch, shedding bright light in a 15’ radius from any point in range. It is not equivalent to daylight.</p><p>Light can dispel darkness and vice versa, but a light taken into darkness will not illuminate it.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2219,15 +2681,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d6+1",
-    "kind": "dmg",
-    "label": "Damage per missile"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes a bolt of magical energy to dart forth from the caster’s fingertip. A magic-user can fire two magic missiles at 3rd-4th level, three at 5th-6th, and one more every two levels thereafter.</p><p>The ranges are given below: Short Range Medium Range Long Range 1-70 71-140 141-210</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": [
+    {
+     "label": "Damage per missile (each needs a hit)",
+     "formula": "1d6+1",
+     "kind": "dmg",
+     "auto": true,
+     "count": "ceil(@L/2)",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2250,7 +2723,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can whisper messages, point a finger at any creature visible within range, transmit the message, and receive whispered replies. The message must be able to travel in an uninterrupted straight line between the caster and the target(s).</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2273,7 +2747,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell provides the caster with a +1 bonus to saving throws and AC against attacks from creatures summoned by evil-aligned casters, as well as anyone of evil alignment. It moves with the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2296,7 +2771,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell shoves any one object or creature within range, moving it 1’ per caster level directly away from the caster. A target creature must save vs. spells to avoid toppling, or to avoid dropping an object that a push is directed against. The spell affects up to 50 pounds per caster level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": [
+    {
+     "label": "Distance pushed (feet)",
+     "formula": "@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Weight moved, up to (pounds)",
+     "formula": "50*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2319,7 +2814,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to decipher any non-magical writings or inscriptions, such as books, carvings, or maps. Once the caster has read the inscription, he or she is thereafter able to read that particular writing without another casting of read languages.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2342,7 +2838,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can decipher magical inscriptions on objects such as books, scrolls, weapons, and the like, which would otherwise be unintelligible.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2365,7 +2862,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Shield creates an invisible barrier of force that hovers around the caster, providing AC2 vs. missiles and AC4 vs. all other attacks.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2380,15 +2878,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d8+@L",
-    "kind": "dmg",
-    "label": "Electrical damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>The caster’s touch deals 1d8 points of electrical damage, plus 1 point per caster level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": [
+    {
+     "label": "Electrical damage",
+     "formula": "1d8+@L",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2403,15 +2912,53 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "2d8",
-    "kind": "num",
-    "label": "Creatures affected (1HD; 2d6 at 2HD, 1d6 at 3HD, 1 at 4HD)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A sleep spell causes any creatures of up to 4HD (except the undead) in a 10’ circle to fall irresistibly into a magical slumber with no saving throw.</p><table class=\"bh-tbl\"><tr><th>HD</th><th>No. Affected</th></tr><tr><td>1</td><td>2d8</td></tr><tr><td>2</td><td>2d6</td></tr><tr><td>3</td><td>1d6</td></tr><tr><td>4</td><td>1</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": [
+    {
+     "label": "Duration (turns)",
+     "formula": "4d4",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Creatures of 1 HD put to sleep",
+     "formula": "2d8",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Creatures of 2 HD",
+     "formula": "2d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Creatures of 3 HD",
+     "formula": "1d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2434,7 +2981,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can make a voice seem to issue from someplace else, such as an object, a creature, etc.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.26.</p>",
-   "source": "Journeymanne Rules p.26"
+   "source": "Journeymanne Rules p.26",
+   "rolls": []
   }
  },
  {
@@ -2457,7 +3005,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A light springs forth from an object within range, illuminating a 30’ radius. The light shed by the magic- user spell is not equivalent to daylight. It will shed light forever unless dismissed by the caster or dispelled.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2480,7 +3029,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes an object or point to radiate total darkness out to a 15’ radius. Non-magical light cannot illuminate the area, and even creatures with darkvision are unable to see. The effect is immobile, but the spell can be cast on a movable object. Darkness and light dispel one another.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2503,7 +3053,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the presence of evil objects, as well as evil intentions or thoughts of any creature in range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2526,7 +3077,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the location of any invisible creatures and objects within range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2549,7 +3101,36 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes the Dexterity score of the subject to increase for the duration of the spell. The new temporary ability score provides all the usual bonuses to missile attack rolls and any Dexterity-based rolls, but it has no effect on a thief’s experience bonus.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": [
+    {
+     "label": "Dexterity increase: cleric or magic-user",
+     "formula": "1d4",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fighter",
+     "formula": "1d6",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Thief",
+     "formula": "2d4",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2572,7 +3153,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell erases all memory of recent events of any creature within 10’ of the target point. Victims forget everything within 1 minute per caster level before the moment of casting. Charm or suggestion cast during the forgotten time are not affected, although victims will forget that were cast.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": [
+    {
+     "label": "Minutes of memory erased",
+     "formula": "@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2595,7 +3187,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes the affected creature to panic and flee from the caster for the duration. Victims have a 50% chance of dropping hand-held items. It cannot be cast while the caster is engaged in melee combat. Remove fear counters and dispels inflict fear.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2618,7 +3211,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject and all worn clothing or carried equipment becomes Invisible, vanishing from sight (even from darkvision). Dropping an item makes it appear; picking it up makes it invisible again.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2641,7 +3235,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The knock spell opens jammed, barred, locked, or secret doors, as well as gates, boxes, and similar objects. It dispels hold portal spells, but does not then open the item.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2664,7 +3259,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Levitate allows the caster to float the subject up and down at a movement rate of 60 each turn. The subject cannot be moved horizontally, but the latter could clamber along the face of a cliff, for example, or push against a ceiling or other objects to move laterally.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2687,7 +3283,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster can sense the direction (but not distance) of a well-known or clearly visualised object. The spell can search for typical objects, locating only the nearest if more than one is within range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
-   "source": "Journeymanne Rules p.27"
+   "source": "Journeymanne Rules p.27",
+   "rolls": []
   }
  },
  {
@@ -2710,7 +3307,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A magic lock cast upon a door, chest, or portal magically locks it.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2733,7 +3331,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell imbues the chosen object or creature with an enchanted mouth that suddenly appears and speaks its message whenever a specified event occurs. The message must be 25 or fewer words.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2748,15 +3347,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d4",
-    "kind": "num",
-    "label": "Duplicates"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>1d4 illusory, identical duplicates of the caster pop into being, making it difficult for enemies to know which target to attack. The mirror images mimic the magic- user’s actions exactly.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": [
+    {
+     "label": "Images",
+     "formula": "1d4",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2779,7 +3389,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates the visual illusion of an object, creature, or force, as envisioned and controlled by the caster. The phantasmal image does not create sound, smell, texture, or temperature, but victims successfully attacked by it believe they took real damage and may die.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2794,15 +3405,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@H)d6",
-    "kind": "dmg",
-    "label": "Sound blast damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Phantasmal sound allows the magic-user to create a volume of sound that rises, recedes, approaches, or remains at a fixed place.</p><p>The spell may be cast directly at a creature capable of hearing, creating a blast of sound causing 1d6 damage per 2 caster levels.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": [
+    {
+     "label": "Sound blast damage",
+     "formula": "(@H)d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2825,7 +3447,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Pyrotechnics turns a normal fire into a burst of colourful fireworks or a cloud of choking smoke.</p><p>The size of the fire determines the impressiveness of the Pyrotechnics; for example, a torch can produce 20 cubic feet of smoke. The fire is immediately extinguished at the end of the spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2848,7 +3471,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A coruscating ray of light springs from the caster’s hand. The victim loses 4 points of Dexterity.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2871,7 +3495,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to detect and understand the thoughts of any sapient creature within range, regardless of language. A thin layer of lead or more than 2’ of stone blocks the spell completely.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -2894,7 +3519,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Creatures caught within a web become entangled among the tacky fibres. Giants can break through in just 2 rounds, but a normal human would take 2d4 turns. The strands of a web spell are flammable, but the fire will also harm any trapped creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": [
+    {
+     "label": "Turns for a human to break free",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2917,7 +3553,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>By means of this spell the caster can blink out of existence and re-appear one round later, up to 5’ away in any direction.</p><p>If the space is occupied by another creature or object, the caster will re-appear closer to his original location.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": [
+    {
+     "label": "Rounds of blinking",
+     "formula": "@L",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -2940,7 +3587,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Clairaudience enables the caster to clearly hear sounds at a chosen location.</p><p>This spell can be cast through remote viewing, such as a crystal ball, in which case the range is counted from the location of the remote viewpoint. It is blocked by more than 20’ of stone or a thin layer of lead.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -2963,7 +3611,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Clairvoyance enables the caster to see things in a chosen location as if he or she were there. This spell can be cast through remote viewing, such as a crystal ball, in which case the range is counted from the location of the remote viewpoint.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -2986,7 +3635,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject gains the ability to see 60’ even in total darkness. Darkvision is black and white only but otherwise as good as normal sight. It does not grant the ability to see in magical darkness or to spot invisible creatures or objects.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -3009,7 +3659,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Dispel magic will end on-going spells that have been cast on a creature, or object; temporarily suppress the magical abilities of a magic item; end on-going spells within an area (or at least their effects); or counter another caster’s spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -3024,15 +3675,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "4d6",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>These runes are placed upon a book, map, scroll, or similar object bearing written information. The runes detonate when read by anyone except the caster, dealing 4d6 points of damage and destroying the object. The caster can remove the runes, otherwise they will remain until triggered.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": [
+    {
+     "label": "Damage when read",
+     "formula": "4d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3055,7 +3717,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Fire arrow turns ammunition (such as arrows, quarrels, and sling stones) into fiery projectiles. For 1 round per level the caster can affect any projectile that can be brought within range. The flaming ammunition deals an extra 1 point of fire damage to any target hit.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": [
+    {
+     "label": "Rounds",
+     "formula": "@L",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3070,15 +3743,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d6",
-    "kind": "dmg",
-    "label": "Fire damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A fire ball detonates with a 20’ burst radius and deals 1d6 points of fire damage per caster level to every creature within the area. The caster determines where the fire ball detonates, and it explodes at that point unless it impacts upon a solid barrier first.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": [
+    {
+     "label": "Fire damage",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3101,7 +3785,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject can fly through the air with perfect manoeuvrability at its normal speed. Using a fly spell requires only as much concentration as walking, therefore the subject can carry loads, attack, or cast spells normally.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -3124,7 +3809,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Up to 24 creatures in a 50’ radius move and act twice as quickly as normal. Haste doubles the target’s normal number of attacks and movement rate. Haste does not affect magic, so the rate of spell casting or the use of spell-like powers or magic items is not speeded up.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.29.</p>",
-   "source": "Journeymanne Rules p.29"
+   "source": "Journeymanne Rules p.29",
+   "rolls": []
   }
  },
  {
@@ -3147,7 +3833,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Up to 4 humanoids are paralysed and freeze in place. They remain aware and breathe normally but cannot take any actions. A winged creature cannot flap its wings and falls if flying when held. There is a –1 penalty on the saving throw for every creature less than 4.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3170,7 +3857,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell is exactly like invisibility, but it affects everyone within 10’ of the subject at the time of casting. Moving out of this sphere makes creatures visible, going back in makes them invisible again.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3185,15 +3873,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d6",
-    "kind": "dmg",
-    "label": "Electricity damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A lightning bolt deals 1d6 points of electricity damage per caster level to each creature within its area of effect. The bolt is 60’ long and 5’ across, originating at any point within the spell’s range.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": [
+    {
+     "label": "Electricity damage",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3216,7 +3915,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil- aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3239,7 +3939,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The recipient gains immunity to all normal missile attacks including thrown weapons, sling stones, and quarrels, as well as arrows.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3262,7 +3963,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes one end of a 6’ to 24’ long rope to rise into the air until the whole length hangs perpendicular to the ground, affixed at the upper end to an extra- dimensional space.</p><p>The space holds as many as 3 creatures in complete safety.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3285,7 +3987,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Up to 24 creatures in a 50’ radius are slowed, attacking half as often and moving at half speed. Haste and slow counter but do not dispel each other.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3308,7 +4011,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster makes a suggestion, limited to a sentence or two, to be acted on at any time within the duration. A self-harmful act must sound reasonable to be obeyed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
-   "source": "Journeymanne Rules p.28"
+   "source": "Journeymanne Rules p.28",
+   "rolls": []
   }
  },
  {
@@ -3331,7 +4035,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1d3 Berserkers<br>2 1d6 Centipedes, Giant<br>3 1d3 Fighters (2nd level)<br>4 1d4 Goblins<br>5 1d6 Kobolds<br>6 1d3 Orcs<br>7 1d6 Rats, Giant<br>8 1d4 Skeletons<br>9 1d6 Stirges<br>10 1d3 Thieves (2nd level)</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Berserkers",
+       "formula": "1d3"
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Giant centipedes",
+       "formula": "1d6"
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Fighters (2nd level)",
+       "formula": "1d3"
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Goblins",
+       "formula": "1d4"
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Kobolds",
+       "formula": "1d6"
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Orcs",
+       "formula": "1d3"
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "Giant rats",
+       "formula": "1d6"
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "Skeletons",
+       "formula": "1d4"
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "Stirges",
+       "formula": "1d6"
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "Thieves (2nd level)",
+       "formula": "1d3"
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -3354,7 +4130,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell targets up to 10 creatures within range. The transmuted creatures can breathe water freely.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
-   "source": "Journeymanne Rules p.30"
+   "source": "Journeymanne Rules p.30",
+   "rolls": []
   }
  },
  {
@@ -3369,15 +4146,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "3d6",
-    "kind": "num",
-    "label": "Creatures of 3HD or less"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes a creature of any type regard the caster as its trusted friend and ally. Up to 3d6 creatures of 3HD or less are affected; only 1 creature of 4HD or more can be charmed.</p><p>The victim is allowed to make repeated saving throws to throw off the charm at intervals determined by hit dice.</p><table class=\"bh-tbl\"><tr><th>Hit Dice</th><th>Saving Throw</th></tr><tr><td>0-1</td><td>Every 1 month</td></tr><tr><td>2-4</td><td>Every 3 weeks</td></tr><tr><td>5-7</td><td>Every 2 weeks</td></tr><tr><td>8-10</td><td>Every 1 week</td></tr><tr><td>11-14</td><td>Every 2 days</td></tr><tr><td>15+</td><td>Every 1 day</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": [
+    {
+     "label": "Creatures of 3 HD or less",
+     "formula": "3d6",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3400,7 +4188,46 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes the victims to become confused, making them unable to independently determine what they will do. Creatures of up to 3HD are automatically affected; only creatures of 4HD or more get a saving throw.</p><p class=\"bh-table\">2d6 Action<br>2-5 Attack caster’s party<br>6-8 Do nothing<br>9-12 Attack each other or allies</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": [
+    {
+     "label": "Delay before it takes hold (rounds; 0 or less: at once)",
+     "formula": "1d8-4",
+     "kind": "info",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Each round, per creature",
+     "formula": "2d6",
+     "kind": "table",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 2,
+       "hi": 5,
+       "text": "Attacks the caster's party",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 8,
+       "text": "Does nothing",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 12,
+       "text": "Attacks its own allies",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -3423,7 +4250,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject is instantly transported from its current location to any other spot in any direction within 360’.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": []
   }
  },
  {
@@ -3446,7 +4274,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Enchant Weapon makes a normal weapon equivalent to a magical one for purposes of striking creatures unaffected by mundane weapons, but it provides no bonuses to hit or damage. The spell affects 3 small, 2 normal, or 1 large weapon.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": []
   }
  },
  {
@@ -3469,7 +4298,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Extension 1 adds 50% to the duration of the next spell of 1st, 2nd or 3rd level cast by the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": []
   }
  },
  {
@@ -3492,7 +4322,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>When casting this spell, the caster appears to burst into wispy blue, green or violet flames, shedding dim light in a 15’ radius. Any creature striking the caster in melee deals normal damage, but also takes twice the damage dealt to its own hit points.</p><p>Cold shield: The flames are cold to the touch.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": []
   }
  },
  {
@@ -3507,15 +4338,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d4+@L",
-    "kind": "dmg",
-    "label": "Fire damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A fire trap can ward any object that can be opened and closed, but the item cannot have another closure or warding spell placed upon it. When someone other than the caster opens the object, a fiery explosion fills the area in a 5’ radius around the spell’s centre.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": [
+    {
+     "label": "Fire damage when opened",
+     "formula": "1d4+@L",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "save for half",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3530,15 +4372,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "3d10",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Great magical hailstones pound down, dealing 3d10 points of damage to every creature in a 15’ radius with no saving throw.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": [
+    {
+     "label": "Damage (no save)",
+     "formula": "3d10",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3561,7 +4414,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes the affected creature to collapse helplessly in excruciating pain. A successful save still causes the victim to run away at top speed. The spell only affects creatures who can feel pain.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3584,7 +4438,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes natural terrain look, sound, and smell (but not feel) like some other sort of natural terrain. The effect lasts until an enemy of the caster makes contact with any part of the illusion.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.31.</p>",
-   "source": "Journeymanne Rules p.31"
+   "source": "Journeymanne Rules p.31",
+   "rolls": []
   }
  },
  {
@@ -3607,7 +4462,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates an invisible visual sensor at any point within range. A magic eye travels at a speed of 120 and can move anywhere within 240’ of the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3630,7 +4486,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Plant growth causes normal vegetation (grasses, briars, bushes, creepers, thistles, trees, vines, etc.) to become thick and overgrown within a 300 square foot area of any shape desired by the caster.</p><p>The plants entwine to form a thicket or jungle that creatures must hack or force through.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3653,7 +4510,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject of this spell assumes the form, physical characteristics and all other abilities of any other creature.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3676,7 +4534,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster assumes the form and physical characteristics of any other creature. Extraordinary abilities like dragon breath or a basilisk’s deadly gaze are not acquired, but the caster’s own mental and physical skills are retained. Undead casters remain undead in their new form.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3699,7 +4558,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Remove curse immediately removes all curses on an object or a creature. It turns a cursed shield, weapon, or suit of armour into a mundane item.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3722,7 +4582,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell shields the caster from all spells of 1st through 3rd level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": []
   }
  },
  {
@@ -3745,7 +4606,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1d3 Ants, Giant<br>2 1d2 Bugbears<br>3 1d2 Ghouls<br>4 1d2 Gnolls<br>5 1d2 Cave Creepers<br>6 1d3 Hobgoblins<br>7 1d2 Magic-Users (3rd level)<br>8 1d3 Thieves (3rd level)<br>9 1d2 Toads, Giant<br>10 1d3 Zombies</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Giant ants",
+       "formula": "1d3"
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Bugbears",
+       "formula": "1d2"
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Ghouls",
+       "formula": "1d2"
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Gnolls",
+       "formula": "1d2"
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Cave creepers",
+       "formula": "1d2"
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Hobgoblins",
+       "formula": "1d3"
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "Magic-users (3rd level)",
+       "formula": "1d2"
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "Thieves (3rd level)",
+       "formula": "1d3"
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "Giant toads",
+       "formula": "1d2"
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "Zombies",
+       "formula": "1d3"
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -3768,7 +4701,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell transforms up to 10 willing beings per caster level into the likenesses of trees. The beings must stay within a circle of 10’ radius per caster level. The illusion is proof against contact, but attacks on the subjects may draw blood and thus reveal the illusion.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": [
+    {
+     "label": "Beings disguised, up to",
+     "formula": "10*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3783,15 +4727,35 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d6",
-    "kind": "dmg",
-    "label": "Damage passing through (2d6 undead or cold-using)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Conjures an immobile, blazing curtain of shimmering fire 20’ high, 60’ long line, or a 20’ high, 30’ diameter circle. Non fire-using creatures passing through take 1d6 points of damage, or 2d6 if undead or cold-using.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": [
+    {
+     "label": "Damage passing through",
+     "formula": "1d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Undead or cold-using creatures",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3806,15 +4770,35 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d6",
-    "kind": "dmg",
-    "label": "Damage breaking through (2d6 fire-using)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell conjures a 6” thick wall of ice 20’ high x 60’ long, or 20’ high x 30’ diameter. Non cold-using creatures breaking through take 1d6 damage, fire-using creatures take 2d6.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.32.</p>",
-   "source": "Journeymanne Rules p.32"
+   "source": "Journeymanne Rules p.32",
+   "rolls": [
+    {
+     "label": "Damage breaking through",
+     "formula": "1d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fire-using creatures",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3829,15 +4813,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d6",
-    "kind": "num",
-    "label": "Animals"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>1d6 normal animals grow to giant size, with a commensurate increase in hit dice and damage.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": [
+    {
+     "label": "Animals grown",
+     "formula": "1d6",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3860,7 +4855,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Turns dead creatures into undead skeletons or zombies under the control of the caster. It creates 1HD of undead at 9th level, plus an additional HD for every level thereafter. A skeleton can be created only from a complete skeleton; a zombie can be created only from an intact corpse.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -3883,7 +4879,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell generates a cloud of poisonous vapours 20’ deep and 40’ in diameter, automatically killing living creature with 4HD or fewer with no saving throw.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -3898,15 +4895,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d4+@L",
-    "kind": "dmg",
-    "label": "Cold damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>Cone of cold creates an area of extreme cold, starting at the caster’s hand and extending outward in a cone 50’ long and 10’ across at the end. It drains heat, dealing 1d4+1 points of cold damage per caster level and freezing any liquids in its path.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": [
+    {
+     "label": "Cold damage",
+     "formula": "(@L)d4+@L",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "save vs. breath for half",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3929,7 +4937,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Extension 2 adds 75% to the duration of the next spell of up to 4th level cast by the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -3952,7 +4961,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This phantom watchdog is invisible to everyone but the caster. It guards the area where it is conjured and barks loudly if any cat-sized or larger creature approaches. It notices invisible, ethereal, and similarly unseen creatures.</p><p>The faithful hound cannot be attacked, but it can be dispelled.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": [
+    {
+     "label": "Bite (as a 10HD monster)",
+     "formula": "3d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -3975,7 +4995,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>If the targeted magic-user fails to save vs. spells (at a – 4 penalty), he or she becomes unable to cast spells, understand language, or communicate coherently. The subject remains in this state until a dispel magic spell is used to cancel the effect of the feeblemind.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -3998,7 +5019,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>By casting magic jar, the caster’s life force is placed in an inanimate object (the magic jar), leaving the body lifeless. The discorporate caster can attempt to take control of any living creature within 120’, forcing the latter’s spirit into the magic jar if it fails its saving throw.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -4021,7 +5043,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Up to 4 creatures of any type are paralysed and freeze in place. They remain aware and breathe normally but cannot take any actions. A winged creature cannot flap its wings and falls if flying when held. There is a –1 penalty on the saving throw for every creature less than 4 targeted.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -4044,7 +5067,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Pass wall opens a 10’ deep, human-sized tunnel through solid rock or any kind of non-magical wall.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.33.</p>",
-   "source": "Journeymanne Rules p.33"
+   "source": "Journeymanne Rules p.33",
+   "rolls": []
   }
  },
  {
@@ -4067,7 +5091,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster sends his or her mind to another plane of existence to receive advice and information. Only questions that may be answered with “yes” or “no” can be asked. The entity contacted may not know the answer; even if it does it may not speak the truth.</p><p class=\"bh-table\">1d10 Questions Answer Truth Madness<br>1 3 50% 55% 0%<br>2 4 55% 60% 10%<br>3 5 60% 65% 20%<br>4 6 65% 70% 30%<br>5 7 70% 75% 40%<br>6 8 75% 80% 50%<br>7 9 80% 85% 60%<br>8 10 85% 90% 70%<br>9 11 90% 95% 80%<br>10 12 95% 100% 90%</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": [
+    {
+     "label": "Plane contacted",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "3 questions; knows 50%; truthful 55%; madness 0%",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "4 questions; knows 55%; truthful 60%; madness 10%",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "5 questions; knows 60%; truthful 65%; madness 20%",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "6 questions; knows 65%; truthful 70%; madness 30%",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "7 questions; knows 70%; truthful 75%; madness 40%",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "8 questions; knows 75%; truthful 80%; madness 50%",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "9 questions; knows 80%; truthful 85%; madness 60%",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "10 questions; knows 85%; truthful 90%; madness 70%",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "11 questions; knows 90%; truthful 95%; madness 80%",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "12 questions; knows 95%; truthful 100%; madness 90%",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -4090,7 +5186,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell turns earth, sand and rock into an equal volume of mud up to 300 square feet to a maximum depth of 10’. Any creature unable to fly or otherwise free itself sinks, reducing its speed to 10% of normal. The mud remains unless dispelled.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": [
+    {
+     "label": "Days for the mud to dry",
+     "formula": "3d6",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4113,7 +5220,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell can form an existing piece of stone into any shape that suits the caster’s purpose.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": []
   }
  },
  {
@@ -4136,7 +5244,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1d2 Fighters (4th level)<br>2 1d2 Harpies<br>3 1d2 Magic-Users (4th level)<br>4 1d2 Ochre Jellies<br>5 1d2 Snakes, Giant<br>6 1d2 Spiders, Giant<br>7 1d2 Weasels, Giant<br>8 1d2 Thieves (4th level)<br>9 1d2 Wererats<br>10 1d2 Wights</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Fighters (4th level)",
+       "formula": "1d2"
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Harpies",
+       "formula": "1d2"
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Magic-users (4th level)",
+       "formula": "1d2"
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Ochre jellies",
+       "formula": "1d2"
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Giant snakes",
+       "formula": "1d2"
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Giant spiders",
+       "formula": "1d2"
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "Giant weasels",
+       "formula": "1d2"
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "Thieves (4th level)",
+       "formula": "1d2"
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "Wererats",
+       "formula": "1d2"
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "Wights",
+       "formula": "1d2"
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -4159,7 +5339,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a large elemental of the chosen type to attack the caster’s opponents to the best of its ability. The elemental can also be directed not to attack, to attack particular enemies, or to perform other actions within its capabilities.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": []
   }
  },
  {
@@ -4182,7 +5363,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Telekinesis allows the caster to move objects or creatures by concentrating on them. The spell moves an object weighing up to 20 pounds per caster level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.34.</p>",
-   "source": "Journeymanne Rules p.34"
+   "source": "Journeymanne Rules p.34",
+   "rolls": [
+    {
+     "label": "Weight moved, up to (pounds)",
+     "formula": "20*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4205,7 +5397,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell instantly transports the caster to any desired destination. He or she must have some clear idea of the location and layout of the destination. If the caster is unfamiliar of the destination, there is a 75% chance being killed on arrival.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4228,7 +5421,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Creates an invisible, immobile 20’ diameter sphere extending below ground, centred on the caster impervious to damage of all kinds and unaffected by most spells, including dispel magic. Breath weapons and spells cannot pass through the wall in either direction. Disintegrate immediately destroys it.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4251,7 +5445,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Conjures an immobile 3” thick wall of iron 20’ high x 60’ long, or 20’ high x 30’ diameter.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4274,7 +5469,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell conjures an immobile 2’ thick wall of stone 20’ high, 60’ long line; alternatively it can form a 20’ high, 30’ diameter circle.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4297,7 +5493,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>An invisible barrier surrounds the caster, which prevents any spells from passing into or out of its confines. The caster can lower and raise the anti-magic shell while the spell lasts.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4320,7 +5517,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell can change the weather in the local area. Control weather can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them, including fog, rain, cold, heat, clouds, and wind of various strengths.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4343,7 +5541,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>All creatures under 7HD in a 30’ radius of the chosen point drop dead, with no saving throw.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4366,7 +5565,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell disintegrates one approximately human-sized non-magical object or creature. The spell will only affect only part of any very large object or structure targeted.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": []
   }
  },
  {
@@ -4389,7 +5589,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Enchant item lets the caster create a magic item. The item must be of the finest workmanship and commensurate cost, and may require exotic components, for instance, the hide of a blink dog to fashion a cloak of teleportation.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.35.</p>",
-   "source": "Journeymanne Rules p.35"
+   "source": "Journeymanne Rules p.35",
+   "rolls": [
+    {
+     "label": "Weeks of work",
+     "formula": "1d8+2",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4412,7 +5623,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Extension 3 adds 100% to the duration of the next spell of up to 5th level cast by the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4435,7 +5647,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject, along with all its carried gear, turns into a mindless, inert statue. Only stone to flesh can revive creatures affected by this spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4458,7 +5671,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A geas places a magical command on a creature to carry out some service or to refrain from some course of action, as desired by the caster.</p><p>The creature must follow the given instructions until the geas is completed, no matter how long it takes.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4481,7 +5695,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell conjures the eponymous monster to do the caster’s bidding (see Part 6: Monsters for details of this elemental being).</p><p>The spell lasts until the mission is completed, although an invisible stalker will pervert instructions for unending or highly complex tasks. Dispel magic is ineffective.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4504,7 +5719,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Legend lore brings to the caster’s mind legends about an important person, place, or thing.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4527,7 +5743,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>By means of this spell the caster can lower the level of a water body such as a pond or river by half, e.g. a 10’ deep stream becomes 5’ deep for the duration.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4550,7 +5767,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Move earth shifts embankments, hillocks, dunes, ridges, and so forth at a movement rate of 60.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4573,7 +5791,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a dry passage through water up to 10’ wide. The depth and duration depends on caster level.</p><table class=\"bh-tbl\"><tr><th>Level</th><th>Depth</th><th>Duration</th></tr><tr><td>17</td><td>20’</td><td>12 turns</td></tr><tr><td>18</td><td>30’</td><td>18 turns</td></tr><tr><td>19</td><td>40’</td><td>24 turns</td></tr><tr><td>20</td><td>50’</td><td>36 turns</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4596,7 +5815,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates an illusory version of the caster anywhere within range. The projected image mimics the caster’s actions from onlookers’ perspectives, spells or missiles will appear to originate from the image.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4619,7 +5839,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell reincarnates a dead creature’s spirit in the body of a nearby creature. The subject recalls its former life and form and retains class, level and alignment.</p><p class=\"bh-table\">1d10 LG LE N<br>1 Dragon Dragon Ape<br>2 Dwarf Gargoyle Doppelganger<br>3 Dwarf Giant Griffon<br>4 Giant Goblin Hippogriff<br>5 Half Elf Half Orc Human<br>6 Halfling Hobgoblin Lizard Man<br>7 Halfling Human Minotaur<br>8 Human Kobold Nixie<br>9 Human Medusa Ogre<br>10 Human Wererat Weretiger<br>1d10 CG CE<br>1 Centaur Bugbear<br>2 Dragon Dragon<br>3 Elf Ghoul<br>4 Elf Giant<br>5 Giant Gnoll<br>6 Gnome Harpy<br>7 Half Elf Human<br>8 Half Orc Orc<br>9 Human Troglodyte<br>10 Werebear Werewolf</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": [
+    {
+     "label": "New form",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "LG dragon · LE dragon · N ape · CG centaur · CE bugbear",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "LG dwarf · LE gargoyle · N doppelganger · CG dragon · CE dragon",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "LG dwarf · LE giant · N griffon · CG elf · CE ghoul",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "LG giant · LE goblin · N hippogriff · CG elf · CE giant",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "LG half-elf · LE half-orc · N human · CG giant · CE gnoll",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "LG halfling · LE hobgoblin · N lizard man · CG gnome · CE harpy",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "LG halfling · LE human · N minotaur · CG half-elf · CE human",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "LG human · LE kobold · N nixie · CG half-orc · CE orc",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "LG human · LE medusa · N ogre · CG human · CE troglodyte",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "LG human · LE wererat · N weretiger · CG werebear · CE werewolf",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -4642,7 +5934,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell prevents creatures from approaching the caster. Any creature within a range of 120 attempting to move towards the caster is forced back at its intended movement rate, e.g. a person intending to move towards the caster at a rate of 20 would instead move directly away at a rate of 20.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.36.</p>",
-   "source": "Journeymanne Rules p.36"
+   "source": "Journeymanne Rules p.36",
+   "rolls": []
   }
  },
  {
@@ -4665,7 +5958,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell wards the caster and anyone within 10’ from all spells of 1st through 4th level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4688,7 +5982,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell restores a petrified creature and its possessions to the same state they were in at the moment of turning to stone.</p><p>The spell can also convert a mass of stone into an edible fleshy substance.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4711,7 +6006,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1 Ape, Giant<br>2 1 Beetle, Giant<br>3 1 Doppelganger<br>4 1 Fighter (6th level)<br>5 1 Gargoyle<br>6 1 Owl Bear<br>7 1 Rust Monster<br>8 1 Scorpion, Giant<br>9 1 Shadow<br>10 1 Wraith</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "1 giant ape",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "1 giant beetle",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "1 doppelganger",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "1 fighter (6th level)",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "1 gargoyle",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "1 owl bear",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "1 rust monster",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "1 giant scorpion",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "1 shadow",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "1 wraith",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -4734,7 +6101,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster becomes a berserk fighter – stronger, tougher, faster, and more skilled in combat. Hit points double, and any damage taken is subtracted from the additional magical hit points first before actual hit points are affected. AC improves by 6.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4757,7 +6125,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Banishment forces summoned creatures back to where they came from. The caster can improve the chance of success by presenting an object or substance that the target hates, fears, or otherwise opposes.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4780,7 +6149,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell animates and allows some degree of control over one or more plants. Affected plants will obey the caster’s mental commands to the best of their capacity.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4803,7 +6173,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Control undead affects 2HD of undead creatures per caster level, all of which must be within 30’ of each other at the time of casting. The undead obey the caster’s mental commands.</p><p>Intelligent undead creatures remember that they were controlled and may not be happy about it.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": [
+    {
+     "label": "Hit dice of undead controlled",
+     "formula": "2*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4818,15 +6199,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d6",
-    "kind": "dmg",
-    "label": "Fire damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>A delayed fire ball detonates with a 20’ burst radius and deals 1d6 points of fire damage per caster level to every creature within the area. The caster determines where within range the fire ball will appear, and detonates it at any time up to 10 rounds after casting.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": [
+    {
+     "label": "Fire damage",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4849,7 +6241,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>A limited wish can change events in the past, present, or future, such as undoing the harmful effects of many spells or preventing a chance blow that killed a character or ally.</p><p>The power of the spell is limited, and the referee must judge the caster’s wishes with care.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.37.</p>",
-   "source": "Journeymanne Rules p.37"
+   "source": "Journeymanne Rules p.37",
+   "rolls": []
   }
  },
  {
@@ -4872,7 +6265,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a giant, invisible hand under the control of the caster. The magic hand is AC2 and as many hit points as the caster. It can interpose itself between the caster and an opponent, who will be unable to attack through it and can only push past it if it weighs 2,000 pounds or more.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": []
   }
  },
  {
@@ -4887,15 +6281,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "4d6",
-    "kind": "dmg",
-    "label": "Damage"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell brings into being a shimmering, sword-like plane of force. The caster can direct the sword to strike at any opponent within range of the spell, but is unable to do anything other than move while thus concentrating on remotely wielding the blade.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": [
+    {
+     "label": "Damage on a hit",
+     "formula": "4d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -4918,7 +6323,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Mass hold person paralyses all targets within a 15’ radius circle, and freezes them in place. They remain aware but cannot take any actions, or even speak. A winged creature cannot flap its wings and falls if flying at the time. A swimmer cannot swim and may drown.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": []
   }
  },
  {
@@ -4941,7 +6347,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell affects 100 to 300 normal beings, or up to 6 huge creatures like dragons. The subjects and all their gear becomes invisible, even to darkvision. Dropping an item makes it appear, picking it up makes it invisible again. The spell is only ended through dispel magic.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": []
   }
  },
  {
@@ -4964,7 +6371,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell creates a passage through solid stone that is invisible and inaccessible to all creatures except the caster. A phase door has an unlimited duration but vanishes after 7 uses.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": []
   }
  },
  {
@@ -4987,7 +6395,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster utters a single word of power that instantly stuns one creature of choice (no save). The victim cannot act or think coherently.</p><p>The duration of the magical stunning varies depending on the target’s current hit point total.</p><table class=\"bh-tbl\"><tr><th>Hit Points</th><th>Duration</th></tr><tr><td>1-35</td><td>2d6 rounds</td></tr><tr><td>36-70</td><td>1d6 rounds</td></tr><tr><td>71+</td><td>No effect</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": [
+    {
+     "label": "Target with 1-35 hp: rounds stunned",
+     "formula": "2d6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Target with 36-70 hp: rounds stunned",
+     "formula": "1d6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5010,7 +6438,67 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes seven multi-coloured beams of light to spray from the caster’s hand. The spray covers a fan- shaped area 70’ long, 5’ wide at the start and 15’ wide at its end. Each beam has a different power; roll 1d8 to determine which colour hits the target:</p><p class=\"bh-table\">1d8 Colour Effect<br>1 Red 10 points damage<br>2 Orange 20 points damage<br>3 Yellow 40 points damage<br>4 Green Save vs. poison or die<br>5 Blue Save vs. gaze or turn to stone<br>6 Indigo Save vs. wand or freeze to death<br>7 Violet Save vs. spell or go insane<br>8 Any 2 As per colour above.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": [
+    {
+     "label": "Beam striking each target",
+     "formula": "1d8",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "Red: damage",
+       "formula": "10"
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "Orange: damage",
+       "formula": "20"
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "Yellow: damage",
+       "formula": "40"
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "Green: save vs. ray or poison or die",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "Blue: save vs. gaze or turn to stone",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "Indigo: save vs. wand or freeze to death",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "Violet: save vs. spell or go insane",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "Struck by two colours: roll twice more, ignoring 8",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -5033,7 +6521,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Simulacrum turns a clay model into a duplicate of any creature, and a limited wish gives it a semblance of life. The simulacrum looks identical, but has only 30-60% (1d4+2 x 10) of the original’s level, ability scores, skills, and special powers.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
-   "source": "Journeymanne Rules p.38"
+   "source": "Journeymanne Rules p.38",
+   "rolls": [
+    {
+     "label": "Percentage of the original",
+     "formula": "(1d4+2)*10",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5056,7 +6555,8 @@
    "cast": 0,
    "known": true,
    "description": "<p><em>The Journeymanne Rules list this spell in the Book of 7th Level Magic-User Spells but print no description for it. The referee decides how it works.</em></p>",
-   "source": "Journeymanne Rules"
+   "source": "Journeymanne Rules",
+   "rolls": []
   }
  },
  {
@@ -5079,7 +6579,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1 Cockatrice<br>2 1 Fighter (7th level)<br>3 1 Great Cat, Large<br>4 1 Hell Hound (5HD)<br>5 1 Hydra (1d4+2 heads)<br>6 1 Invisible Stalker<br>7 1 Manticore<br>8 1 Minotaur<br>9 1 Spectre<br>10 1 Troll</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "1 cockatrice",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "1 fighter (7th level)",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "1 large great cat",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "1 hell hound (5HD)",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "1 hydra (heads)",
+       "formula": "1d4+2"
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "1 invisible stalker",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "1 manticore",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "1 minotaur",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "1 spectre",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "1 troll",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -5102,7 +6674,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a demon (see Part 6: Monsters). The caster must know the individual demon’s name. The demon will not be pleased, and the caster would do well to cause it to appear within a magic circle of some sort to avoid a horrible end. Alternatively, the caster can bargain for the demon’s aid.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": []
   }
  },
  {
@@ -5125,7 +6698,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell instantly calls some previously touched and named item directly to the caster’s hand from virtually any location.</p><p>Another possessor can save vs. spells to keep hold of the object, but the caster will know precisely where exactly it is located at that moment.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": []
   }
  },
  {
@@ -5148,7 +6722,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell reduces the caster to two dimensions, height and width, with no depth at all. He or she is effectively invisible when viewed side-on, and can pass through solid objects by moving sideways.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": []
   }
  },
  {
@@ -5171,7 +6746,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell causes all items or creatures within 15’ of the centre of effect to fall upwards for 1 round, for about 1,270’ unless something intervenes. Subjects take damage as normal if they strike a ceiling or other surface, and all fall to the ground when the spell ends.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": []
   }
  },
  {
@@ -5194,7 +6770,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell teleports an object weighing up to 50 pounds per caster level to any desired location. A dispel magic cast on the stone object causes the original to reappear in its place.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.39.</p>",
-   "source": "Journeymanne Rules p.39"
+   "source": "Journeymanne Rules p.39",
+   "rolls": [
+    {
+     "label": "Weight teleported, up to (pounds)",
+     "formula": "50*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5217,7 +6804,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Antipathy causes an object or location to emanate magical vibrations that repel either a specific kind of intelligent creature or creatures of a particular alignment, as defined by the caster.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5240,7 +6828,43 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell functions like magic hand, except that the hand can also unerringly strike one opponent per round. The damage it deals is shown on the table below; an already stunned target takes an additional 4 points of damage per blow.</p><p class=\"bh-table\">1d20 Effect<br>1-12 1d6 damage<br>13-16 2d6 damage<br>17-19 3d6 damage + stunned for 1 round<br>20 4d6 damage + stunned for 3 rounds</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": [
+    {
+     "label": "Strike",
+     "formula": "1d20",
+     "kind": "table",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 12,
+       "text": "Damage",
+       "formula": "1d6"
+      },
+      {
+       "lo": 13,
+       "hi": 16,
+       "text": "Damage",
+       "formula": "2d6"
+      },
+      {
+       "lo": 17,
+       "hi": 19,
+       "text": "Damage, and stunned for 1 round",
+       "formula": "3d6"
+      },
+      {
+       "lo": 20,
+       "hi": 20,
+       "text": "Damage, and stunned for 3 rounds",
+       "formula": "4d6"
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -5263,7 +6887,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes an exact duplicate of a creature from a small piece of the original’s flesh, taken while living. The spell duplicates the original’s body and mind at the time the flesh was taken.</p><p>If it cannot do so both the clone and the original succumb to madness.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5286,7 +6911,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell turns an iron object weighing up to 5 pounds per caster level into a clear, crystal-like substance of the same strength as the original, but only one third of the weight.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": [
+    {
+     "label": "Iron changed, up to (pounds)",
+     "formula": "5*@L",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5301,15 +6937,53 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "4d6",
-    "kind": "dmg",
-    "label": "Fire damage (third round)"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>An incendiary cloud spell creates a 10’ deep, 20’ diameter cloud of roiling smoke which obscures all sight. On the third round, the white-hot embers within the cloud ignite to deal 4d6 points of fire damage to everything within.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": [
+    {
+     "label": "Third round: fire damage",
+     "formula": "4d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fourth round",
+     "formula": "3d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Fifth round",
+     "formula": "2d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Sixth round",
+     "formula": "1d6",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5332,7 +7006,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject feels an undeniable urge to dance and begins doing so, complete with foot shuffling and tapping. The subject suffers a –4 penalty to AC, loses any AC bonus granted by a shield, and automatically fails saving throws.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5355,7 +7030,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes up to 30 HD worth of creatures of any type regard the caster as their trusted friend and ally. All creatures within 15’ of the centre of effect are targeted.</p><table class=\"bh-tbl\"><tr><th>Hit Dice</th><th>Saving Throw</th></tr><tr><td>0-1</td><td>Every month</td></tr><tr><td>2-4</td><td>Every 3 weeks</td></tr><tr><td>5-7</td><td>Every 2 weeks</td></tr><tr><td>8-10</td><td>Every week</td></tr><tr><td>11-14</td><td>Every 2 days</td></tr><tr><td>15+</td><td>Every day</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5378,7 +7054,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The subject is protected from all magical detection, whether by items or spells.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5401,7 +7078,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell changes one object or creature into another.</p><p>Change to Factor Same kingdom (animal, vegetable, mineral) 5 Same class (mammals, fungi, metals, etc.) 2 Same or smaller size 2 Related (twig is to tree, wolf fur is to wolf, etc.) 2 Same or lower Intelligence 2 Factor Duration Example</p><p class=\"bh-table\">0 20 minutes Pebble to human<br>2 1 hour Marionette to human<br>4 3 hours Human to marionette<br>5 12 hours Lizard to manticore<br>6 2 days Sheep to wool coat<br>7 1 week Shrew to manticore<br>9+ Permanent Manticore to shrew</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": []
   }
  },
  {
@@ -5424,7 +7102,27 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster utters a single word of power that instantly blinds one chosen creature (no save).</p><p>The duration of the magical blindness varies depending on the target’s current hit point total.</p><table class=\"bh-tbl\"><tr><th>Hit Points</th><th>Duration</th></tr><tr><td>1-40</td><td>2d4 days</td></tr><tr><td>41-80</td><td>1d4 days</td></tr><tr><td>81+</td><td>No effect</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": [
+    {
+     "label": "Target with 1-40 hp: days blind",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Target with 41-80 hp: days blind",
+     "formula": "1d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5447,7 +7145,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Prismatic wall creates a shimmering, multi-coloured plane of light similar to a prismatic sphere. The wall’s maximum proportions are 40’ wide and 20’ high per caster level. The wall is immobile, but the caster can pass through without harm.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": [
+    {
+     "label": "Rounds blinded (under 8 HD)",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5470,7 +7179,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This powerful spell brings into being an immobile, invisible 20’ cube composed of solid walls of force. Creatures within the area are caught and contained unless they are too big to fit inside, in which case they are simply shunted aside.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.40.</p>",
-   "source": "Journeymanne Rules p.40"
+   "source": "Journeymanne Rules p.40",
+   "rolls": []
   }
  },
  {
@@ -5493,7 +7203,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell grants immunity to one specified spell for every 4 caster levels. The spells protected against must be 6th level or less.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": [
+    {
+     "label": "Spells guarded against",
+     "formula": "max(1,floor(@L/4))",
+     "kind": "num",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5516,7 +7237,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Soul trap forces a creature’s life force (and its material body) into a gem worth 1,000gp per HD of the victim.</p><p>Spell Completion: First, the spell can be completed by speaking its final word. This allows the target to save to avoid the effect; if successful, the gem shatters.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": []
   }
  },
  {
@@ -5539,7 +7261,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1 Basilisk<br>2 1 Crab, Giant<br>3 1 Fighter (9th level)<br>4 1 Flesh Golem<br>5 1 Hill Giant<br>6 1 Hydra (1d4+4 heads)<br>7 1 Lich<br>8 1 Otyugh<br>9 1 Vampire (6HD)<br>10 1 White Dragon (6HD)</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.41.</p>",
-   "source": "Journeymanne Rules p.41"
+   "source": "Journeymanne Rules p.41",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "1 basilisk",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "1 giant crab",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "1 fighter (9th level)",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "1 flesh golem",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "1 hill giant",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "1 hydra (heads)",
+       "formula": "1d4+4"
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "1 lich",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "1 otyugh",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "1 vampire (6HD)",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "1 white dragon (6HD)",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -5562,7 +7356,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to scribe a potent rune of power upon a surface. The symbol affects any creature hostile or of a different alignment to the caster when triggered. Only a dispel magic by a caster at least 1 level higher than the original caster can negate a symbol.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.42.</p>",
-   "source": "Journeymanne Rules p.42"
+   "source": "Journeymanne Rules p.42",
+   "rolls": [
+    {
+     "label": "Symbol of pain: turns at −4",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5585,7 +7390,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Sympathy causes an object or location to emanate magical vibrations that attract either a specific kind of intelligent creature or creatures of a particular alignment, as defined by the caster.</p><p>The compulsion to stay in the area or touch the object is overpowering.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.42.</p>",
-   "source": "Journeymanne Rules p.42"
+   "source": "Journeymanne Rules p.42",
+   "rolls": [
+    {
+     "label": "Rounds before the next save",
+     "formula": "1d6*10",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5608,7 +7424,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell instantly transports the caster and anyone within 10’ to any destination. The destination must be known to the caster, or the spell fails.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.42.</p>",
-   "source": "Journeymanne Rules p.42"
+   "source": "Journeymanne Rules p.42",
+   "rolls": []
   }
  },
  {
@@ -5631,7 +7448,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster to attain immortality as one of the undead. The type of undead creature possible is determined by caster level.</p><p>Caster Level Undead Type Level Loss</p><p class=\"bh-table\">16 Wight 1<br>17 Wraith 2<br>18 Spectre 3<br>19 Vampire 4<br>20 Lich 5</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.42.</p>",
-   "source": "Journeymanne Rules p.42"
+   "source": "Journeymanne Rules p.42",
+   "rolls": []
   }
  },
  {
@@ -5654,7 +7472,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell functions like legend lore, except that it is faster and less cryptic. A question about some person, place, or object is posed while casting the spell. The clarity of the vision depends on how well the caster knows the subject.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.42.</p>",
-   "source": "Journeymanne Rules p.42"
+   "source": "Journeymanne Rules p.42",
+   "rolls": []
   }
  },
  {
@@ -5677,7 +7496,36 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell functions like clenched fist, except that the hand can also grab and crush an opponent. The hand attacks once per round, and it never misses. The damage it deals increases as it squeezes its victim: Round Damage</p><p class=\"bh-table\">1 1d10<br>2 1d10<br>3 3d10<br>4+ 4d10</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": [
+    {
+     "label": "Rounds 1-2: damage",
+     "formula": "1d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Round 3",
+     "formula": "3d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Round 4 and later",
+     "formula": "4d10",
+     "kind": "dmg",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5700,7 +7548,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell disintegrates any non-magical objects or creatures within a 30’ diameter sphere.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": []
   }
  },
  {
@@ -5723,7 +7572,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>All magical effects and magic items within the radius of the spell, except for those in contact with the caster, permanently lose their enchantment(s).</p><p>Magic items can save vs. spells as a magic-user of their effective caster level, e.g. a wand of haste would be at least 5th level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": []
   }
  },
  {
@@ -5746,7 +7596,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell must be cast in the exact spot where imprisonment was cast, thereby freeing that victim. If the caster does not know exactly who is imprisoned below there is a 10% chance that 1d100 other creatures of any type are summoned instead.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": [
+    {
+     "label": "Wrong prison: 10% chance of creatures freed",
+     "formula": "1d100",
+     "kind": "num",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5769,7 +7630,37 @@
    "cast": 0,
    "known": true,
    "description": "<p>Casting gate and naming a particular individual or kind of being from another dimension instantly transports it to the caster’s location.</p><p>A deity or similar unique being cannot be controlled and acts as it pleases, making the calling of such creatures rather dangerous.</p><p class=\"bh-table\">1d100 Result<br>01-05 Being returns to own plane immediately<br>06-95 Being listens to caster’s plea<br>96-00 Another being entirely appears</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": [
+    {
+     "label": "Result",
+     "formula": "1d100",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 5,
+       "text": "The being returns to its own plane at once",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 95,
+       "text": "The being listens to the caster's plea",
+       "formula": ""
+      },
+      {
+       "lo": 96,
+       "hi": 100,
+       "text": "Another being entirely appears",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -5792,7 +7683,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster is immune to all mundane or magical harm for the duration of the spell. He or she can move, talk, and otherwise act normally, but cannot cast spells.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": []
   }
  },
  {
@@ -5815,7 +7707,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The target creature is entombed in a state of suspended animation in a small spherical space deep underground. The subject remains there unless a freedom spell is cast at the locale where the imprisonment took place.</p><p>For the creature, time ceases to flow and its condition becomes fixed.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": []
   }
  },
  {
@@ -5838,7 +7731,36 @@
    "cast": 0,
    "known": true,
    "description": "<p>The victim is banished to an extra-dimensional labyrinth. Its Intelligence score determines how soon it can escape the maze, whereupon it reappears where it had been when the spell was cast.</p><p>Minotaurs escape in 1 round, other beings use their Intelligence.</p><table class=\"bh-tbl\"><tr><th>Intelligence</th><th>Rounds to Escape</th></tr><tr><td>0-5</td><td>3d8</td></tr><tr><td>6-11</td><td>2d4</td></tr><tr><td>12+</td><td>1d4</td></tr></table><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": [
+    {
+     "label": "Intelligence 0-5: rounds to escape",
+     "formula": "3d8",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Intelligence 6-11",
+     "formula": "2d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    },
+    {
+     "label": "Intelligence 12+",
+     "formula": "1d4",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5853,15 +7775,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "(@L)d6",
-    "kind": "dmg",
-    "label": "Fire damage per sphere"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell is similar to fire ball in many aspects. When cast, 8 flaming spheres streak in straight lines from the caster’s outstretched hand to any points in range, where each detonates with a 20’ burst radius for 1d6 points of fire damage per caster level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.43.</p>",
-   "source": "Journeymanne Rules p.43"
+   "source": "Journeymanne Rules p.43",
+   "rolls": [
+    {
+     "label": "Fire damage per sphere",
+     "formula": "(@L)d6",
+     "kind": "dmg",
+     "auto": true,
+     "count": "8",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5884,7 +7817,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes certain other spells permanent if they are cast immediately afterwards. The spell to be made permanent may be of no higher level than one quarter the caster’s level.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": []
   }
  },
  {
@@ -5907,7 +7841,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster utters a single word of power that may instantly slay one designated creature (no save). The effectiveness of Hit Points Effect the spell depends on 1-50 Death the target’s current hit 51-100 Lose ½ hit points point total. 101+ No effect</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": []
   }
  },
  {
@@ -5930,7 +7865,18 @@
    "cast": 0,
    "known": true,
    "description": "<p>Prismatic sphere creates a shimmering, multi-coloured globe of light 20’ in diameter. It moves with the caster. Any creature under 10 HD (other than the caster) looking at the sphere is blinded for 2d6 rounds. The layers must be stripped away one by one.</p><p>No. Colour Negate Effect / Save</p><p class=\"bh-table\">1 Red Cone of cold 10 points damage<br>2 Orange Fire Arrow 20 points damage<br>3 Yellow Disintegrate 40 points damage<br>4 Green Pass wall vs. poison or die<br>5 Blue Magic missile vs. gaze or petrify<br>6 Indigo Continual light vs. wand or freeze<br>7 Violet Dispel magic vs. spell or go mad</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": [
+    {
+     "label": "Rounds blinded (under 10 HD)",
+     "formula": "2d6",
+     "kind": "dur",
+     "auto": false,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -5953,7 +7899,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell allows the caster’s essence to travel in immaterial form, undetectable to other beings. If the caster’s physical body is destroyed, or the maximum distance between body and spirit given below is exceeded the projected form is irretrievably lost in the astral plane for all eternity.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": []
   }
  },
  {
@@ -5976,7 +7923,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell imbues an object with the power to transport its holder and all objects worn or carried by the same instantly to the caster’s abode, upon speaking a unique command.</p><p>The caster may also use the command to teleport to within 10’ of the possessor of the item; or allow the user to do so.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": []
   }
  },
  {
@@ -5999,7 +7947,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>The caster assumes the form, physical characteristics and all other abilities of any other type of creature. The caster can continue to shape change at will for the duration of the spell.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.44.</p>",
-   "source": "Journeymanne Rules p.44"
+   "source": "Journeymanne Rules p.44",
+   "rolls": []
   }
  },
  {
@@ -6022,7 +7971,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell imprisons a newly dead creature’s soul in an object, preventing it from being returned through clone, raise dead, reincarnation, resurrection, or even a wish. Destroying the object or dispelling the spell frees the bound soul.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.45.</p>",
-   "source": "Journeymanne Rules p.45"
+   "source": "Journeymanne Rules p.45",
+   "rolls": []
   }
  },
  {
@@ -6045,7 +7995,79 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell summons a number of creatures from the table below to attack the caster’s opponents to the best of their ability. If the caster can communicate with the beings they can be directed not to attack, to attack particular enemies, or to perform other actions.</p><p class=\"bh-table\">1d10 Number Creature<br>1 1 Bear, Giant<br>2 1 Black Pudding<br>3 1 Black Dragon (7HD)<br>4 1 Brass Dragon (7HD)<br>5 1 Chimera<br>6 1 Griffon<br>7 1 Purple Worm<br>8 1 Stone Golem<br>9 1 Stone Giant<br>10 1 Vampire (7HD)</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.45.</p>",
-   "source": "Journeymanne Rules p.45"
+   "source": "Journeymanne Rules p.45",
+   "rolls": [
+    {
+     "label": "Creatures summoned",
+     "formula": "1d10",
+     "kind": "table",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": [
+      {
+       "lo": 1,
+       "hi": 1,
+       "text": "1 giant bear",
+       "formula": ""
+      },
+      {
+       "lo": 2,
+       "hi": 2,
+       "text": "1 black pudding",
+       "formula": ""
+      },
+      {
+       "lo": 3,
+       "hi": 3,
+       "text": "1 black dragon (7HD)",
+       "formula": ""
+      },
+      {
+       "lo": 4,
+       "hi": 4,
+       "text": "1 brass dragon (7HD)",
+       "formula": ""
+      },
+      {
+       "lo": 5,
+       "hi": 5,
+       "text": "1 chimera",
+       "formula": ""
+      },
+      {
+       "lo": 6,
+       "hi": 6,
+       "text": "1 griffon",
+       "formula": ""
+      },
+      {
+       "lo": 7,
+       "hi": 7,
+       "text": "1 purple worm",
+       "formula": ""
+      },
+      {
+       "lo": 8,
+       "hi": 8,
+       "text": "1 stone golem",
+       "formula": ""
+      },
+      {
+       "lo": 9,
+       "hi": 9,
+       "text": "1 stone giant",
+       "formula": ""
+      },
+      {
+       "lo": 10,
+       "hi": 10,
+       "text": "1 vampire (7HD)",
+       "formula": ""
+      }
+     ]
+    }
+   ]
   }
  },
  {
@@ -6068,7 +8090,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>This spell places the subject into a state of suspended animation.</p><p>For a creature, time ceases to flow and its condition becomes fixed.</p><p>This state persists until the magic is removed (such as by a successful dispel magic spell or a freedom spell).</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.45.</p>",
-   "source": "Journeymanne Rules p.45"
+   "source": "Journeymanne Rules p.45",
+   "rolls": []
   }
  },
  {
@@ -6083,15 +8106,26 @@
    "reverseOf": "",
    "reverse": "",
    "roll": {
-    "formula": "1d6",
-    "kind": "dur",
-    "label": "Rounds"
+    "formula": "",
+    "kind": "",
+    "label": ""
    },
    "memorized": 0,
    "cast": 0,
    "known": true,
    "description": "<p>This spell makes time cease to flow for everyone within 15’ of the caster. The caster is free to act and move, and the effect moves with him or her.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.45.</p>",
-   "source": "Journeymanne Rules p.45"
+   "source": "Journeymanne Rules p.45",
+   "rolls": [
+    {
+     "label": "Duration (rounds)",
+     "formula": "1d6",
+     "kind": "dur",
+     "auto": true,
+     "count": "",
+     "save": "",
+     "table": []
+    }
+   ]
   }
  },
  {
@@ -6114,7 +8148,8 @@
    "cast": 0,
    "known": true,
    "description": "<p>Wish is the mightiest spell a caster can use. It can duplicate other magic effects, alter time (to a greater extent than limited wish), create magical and non-magical items of limited value, and even revive the dead.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.45.</p>",
-   "source": "Journeymanne Rules p.45"
+   "source": "Journeymanne Rules p.45",
+   "rolls": []
   }
  }
 ]
