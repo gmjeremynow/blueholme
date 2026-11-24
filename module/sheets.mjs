@@ -1,6 +1,6 @@
 import * as T from "./tables.mjs";
 import * as Rolls from "./rolls.mjs";
-import { MAGIC_CATEGORIES } from "./models.mjs";
+import { MAGIC_CATEGORIES, NPC_ROLES } from "./models.mjs";
 import { postTreasure } from "./treasure.mjs";
 
 const { SYSTEM_ID } = T;
@@ -259,6 +259,20 @@ export class CharacterSheet extends BHActorSheet {
     const d = Number(target.dataset.delta) || 0;
     const m = Math.max(0, it.system.memorized + d);
     await it.update({ "system.memorized": m, "system.cast": Math.min(it.system.cast, m) });
+  }
+}
+
+/* ================================================================== */
+/*  Non-player character: the character sheet plus terms of service      */
+/* ================================================================== */
+export class NPCSheet extends CharacterSheet {
+  static DEFAULT_OPTIONS = { classes: ["blueholme", "sheet", "actor", "character", "npc"] };
+  async _prepareContext(options) {
+    const ctx = await super._prepareContext(options);
+    ctx.isNPC = true;
+    ctx.recordTitle = "Non-Player Character";
+    ctx.npcRoles = Object.entries(NPC_ROLES).map(([value, label]) => ({ value, label }));
+    return ctx;
   }
 }
 

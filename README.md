@@ -31,8 +31,9 @@ On first launch the GM is offered the compendia. They can be rebuilt at any time
 
 | Area | Source | Automation |
 |---|---|---|
+| Actor types | p.51 | **Character**, **NPC** and **Creature**. An NPC is a character the referee controls: same rules and sheet as a character, plus a Service box (role, who they serve, job, wage, treasure share, loyalty) and a neutral token by default |
 | Character classes | pp.6-9 | Cleric, fighter, magic-user and thief progressions: XP, hit dice, spells by level, fighter damage bonus, backstab multiplier |
-| Combination classes | p.10 | Tick more than one class: XP needs are added together, hit points rolled for each class and averaged, best attack table, best saving throw in each column, all prime requisites |
+| Combination classes | p.10 | Choose a combination from the Class list: XP needs are added together, hit points rolled for each class and averaged, best attack table, best saving throw in each column, all prime requisites |
 | Prime requisites | p.5 | XP modifier from the prime requisite(s): one low score gives the penalty, all must be high for the bonus; species XP modifier added (p.62) |
 | Ability modifiers | p.5 | Extra languages (Int), hit points per level (Con), missile to hit (Dex), followers (Cha) |
 | Species | p.5, p.11, Part 6 | Human, dwarf, elf, half-elf, halfling, half-orc, gnome, feline, or other: class hit die from the Species vs. Class Hit Dice table, move, save bonuses (dwarves and halflings +2), halfling missile bonus and weapon sizes, the thieves' skill modifiers printed for elves, halflings and orcs, and the species notes from the creature entries |

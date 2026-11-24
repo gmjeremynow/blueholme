@@ -34,7 +34,7 @@ function form(button) { return button.form.elements; }
  */
 export async function rollAttack(actor, { item = null, attack = null, fast = false } = {}) {
   const s = actor.system;
-  const isChar = actor.type === "character";
+  const isChar = actor.type !== "monster";
   const w = item?.system;
   const canMissile = !!w && (w.category === "missile" || w.thrown);
   const canMelee = !w || w.category === "melee";
@@ -103,7 +103,7 @@ export function damageFormula(actor, { item = null, attack = null, missile = fal
     let base = w.damage || "1d6";
     if (setting("variableDamage") && (!w.damage || w.damage === "1d6")) {
       let size = w.size;
-      if (actor.type === "character" && s.speciesDef?.small) size = T.SIZE_UP[size] ?? size;
+      if (actor.type !== "monster" && s.speciesDef?.small) size = T.SIZE_UP[size] ?? size;
       base = T.VARIABLE_DAMAGE[size]?.formula ?? "1d6";
       notes.push(`${T.WEAPON_SIZES[size]} weapon`);
     }
@@ -114,7 +114,7 @@ export function damageFormula(actor, { item = null, attack = null, missile = fal
   } else if (attack) {
     parts.push(attack.damage || "0");
   } else parts.push("1d6");
-  if (actor.type === "character") {
+  if (actor.type !== "monster") {
     if (s.fighterDamage) { parts.push(String(s.fighterDamage)); notes.push(`fighter ${signed(s.fighterDamage)}`); }
     if (s.mods.damage) parts.push(String(s.mods.damage));
   }

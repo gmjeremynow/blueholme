@@ -254,3 +254,6 @@ button.bh-treasure { font-size: 12px; }
 .blueholme .roll-row { display: flex; gap: 6px; align-items: center; flex: 1 1 100%; }
 .blueholme .roll-row .r-label { flex: 2; }
 .blueholme .roll-row .r-formula { flex: 1; }
+.blueholme .box.service { margin-bottom: 8px; }
+.blueholme .box.service .fld { flex: 1 1 140px; }
+.blueholme .box.service .fld.narrow { flex: 0 0 130px; }

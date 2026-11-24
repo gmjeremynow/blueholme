@@ -3,8 +3,8 @@
     <img class="portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" title="Change portrait">
     <div class="head-main">
       <div class="title-line">
-        <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="Character name">
-        <span class="record-mark"><span class="brand">BLUEHOLME™</span>Character Record</span>
+        <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="{{#if isNPC}}NPC name{{else}}Character name{{/if}}">
+        <span class="record-mark"><span class="brand">BLUEHOLME™</span>{{#if recordTitle}}{{recordTitle}}{{else}}Character Record{{/if}}</span>
       </div>
       <div class="head-fields">
         <label class="fld"><span>Species</span>
@@ -55,6 +55,23 @@
   <div class="tab-scroll">
   {{!-- ===================== RECORD ===================== --}}
   <section class="tab-body" data-tab="record">
+    {{#if isNPC}}
+    <div class="box service">
+      <h3>Service <span class="hint">followers, retainers and hirelings (p.51)</span></h3>
+      <div class="fields">
+        <label class="fld narrow"><span>Role</span>
+          <select name="system.service.role">{{#each npcRoles}}<option value="{{value}}" {{bh-selected value ../system.service.role}}>{{label}}</option>{{/each}}</select>
+        </label>
+        <label class="fld"><span>Serves</span><input type="text" name="system.service.employer" value="{{system.service.employer}}" placeholder="Employer or leader"></label>
+        <label class="fld"><span>Job</span><input type="text" name="system.service.job" value="{{system.service.job}}" placeholder="e.g. armourer, guard, sage"></label>
+      </div>
+      <div class="fields">
+        <label class="fld"><span>Wage</span><input type="text" name="system.service.wage" value="{{system.service.wage}}" placeholder="gp per week"></label>
+        <label class="fld"><span>Treasure share</span><input type="text" name="system.service.share" value="{{system.service.share}}"></label>
+        <label class="fld"><span>Loyalty</span><input type="text" name="system.service.loyalty" value="{{system.service.loyalty}}" title="Set by the referee; it may wax or wane with treatment, share of treasure and success (p.51)"></label>
+      </div>
+    </div>
+    {{/if}}
     <div class="grid-2">
       <div class="box">
         <h3>Abilities <button type="button" class="mini" data-action="rollAbilities" title="Roll ability scores and starting gold (p.4)"><i class="fa-solid fa-dice"></i></button></h3>

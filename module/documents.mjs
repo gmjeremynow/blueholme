@@ -12,9 +12,10 @@ export class BHActor extends Actor {
     const update = {};
     if (data.prototypeToken?.displayBars === undefined) update["prototypeToken.displayBars"] = CONST.TOKEN_DISPLAY_MODES?.HOVER ?? 30;
     if (data.prototypeToken?.bar1?.attribute === undefined) update["prototypeToken.bar1.attribute"] = "hp";
-    if (this.type === "character") {
+    if (this.type === "character" || this.type === "npc") {
       if (data.prototypeToken?.actorLink === undefined) update["prototypeToken.actorLink"] = true;
-      if (data.prototypeToken?.disposition === undefined) update["prototypeToken.disposition"] = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
+      const disp = this.type === "npc" ? CONST.TOKEN_DISPOSITIONS.NEUTRAL : CONST.TOKEN_DISPOSITIONS.FRIENDLY;
+      if (data.prototypeToken?.disposition === undefined) update["prototypeToken.disposition"] = disp;
     } else {
       if (data.prototypeToken?.disposition === undefined) update["prototypeToken.disposition"] = CONST.TOKEN_DISPOSITIONS.HOSTILE;
       if (!data.img || data.img === "icons/svg/mystery-man.svg") update.img = "icons/svg/skull.svg";

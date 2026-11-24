@@ -2,9 +2,9 @@
  * BLUEHOLME Journeymanne Rules for Foundry VTT (V14).
  * Unofficial; game mechanics are Open Game Content under the OGL 1.0a (see LICENSE-OGL.txt).
  */
-import { CharacterData, MonsterData, WeaponData, ArmorData, GearData, SpellData, MagicData, TreasureData } from "./module/models.mjs";
+import { CharacterData, NPCData, MonsterData, WeaponData, ArmorData, GearData, SpellData, MagicData, TreasureData } from "./module/models.mjs";
 import { BHActor, BHItem, BHChatMessage, BHCombatant } from "./module/documents.mjs";
-import { CharacterSheet, MonsterSheet, BHItemSheet } from "./module/sheets.mjs";
+import { CharacterSheet, NPCSheet, MonsterSheet, BHItemSheet } from "./module/sheets.mjs";
 import * as Rolls from "./module/rolls.mjs";
 import * as Tables from "./module/tables.mjs";
 import * as Treasure from "./module/treasure.mjs";
@@ -18,9 +18,9 @@ Hooks.once("init", () => {
   CONFIG.Item.documentClass = BHItem;
   CONFIG.ChatMessage.documentClass = BHChatMessage;
   CONFIG.Combatant.documentClass = BHCombatant;
-  CONFIG.Actor.dataModels = { character: CharacterData, monster: MonsterData };
+  CONFIG.Actor.dataModels = { character: CharacterData, npc: NPCData, monster: MonsterData };
   CONFIG.Item.dataModels = { weapon: WeaponData, armor: ArmorData, gear: GearData, spell: SpellData, magic: MagicData, treasure: TreasureData };
-  CONFIG.Actor.trackableAttributes = { character: { bar: ["hp"], value: [] }, monster: { bar: ["hp"], value: [] } };
+  CONFIG.Actor.trackableAttributes = { character: { bar: ["hp"], value: [] }, npc: { bar: ["hp"], value: [] }, monster: { bar: ["hp"], value: [] } };
   // Initiative (p.56): highest Dexterity acts first, ties broken by 1d6 (the decimal part). Monsters roll 3d6 Dexterity.
   CONFIG.Combat.initiative = { formula: "1d6", decimals: 2 };
 
@@ -28,6 +28,7 @@ Hooks.once("init", () => {
   DSC.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
   DSC.unregisterSheet(Item, "core", foundry.appv1.sheets.ItemSheet);
   DSC.registerSheet(Actor, ID, CharacterSheet, { types: ["character"], makeDefault: true, label: "Journeymanne Character" });
+  DSC.registerSheet(Actor, ID, NPCSheet, { types: ["npc"], makeDefault: true, label: "Journeymanne NPC" });
   DSC.registerSheet(Actor, ID, MonsterSheet, { types: ["monster"], makeDefault: true, label: "Journeymanne Creature" });
   DSC.registerSheet(Item, ID, BHItemSheet, { makeDefault: true, label: "Journeymanne Item" });
 

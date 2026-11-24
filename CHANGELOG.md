@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- New **NPC** actor type. The book treats non-player characters as characters the referee controls (p.51), so an NPC uses the full character rules and sheet: classes, level, hit points, saves, spells, thieves' skills, equipment and attacks.
+- The NPC sheet has a Service box: role (follower, retainer, hireling, mercenary, other), who they serve, job, wage, treasure share and loyalty.
+- NPC tokens are linked to their actor and neutral by default (characters are friendly, creatures hostile).
+
 ## 0.2.10
 
 - The creature sheet only shows the book's AC under the Armour Class box when it differs from the number used for play (bandits "4-7", lich "0 Min.", green slime and yellow mould "N/A"). It is labelled "book:" instead of "printed".

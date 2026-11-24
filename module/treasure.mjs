@@ -139,7 +139,7 @@ export async function giveTreasure(message) {
   if (!actor) return ui.notifications.warn("Select the token that takes the treasure.");
   if (!actor.isOwner) return ui.notifications.warn(`You do not own ${actor.name}.`);
   const update = {};
-  if (actor.type === "character") for (const [k, v] of Object.entries(f.coins ?? {})) if (v) update[`system.coins.${k}`] = (actor.system.coins[k] ?? 0) + v;
+  if (actor.type !== "monster") for (const [k, v] of Object.entries(f.coins ?? {})) if (v) update[`system.coins.${k}`] = (actor.system.coins[k] ?? 0) + v;
   if (Object.keys(update).length) await actor.update(update);
   const docs = [];
   for (const v of f.jewels ?? []) docs.push({ name: `Jewel (${v.toLocaleString()} gp)`, type: "treasure", system: { value: v, quantity: 1 } });

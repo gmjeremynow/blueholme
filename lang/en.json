@@ -1,6 +1,6 @@
 {
   "TYPES": {
-    "Actor": { "character": "Character", "monster": "Creature" },
+    "Actor": { "character": "Character", "npc": "NPC", "monster": "Creature" },
     "Item": { "weapon": "Weapon", "armor": "Armour", "gear": "Equipment", "spell": "Spell", "magic": "Magic Item", "treasure": "Treasure" }
   }
 }

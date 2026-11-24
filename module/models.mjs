@@ -299,3 +299,24 @@ export class TreasureData extends foundry.abstract.TypeDataModel {
     return { ...common(), quantity: int(1, { min: 0 }), value: num(0, { min: 0 }) };
   }
 }
+
+/* ================================================================== */
+/*  Non-player character (p.51): a character the referee controls       */
+/* ================================================================== */
+export const NPC_ROLES = { follower: "Follower", retainer: "Retainer", hireling: "Hireling", mercenary: "Mercenary", other: "Other" };
+export class NPCData extends CharacterData {
+  static defineSchema() {
+    const f = foundry.data.fields;
+    return {
+      ...super.defineSchema(),
+      service: new f.SchemaField({
+        role: new f.StringField({ initial: "retainer", choices: Object.keys(NPC_ROLES) }),
+        employer: new f.StringField({ initial: "" }),
+        job: new f.StringField({ initial: "" }),
+        wage: new f.StringField({ initial: "" }),
+        share: new f.StringField({ initial: "" }),
+        loyalty: new f.StringField({ initial: "" })
+      })
+    };
+  }
+}
