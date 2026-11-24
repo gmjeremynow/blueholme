@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+- Removed the Player name field from the Notes tab (Foundry already records who owns a character); age, height and weight share the row.
+
 ## 0.2.2
 
 - "BLUEHOLME™" now appears above "Character Record" and "Creature" in the sheet headers.
