@@ -22,7 +22,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       details: new f.SchemaField({
         species: str("human"), speciesName: str(""), speciesDie: int(8), speciesMove: int(30), speciesSave: int(0),
         speciesXP: int(0), naturalAC: int(9, { min: -10, max: 9 }),
-        alignment: str(""), languages: str(""), player: str(""), age: str(""), height: str(""), weight: str(""),
+        alignment: str(""), languages: str(""), player: str(""), sex: str(""), age: str(""), height: str(""), weight: str(""), deity: str(""),
         appearance: str(""), biography: html(), notes: html()
       }),
       classes: new f.SchemaField(Object.fromEntries(T.CLASS_KEYS.map(k => [k, bool(k === "fighter")]))),

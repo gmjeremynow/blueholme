@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4
+
+- Notes tab: the character details row is now Sex, Age, Height, Weight and Deity.
+
 ## 0.2.3
 
 - Removed the Player name field from the Notes tab (Foundry already records who owns a character); age, height and weight share the row.
