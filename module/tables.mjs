@@ -258,6 +258,8 @@ export const VARIABLE_DAMAGE = {
   heavy: { formula: "2d6kh", attacks: "1 every 2 rounds" },
   extraheavy: { formula: "3d6kh", attacks: "1 every 3 rounds" }
 };
+/** Show keep-highest / keep-lowest dice as the sheet writes them: "2d6kh" becomes "2d6(H)", "2d6kl" becomes "2d6(L)". */
+export const showDice = f => String(f ?? "").replace(/(\d*d\d+)kh\d*/g, "$1(H)").replace(/(\d*d\d+)kl\d*/g, "$1(L)");
 export const SIZE_UP = { light: "normal", normal: "heavy", heavy: "heavy", extraheavy: "extraheavy" };
 // Movement Speed Multipliers (p.46)
 export const MOVE_MULT = {

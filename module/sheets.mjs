@@ -208,7 +208,7 @@ export class CharacterSheet extends BHActorSheet {
     const varDmg = (() => { try { return game.settings.get(SYSTEM_ID, "variableDamage"); } catch (e) { return false; } })();
     ctx.weapons = items.filter(i => i.type === "weapon").map(i => ({
       id: i.id, name: i.name, img: i.img, equipped: i.system.equipped, quantity: i.system.quantity,
-      damage: Rolls.damageFormula(a, { item: i }).formula, size: T.WEAPON_SIZES[i.system.size],
+      damage: T.showDice(Rolls.damageFormula(a, { item: i }).formula), size: T.WEAPON_SIZES[i.system.size],
       speed: varDmg ? T.VARIABLE_DAMAGE[s.speciesDef?.small ? T.SIZE_UP[i.system.size] : i.system.size]?.attacks : "",
       bonus: i.system.hitBonus ? signed(i.system.hitBonus) : "",
       range: i.system.range.short ? `${i.system.range.short}/${i.system.range.medium}/${i.system.range.long}` : "", rate: i.system.rate

@@ -68,7 +68,7 @@ Hooks.on("renderCombatTracker", (app, html) => {
 function registerSettings() {
   game.settings.register(ID, "variableDamage", {
     name: "Option: weapon speed / variable damage (p.58)",
-    hint: "Light weapons roll the worse of 2d6, heavy weapons the better of 2d6, the heavy crossbow the best of 3d6; normal weapons 1d6. Weapons whose damage you have changed from 1d6 keep their own formula.",
+    hint: "Light weapons roll 2d6(L), the lower of 2d6; heavy weapons 2d6(H), the higher of 2d6; the heavy crossbow 3d6(H), the highest of 3d6; normal weapons 1d6. Weapons whose damage you have changed from 1d6 keep their own formula.",
     scope: "world", config: true, type: Boolean, default: false
   });
   game.settings.register(ID, "encumbrance", {

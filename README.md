@@ -38,7 +38,7 @@ On first launch the GM is offered the compendia. They can be rebuilt at any time
 | Species | p.5, p.11, Part 6 | Human, dwarf, elf, half-elf, halfling, half-orc, gnome, feline, or other: class hit die from the Species vs. Class Hit Dice table, move, save bonuses (dwarves and halflings +2), halfling missile bonus and weapon sizes, the thieves' skill modifiers printed for elves, halflings and orcs, and the species notes from the creature entries |
 | Attack rolls | p.57 | Score needed against the targeted tokens' AC from the class or creature matrix; Dex and range modifiers for missiles, partial cover, retreating targets, parry, backstab +4, magic bonuses and "+N vs." bonuses |
 | Damage | p.56, p.58 | 1d6 per weapon, fighter damage bonus, magic weapon bonus (swords to hit only, other weapons to hit and damage), backstab multiplier, minimum 1; *Apply* and *½* buttons |
-| Variable damage | p.58 option | World setting: light worst of 2d6, heavy best of 2d6, heavy crossbow best of 3d6; attacks per round shown; halflings use the next size up |
+| Variable damage | p.58 option | World setting: light 2d6(L) (lower of 2d6), heavy 2d6(H) (higher of 2d6), heavy crossbow 3d6(H) (highest of 3d6); attacks per round shown; halflings use the next size up |
 | Saving throws | p.61 | Five columns by class and level; creatures by HD on the fighter table (or cleric/thief or magic-user), under 1d8 HD on the 0 row |
 | Thieves' skills | p.9 | Ten skills by level with species and difficulty modifiers; 96-00 always fails; open lock without picks −25% |
 | Turning undead | p.6 | 2d6 against the table, then 2d6 undead turned or destroyed and 2d6 turns of flight |

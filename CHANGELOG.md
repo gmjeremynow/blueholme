@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.5
+
+- Variable damage dice are shown as 2d6(L), 2d6(H) and 3d6(H) on the sheet and chat cards instead of Foundry's 2d6kl / 2d6kh notation.
+
 ## 0.2.4
 
 - Notes tab: the character details row is now Sex, Age, Height, Weight and Deity.

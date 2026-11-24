@@ -89,7 +89,7 @@ export async function rollAttack(actor, { item = null, attack = null, fast = fal
     roll: roll.total, nat, mods: mods.map(([n, l]) => `${signed(n)} ${l}`).join(", "),
     matrix: isChar ? s.attack.matrixLabel : `Creature, ${s.hdLevel < 1 ? "less than 1" : s.hdLevel} HD`,
     hitsAC: hitsAC > 9 ? null : Math.max(hitsAC, -10), targets, noTargets: !targets.length,
-    damage: dmg.formula, damageLabel: dmg.label, rate: w?.rate ?? "", note: attack?.note ?? ""
+    damage: T.showDice(dmg.formula), damageLabel: dmg.label, rate: w?.rate ?? "", note: attack?.note ?? ""
   }, { rolls: [roll], flags: { kind: "attack", damage: dmg.formula, damageLabel: dmg.label, targets: targets.filter(t => t.hit).map(t => t.uuid), actor: actor.uuid } });
 }
 
@@ -129,7 +129,7 @@ export async function rollDamage(message) {
   if (!f.damage) return;
   const actor = f.actor ? await fromUuid(f.actor) : null;
   const roll = await evalRoll(`max(${f.damage}, 1)`);
-  return postCard(actor, "damage", { formula: f.damage, label: f.damageLabel, total: roll.total },
+  return postCard(actor, "damage", { formula: T.showDice(f.damage), label: f.damageLabel, total: roll.total },
     { rolls: [roll], flags: { kind: "damage", amount: roll.total, targets: f.targets ?? [] } });
 }
 
