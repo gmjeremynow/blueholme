@@ -3,7 +3,7 @@
  * (Foundry packs are LevelDB databases; building them in the world keeps the data plain JSON).
  */
 import { SYSTEM_ID } from "./tables.mjs";
-const DATA_VERSION = "5";   // 0.2.8: movement modes spelled out
+const DATA_VERSION = "6";   // 0.2.9: hydra and troglodyte swim speeds
 const ORD = ["", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"];
 const spellFolder = d => `${d.system.list === "cleric" ? "Cleric" : "Magic-User"} ${ORD[d.system.level]} level`;
 

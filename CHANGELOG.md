@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.9
+
+- Checked every creature's movement against its entry in the book. All match except two, now fixed: the hydra and the troglodyte move 30, swim 30 (the book's summary table leaves out their swim speed).
+- Compendia re-import when the world loads (data version 6).
+
 ## 0.2.8
 
 - Creature movement is written the way the creature entries print it: "50, climb 15" instead of the summary table's "50 C15" (also fly, swim, burrow and web).

@@ -4993,7 +4993,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "30",
+   "move": "30, swim 30",
    "alignment": "Neutral",
    "treasure": "11 (0)",
    "xp": "Varies",
@@ -8745,7 +8745,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "30",
+   "move": "30, swim 30",
    "alignment": "Chaotic Evil",
    "treasure": "16 (1)",
    "xp": "25",
