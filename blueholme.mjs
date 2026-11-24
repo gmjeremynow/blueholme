@@ -99,6 +99,7 @@ function registerHelpers() {
   Handlebars.registerHelper("bh-or", (a, b) => a || b);
   Handlebars.registerHelper("bh-null", a => a === null || a === undefined);
   Handlebars.registerHelper("bh-add", (a, b) => Number(a) + Number(b));
+  Handlebars.registerHelper("bh-streq", (a, b) => String(a ?? "").trim() === String(b ?? "").trim());
   Handlebars.registerHelper("bh-selected", (a, b) => (String(a) === String(b) ? "selected" : ""));
   Handlebars.registerHelper("bh-checked", a => (a ? "checked" : ""));
   Handlebars.registerHelper("bh-coins", () => ["cp", "sp", "ep", "gp", "pp"]);

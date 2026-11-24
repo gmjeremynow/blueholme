@@ -30,7 +30,7 @@
       <div class="vital ac">
         <span class="vital-label">Armour Class</span>
         <input class="ac-input" type="number" name="system.ac.value" value="{{system.ac.value}}">
-        {{#if system.ac.text}}<span class="ac-sub">printed {{system.ac.text}}</span>{{/if}}
+        {{#if system.ac.text}}{{#unless (bh-streq system.ac.text system.ac.value)}}<span class="ac-sub" title="Armour class as printed in the book">book: {{system.ac.text}}</span>{{/unless}}{{/if}}
       </div>
     </div>
   </header>

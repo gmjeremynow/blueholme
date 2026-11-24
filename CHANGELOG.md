@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.10
+
+- The creature sheet only shows the book's AC under the Armour Class box when it differs from the number used for play (bandits "4-7", lich "0 Min.", green slime and yellow mould "N/A"). It is labelled "book:" instead of "printed".
+
 ## 0.2.9
 
 - Checked every creature's movement against its entry in the book. All match except two, now fixed: the hydra and the troglodyte move 30, swim 30 (the book's summary table leaves out their swim speed).
