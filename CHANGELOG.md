@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.8
+
+- Creature movement is written the way the creature entries print it: "50, climb 15" instead of the summary table's "50 C15" (also fly, swim, burrow and web).
+- Long creature names fit the sheet header better: a slightly smaller name font, a wider creature sheet, and the full name on hover.
+- Compendia re-import when the world loads (data version 5).
+
 ## 0.2.7
 
 Accuracy review against the printed book.

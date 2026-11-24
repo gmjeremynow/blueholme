@@ -268,7 +268,7 @@ export class CharacterSheet extends BHActorSheet {
 export class MonsterSheet extends BHActorSheet {
   static DEFAULT_OPTIONS = {
     classes: ["blueholme", "sheet", "actor", "monster"],
-    position: { width: 680, height: 760 },
+    position: { width: 720, height: 760 },
     actions: {
       monsterAttack: function (ev, t) { const atk = this.actor.system.attacks[Number(t.dataset.index)]; if (atk) return Rolls.rollAttack(this.actor, { attack: atk, fast: ev.shiftKey }); },
       attackAdd: MonsterSheet.#onAttackAdd,

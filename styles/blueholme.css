@@ -71,6 +71,8 @@
 .blueholme .item-img { width: 52px; height: 52px; border: 1px solid var(--rule-strong); background: #fff; }
 .blueholme .title-line { display: flex; align-items: baseline; gap: 10px; }
 .blueholme .char-name { font-family: var(--bh-serif) !important; font-size: 24px !important; height: 32px !important; flex: 1; border-bottom: 1px solid var(--rule-strong) !important; }
+.blueholme .char-name { min-width: 0; text-overflow: ellipsis; }
+.blueholme .monster-sheet .char-name { font-size: 20px !important; }
 .blueholme .record-mark { font-family: var(--bh-head); color: var(--cobalt); letter-spacing: .06em; font-size: 13px; white-space: nowrap; }
 .blueholme .head-fields, .blueholme .xp-line, .blueholme .fields { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 6px; align-items: flex-end; }
 .blueholme .fld { display: flex; flex-direction: column; gap: 1px; min-width: 120px; flex: 1; }

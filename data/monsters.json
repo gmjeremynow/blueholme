@@ -16,7 +16,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "30 C30",
+   "move": "30, climb 30",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "20",
@@ -65,7 +65,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "40 C20",
+   "move": "40, climb 20",
    "alignment": "Neutral",
    "treasure": "10 (0)",
    "xp": "75",
@@ -114,7 +114,7 @@
     "value": 36,
     "max": 36
    },
-   "move": "50 C15",
+   "move": "50, climb 15",
    "alignment": "Neutral",
    "treasure": "12 (0)",
    "xp": "650",
@@ -205,7 +205,7 @@
     "value": 36,
     "max": 36
    },
-   "move": "30 F90",
+   "move": "30, fly 90",
    "alignment": "Lawful Good",
    "treasure": "0 (0)",
    "xp": "300-1,200",
@@ -653,7 +653,7 @@
     "value": 2,
     "max": 2
    },
-   "move": "F40",
+   "move": "fly 40",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "6",
@@ -695,7 +695,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "F50",
+   "move": "fly 50",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "13",
@@ -884,7 +884,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "30 F45",
+   "move": "30, fly 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "13",
@@ -926,7 +926,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "40 F60",
+   "move": "40, fly 60",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "25",
@@ -968,7 +968,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "50 F75",
+   "move": "50, fly 75",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "125",
@@ -1507,7 +1507,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "30 C30",
+   "move": "30, climb 30",
    "alignment": "Nil",
    "treasure": "11 (0)",
    "xp": "50",
@@ -1598,7 +1598,7 @@
     "value": 2,
     "max": 2
    },
-   "move": "15 C10",
+   "move": "15, climb 10",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "5",
@@ -1640,7 +1640,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "25 C20",
+   "move": "25, climb 20",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "15",
@@ -1682,7 +1682,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "40 C30",
+   "move": "40, climb 30",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "50",
@@ -1724,7 +1724,7 @@
     "value": 40,
     "max": 40
    },
-   "move": "30 F40",
+   "move": "30, fly 40",
    "alignment": "Chaotic Evil",
    "treasure": "15 (0)",
    "xp": "2,300",
@@ -1780,7 +1780,7 @@
     "value": 22,
     "max": 22
    },
-   "move": "20 F45",
+   "move": "20, fly 45",
    "alignment": "Neutral",
    "treasure": "13 (0)",
    "xp": "425",
@@ -1822,7 +1822,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "15 B5",
+   "move": "15, burrow 5",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "10",
@@ -1864,7 +1864,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "20 B5",
+   "move": "20, burrow 5",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "35",
@@ -1906,7 +1906,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "30 B5",
+   "move": "30, burrow 5",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "275",
@@ -1948,7 +1948,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "20 S30",
+   "move": "20, swim 30",
    "alignment": "Chaotic Evil",
    "treasure": "13 (0)",
    "xp": "10",
@@ -1990,7 +1990,7 @@
     "value": 22,
     "max": 22
    },
-   "move": "30 S30",
+   "move": "30, swim 30",
    "alignment": "Chaotic Evil",
    "treasure": "13 (0)",
    "xp": "10 or more",
@@ -2179,7 +2179,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "40 F80",
+   "move": "40, fly 80",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "1,250",
@@ -2228,7 +2228,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "S50",
+   "move": "swim 50",
    "alignment": "2N:1CG",
    "treasure": "0 (0)",
    "xp": "20",
@@ -2319,7 +2319,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "2N:1CE",
    "treasure": "20 (0)",
    "xp": "500-2,700 by age (adult 1,750)",
@@ -2375,7 +2375,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "1N:1CE",
    "treasure": "20 (0)",
    "xp": "500-2,700 by age (adult 1,750)",
@@ -2431,7 +2431,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "1N:2CG",
    "treasure": "20 (0)",
    "xp": "500-2,700 by age (adult 1,750)",
@@ -2487,7 +2487,7 @@
     "value": 45,
     "max": 45
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "1N:2CE",
    "treasure": "20 (0)",
    "xp": "500-2,700 by age (adult 1,750)",
@@ -2543,7 +2543,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "10 S20",
+   "move": "10, swim 20",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "1,900 - 2,300",
@@ -2634,7 +2634,7 @@
     "value": 45,
     "max": 45
    },
-   "move": "40 F80",
+   "move": "40, fly 80",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "1,600",
@@ -2683,7 +2683,7 @@
     "value": 36,
     "max": 36
    },
-   "move": "F45",
+   "move": "fly 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "1,200",
@@ -2725,7 +2725,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "F45",
+   "move": "fly 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "2,300",
@@ -2767,7 +2767,7 @@
     "value": 72,
     "max": 72
    },
-   "move": "F45",
+   "move": "fly 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "2,800",
@@ -3061,7 +3061,7 @@
     "value": 36,
     "max": 36
    },
-   "move": "10 S45",
+   "move": "10, swim 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "1,200",
@@ -3103,7 +3103,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "10 S45",
+   "move": "10, swim 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "2,300",
@@ -3145,7 +3145,7 @@
     "value": 72,
     "max": 72
    },
-   "move": "10 S45",
+   "move": "10, swim 45",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "2,800",
@@ -3285,7 +3285,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "S30",
+   "move": "swim 30",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "10",
@@ -3327,7 +3327,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "S40",
+   "move": "swim 40",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "20",
@@ -3369,7 +3369,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "S50",
+   "move": "swim 50",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "75",
@@ -3411,7 +3411,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "20 F40",
+   "move": "20, fly 40",
    "alignment": "1N:1LE",
    "treasure": "12 (0)",
    "xp": "125",
@@ -3495,7 +3495,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "30 B5",
+   "move": "30, burrow 5",
    "alignment": "Chaotic Evil",
    "treasure": "11 (0)",
    "xp": "25",
@@ -4265,7 +4265,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "30 F75",
+   "move": "30, fly 75",
    "alignment": "Neutral",
    "treasure": "14 (0)",
    "xp": "450",
@@ -4440,7 +4440,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "30 F75",
+   "move": "30, fly 75",
    "alignment": "1N:2CE",
    "treasure": "12 (0)",
    "xp": "50",
@@ -4538,7 +4538,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "45 F90",
+   "move": "45, fly 90",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "35",
@@ -5035,7 +5035,7 @@
     "value": 36,
     "max": 36
    },
-   "move": "F180",
+   "move": "fly 180",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "1,200",
@@ -5119,7 +5119,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "S30",
+   "move": "swim 30",
    "alignment": "Lawful Evil",
    "treasure": "9 (0)",
    "xp": "275",
@@ -5168,7 +5168,7 @@
     "value": 40,
     "max": 40
    },
-   "move": "S45",
+   "move": "swim 45",
    "alignment": "Lawful Evil",
    "treasure": "11 (0)",
    "xp": "900",
@@ -5217,7 +5217,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "S60",
+   "move": "swim 60",
    "alignment": "Lawful Evil",
    "treasure": "13 (0)",
    "xp": "1,350",
@@ -5266,7 +5266,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "Lawful Good",
    "treasure": "14 (0)",
    "xp": "500",
@@ -5357,7 +5357,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "S10",
+   "move": "swim 10",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "10",
@@ -5399,7 +5399,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "S15",
+   "move": "swim 15",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "20",
@@ -5441,7 +5441,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "S20",
+   "move": "swim 20",
    "alignment": "Nil",
    "treasure": "0 (0)",
    "xp": "75",
@@ -5525,7 +5525,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "20 S30",
+   "move": "20, swim 30",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "20",
@@ -5567,7 +5567,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "30 S45",
+   "move": "30, swim 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "75",
@@ -5609,7 +5609,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "45 S45",
+   "move": "45, swim 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "275",
@@ -5651,7 +5651,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "30 S30",
+   "move": "30, swim 30",
    "alignment": "Neutral",
    "treasure": "13 (1)",
    "xp": "20",
@@ -5693,7 +5693,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "20 F90",
+   "move": "20, fly 90",
    "alignment": "Lawful Evil",
    "treasure": "9 (0)",
    "xp": "25",
@@ -5735,7 +5735,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "45 F60",
+   "move": "45, fly 60",
    "alignment": "1N:7LE",
    "treasure": "17 (0)",
    "xp": "500",
@@ -5847,7 +5847,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "30 S45",
+   "move": "30, swim 45",
    "alignment": "Any",
    "treasure": "14 (3)",
    "xp": "10",
@@ -5889,7 +5889,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "45 F90",
+   "move": "45, fly 90",
    "alignment": "Lawful Evil",
    "treasure": "12 (7)",
    "xp": "35",
@@ -6120,7 +6120,7 @@
     "value": 2,
     "max": 2
    },
-   "move": "30 S45",
+   "move": "30, swim 45",
    "alignment": "Neutral",
    "treasure": "17 (8)",
    "xp": "10",
@@ -6253,7 +6253,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "5 S15",
+   "move": "5, swim 15",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "10",
@@ -6295,7 +6295,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "5 S20",
+   "move": "5, swim 20",
    "alignment": "Neutral",
    "treasure": "10 (0)",
    "xp": "35",
@@ -6337,7 +6337,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "5 S30",
+   "move": "5, swim 30",
    "alignment": "Neutral",
    "treasure": "11 (0)",
    "xp": "275",
@@ -6421,7 +6421,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "Lawful Evil",
    "treasure": "14 (2)",
    "xp": "275",
@@ -6554,7 +6554,7 @@
     "value": 9,
     "max": 9
    },
-   "move": "60 F120",
+   "move": "60, fly 120",
    "alignment": "Lawful Good",
    "treasure": "0 (0)",
    "xp": "20",
@@ -6603,7 +6603,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "15 F45",
+   "move": "15, fly 45",
    "alignment": "1N:1CG",
    "treasure": "19 (7)",
    "xp": "15",
@@ -6813,7 +6813,7 @@
     "value": 68,
     "max": 68
    },
-   "move": "30 B30",
+   "move": "30, burrow 30",
    "alignment": "Nil",
    "treasure": "13 (0)",
    "xp": "2,800",
@@ -6862,7 +6862,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "F120",
+   "move": "fly 120",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "50",
@@ -6911,7 +6911,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "F120",
+   "move": "fly 120",
    "alignment": "Neutral",
    "treasure": "11 (0)",
    "xp": "500",
@@ -6960,7 +6960,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "F120",
+   "move": "fly 120",
    "alignment": "Neutral",
    "treasure": "17 (0)",
    "xp": "2,300",
@@ -7009,7 +7009,7 @@
     "value": 2,
     "max": 2
    },
-   "move": "15 S10",
+   "move": "15, swim 10",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "6",
@@ -7051,7 +7051,7 @@
     "value": 2,
     "max": 2
    },
-   "move": "30 S20",
+   "move": "30, swim 20",
    "alignment": "Neutral",
    "treasure": "12 (0)",
    "xp": "6",
@@ -7653,7 +7653,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "S45",
+   "move": "swim 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "35",
@@ -7695,7 +7695,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "S45",
+   "move": "swim 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "450",
@@ -7737,7 +7737,7 @@
     "value": 54,
     "max": 54
    },
-   "move": "S45",
+   "move": "swim 45",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "1,350",
@@ -7863,7 +7863,7 @@
     "value": 22,
     "max": 22
    },
-   "move": "20 S20",
+   "move": "20, swim 20",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "175",
@@ -7912,7 +7912,7 @@
     "value": 32,
     "max": 32
    },
-   "move": "20 S20",
+   "move": "20, swim 20",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "450",
@@ -7961,7 +7961,7 @@
     "value": 40,
     "max": 40
    },
-   "move": "20 S20",
+   "move": "20, swim 20",
    "alignment": "Neutral",
    "treasure": "11 (0)",
    "xp": "900",
@@ -8136,7 +8136,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "40 F75",
+   "move": "40, fly 75",
    "alignment": "Lawful Evil",
    "treasure": "14 (0)",
    "xp": "500",
@@ -8185,7 +8185,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "30 W60",
+   "move": "30, web 60",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "15",
@@ -8269,7 +8269,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "15 W45",
+   "move": "15, web 45",
    "alignment": "Neutral",
    "treasure": "10 (0)",
    "xp": "200",
@@ -8311,7 +8311,7 @@
     "value": 4,
     "max": 4
    },
-   "move": "F60",
+   "move": "fly 60",
    "alignment": "Neutral",
    "treasure": "9 (0)",
    "xp": "10",
@@ -8360,7 +8360,7 @@
     "value": 22,
     "max": 22
    },
-   "move": "10 F120",
+   "move": "10, fly 120",
    "alignment": "Neutral",
    "treasure": "0 (0)",
    "xp": "175",
@@ -8997,7 +8997,7 @@
     "value": 14,
     "max": 14
    },
-   "move": "30 S30",
+   "move": "30, swim 30",
    "alignment": "2N:1LE",
    "treasure": "13 (2)",
    "xp": "65",
@@ -9228,7 +9228,7 @@
     "value": 27,
     "max": 27
    },
-   "move": "30 S45",
+   "move": "30, swim 45",
    "alignment": "Neutral",
    "treasure": "10 (0)",
    "xp": "725",
@@ -9438,7 +9438,7 @@
     "value": 18,
     "max": 18
    },
-   "move": "30 F60",
+   "move": "30, fly 60",
    "alignment": "Lawful Evil",
    "treasure": "14 (0)",
    "xp": "175",
