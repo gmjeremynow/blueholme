@@ -1,0 +1,20 @@
+<div class="bh-dialog">
+  {{#if both}}
+  <label class="row"><span>Attack</span><select name="mode"><option value="melee">Melee</option><option value="missile">Thrown</option></select></label>
+  {{/if}}
+  {{#if hasRange}}
+  <label class="row"><span>Range ({{ranges.short}} / {{ranges.medium}} / {{ranges.long}})</span>
+    <select name="range"><option value="short">Short (+1)</option><option value="medium" selected>Medium</option><option value="long">Long (−1)</option></select></label>
+  <label class="row check"><input type="checkbox" name="cover"> <span>Target has partial cover (−2)</span></label>
+  {{/if}}
+  {{#if canMelee}}
+  {{#if thief}}<label class="row check"><input type="checkbox" name="backstab"> <span>Backstab (+4, damage multiplied)</span></label>{{/if}}
+  <label class="row check"><input type="checkbox" name="retreat"> <span>Target retreats or runs past (+2)</span></label>
+  {{/if}}
+  <label class="row check"><input type="checkbox" name="parry"> <span>Target parries (−2)</span></label>
+  {{#if vsOptions.length}}
+  <label class="row"><span>Special bonus</span><select name="vs"><option value="-1">None</option>{{#each vsOptions}}<option value="{{value}}">{{label}}</option>{{/each}}</select></label>
+  {{/if}}
+  <label class="row"><span>Other modifier</span><input type="number" name="misc" value="0"></label>
+  <p class="hint">Target tokens first to have hits checked against their armour class. Spells and missiles cannot be used while engaged in melee (p.58).</p>
+</div>

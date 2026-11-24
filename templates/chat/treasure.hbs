@@ -1,0 +1,8 @@
+<div class="blueholme-card">
+  <header class="card-title">Treasure {{number}} <span class="sub">{{#if hoard}}lair hoard{{else}}individual{{/if}}</span></header>
+  {{#if nothing}}<p class="verdict">Nothing this time.</p>{{/if}}
+  {{#if coinText}}<p><strong>Coins:</strong> {{coinText}}</p>{{/if}}
+  {{#if jewels.length}}<p><strong>Jewels:</strong> {{#each jewels}}{{this}} gp{{#unless @last}}, {{/unless}}{{/each}} (total {{jewelTotal}} gp)</p>{{/if}}
+  {{#if magic.length}}<p><strong>Magic:</strong></p><ul class="plain">{{#each magic}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+  {{#unless nothing}}<div class="card-buttons"><button type="button" data-card-action="treasure-give"><i class="fa-solid fa-hand-holding"></i> Give to selected token</button></div>{{/unless}}
+</div>

@@ -1,0 +1,122 @@
+<div class="bh-sheet monster-sheet">
+  <header class="sheet-head">
+    <img class="portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" title="Change portrait">
+    <div class="head-main">
+      <div class="title-line">
+        <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="Creature name">
+        <span class="record-mark">Creature</span>
+      </div>
+      <div class="head-fields">
+        <label class="fld"><span>Hit Dice</span><input type="text" name="system.hd" value="{{system.hd}}"></label>
+        <label class="fld narrow"><span>Level</span><input type="number" name="system.hdLevel" value="{{system.hdLevel}}" min="0" title="Level for attacks and saves; 0 = less than 1d8 HD"></label>
+        <label class="fld"><span>Move</span><input type="text" name="system.move" value="{{system.move}}"></label>
+        <label class="fld narrow"><span>Size</span><input type="text" name="system.size" value="{{system.size}}"></label>
+      </div>
+      <div class="head-fields">
+        <label class="fld"><span>Alignment</span><input type="text" name="system.alignment" value="{{system.alignment}}"></label>
+        <label class="fld narrow"><span>Treasure</span><input type="text" name="system.treasure" value="{{system.treasure}}"></label>
+        <label class="fld narrow"><span>XP</span><input type="text" name="system.xp" value="{{system.xp}}"></label>
+      </div>
+    </div>
+    <div class="vitals">
+      <div class="vital hp">
+        <span class="vital-label">Hit Points <a class="mini-link" data-action="rollHP" title="Roll hit points ({{system.hpFormula}})"><i class="fa-solid fa-dice"></i></a></span>
+        <div class="hp-pair">
+          <input type="number" name="system.hp.value" value="{{system.hp.value}}">
+          <span class="slash">/</span>
+          <input type="number" name="system.hp.max" value="{{system.hp.max}}">
+        </div>
+      </div>
+      <div class="vital ac">
+        <span class="vital-label">Armour Class</span>
+        <input class="ac-input" type="number" name="system.ac.value" value="{{system.ac.value}}">
+        {{#if system.ac.text}}<span class="ac-sub">printed {{system.ac.text}}</span>{{/if}}
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs">
+    <a data-action="sheetTab" data-tab="stats">Statistics</a>
+    <a data-action="sheetTab" data-tab="description">Description</a>
+    {{#if isGM}}
+    <span class="quick-rolls">
+      <button type="button" class="mini mini-text" data-action="rollDex" title="Roll Dexterity for initiative (3d6 + modifier)"><i class="fa-solid fa-bolt"></i> Dex {{#if system.dex}}{{system.dex}}{{/if}}</button>
+      <button type="button" class="mini mini-text" data-action="reaction" title="Reaction roll, 2d6 (p.55)"><i class="fa-solid fa-comments"></i> Reaction</button>
+    </span>
+    {{/if}}
+  </nav>
+
+  <div class="tab-scroll">
+  <section class="tab-body" data-tab="stats">
+    <div class="box">
+      <h3>Attacks <span class="hint">creature matrix, {{hdLabel}} HD</span> <a class="add" data-action="attackAdd" title="Add attack"><i class="fa-solid fa-plus"></i></a></h3>
+      <table class="items attacks">
+        <tr><th>No.</th><th>Attack</th><th>Damage</th><th>Note</th><th title="Attacks in the same group are made together; different groups are alternatives">Group</th><th>Hit adj.</th><th></th></tr>
+        {{#each attacks}}
+        {{#if orFirst}}<tr class="or-row"><td colspan="7">— or —</td></tr>{{/if}}
+        <tr>
+          <td><input type="number" class="w3" value="{{count}}" data-attack-index="{{index}}" data-attack-field="count"></td>
+          <td class="name"><a class="rollable" data-action="monsterAttack" data-index="{{index}}" title="Roll to hit (shift-click: no dialog)"><i class="fa-solid fa-dice-d20"></i></a> <input type="text" value="{{name}}" data-attack-index="{{index}}" data-attack-field="name"></td>
+          <td><input type="text" class="w5" value="{{damage}}" data-attack-index="{{index}}" data-attack-field="damage"></td>
+          <td><input type="text" value="{{note}}" data-attack-index="{{index}}" data-attack-field="note"></td>
+          <td><input type="number" class="w3" value="{{group}}" data-attack-index="{{index}}" data-attack-field="group"></td>
+          <td><input type="number" class="w3" value="{{bonus}}" data-attack-index="{{index}}" data-attack-field="bonus"></td>
+          <td class="ctl"><a data-action="attackRemove" data-index="{{index}}"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+      {{#if system.attacksText}}<p class="small">As printed: {{system.attacksText}}{{#if system.damageText}} · {{system.damageText}}{{/if}}</p>{{else}}{{#if system.damageText}}<p class="small">As printed: {{system.damageText}}</p>{{/if}}{{/if}}
+      <table class="matrix">
+        <tr><th>AC</th>{{#each attackRow}}<th>{{ac}}</th>{{/each}}</tr>
+        <tr><th>Need</th>{{#each attackRow}}<td>{{need}}</td>{{/each}}</tr>
+      </table>
+    </div>
+    <div class="grid-2">
+      <div class="box">
+        <h3>Saving Throws</h3>
+        <ul class="saves">
+          {{#each saves}}<li><a class="rollable" data-action="save" data-save="{{key}}"><i class="fa-solid fa-dice-d20"></i> {{label}}</a><span class="save-num">{{value}}</span></li>{{/each}}
+        </ul>
+        <div class="xp-line">
+          <label class="fld"><span>Saves as</span><select name="system.saveAs">{{#each saveOptions}}<option value="{{value}}" {{bh-selected value ../system.saveAs}}>{{label}}</option>{{/each}}</select></label>
+          <label class="fld narrow"><span>at level</span><input type="number" name="system.saveLevel" value="{{system.saveLevel}}" placeholder="{{system.hdLevel}}"></label>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Details</h3>
+        <label class="fld wide"><span>Hit dice formula (for rolling hp)</span><input type="text" name="system.hpFormula" value="{{system.hpFormula}}"></label>
+        <label class="fld wide"><span>Ability modifiers (as a character)</span><input type="text" name="system.abilities" value="{{system.abilities}}"></label>
+        <label class="fld narrow"><span>XP value</span><input type="number" name="system.xpValue" value="{{system.xpValue}}"></label>
+        {{#if hasTreasure}}
+        <div class="btn-row">
+          {{#if system.treasureLair}}<button type="button" data-action="treasureLair"><i class="fa-solid fa-gem"></i> Lair ({{system.treasureLair}})</button>{{/if}}
+          {{#if system.treasureCarried}}<button type="button" data-action="treasureCarried"><i class="fa-solid fa-coins"></i> Carried ({{system.treasureCarried}})</button>{{/if}}
+        </div>
+        {{/if}}
+        <p class="small">{{system.source}}</p>
+      </div>
+    </div>
+    {{#if items.length}}
+    <div class="box">
+      <h3>Items</h3>
+      <table class="items">
+        {{#each items}}
+        <tr data-item-id="{{id}}">
+          <td class="name">{{#if isWeapon}}<a class="rollable" data-action="weaponAttack"><img src="{{img}}" alt=""> {{name}}</a>{{else}}<a data-action="itemChat"><img src="{{img}}" alt=""> {{name}}</a>{{/if}}</td>
+          <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+    {{/if}}
+  </section>
+  <section class="tab-body" data-tab="description">
+    <div class="box">
+      <div class="pm-slot" data-pm-name="system.description" data-pm-enriched="description"><prose-mirror name="system.description" value="{{system.description}}" document-uuid="{{actor.uuid}}" toggled>{{{description}}}</prose-mirror></div>
+    </div>
+    <div class="box"><h3>Referee’s Notes</h3>
+      <div class="pm-slot" data-pm-name="system.notes" data-pm-enriched="notes"><prose-mirror name="system.notes" value="{{system.notes}}" document-uuid="{{actor.uuid}}" toggled>{{{notes}}}</prose-mirror></div>
+    </div>
+  </section>
+  </div>
+</div>

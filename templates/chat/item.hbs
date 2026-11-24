@@ -1,0 +1,6 @@
+<div class="blueholme-card item-card">
+  <header class="card-title"><img src="{{item.img}}" alt=""> {{item.name}}{{#if cast}} <span class="sub">cast</span>{{/if}}</header>
+  {{#if isSpell}}<p class="small">{{listLabel}} {{item.system.level}} · Range {{item.system.range}} · Duration {{item.system.duration}}{{#if item.system.reverseOf}} · reverse of {{item.system.reverseOf}}{{/if}}</p>{{/if}}
+  <div class="card-desc">{{{description}}}</div>
+  {{#if hasRoll}}<div class="card-buttons"><button type="button" data-card-action="dice"><i class="fa-solid fa-dice"></i> {{rollLabel}}: {{item.system.roll.formula}}</button></div>{{/if}}
+</div>

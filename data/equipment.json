@@ -1,0 +1,1677 @@
+[
+ {
+  "name": "Dagger",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "light",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 10,
+    "medium": 20,
+    "long": 30
+   },
+   "thrown": true,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 3,
+   "weight": 0,
+   "description": "<p>A long 1-handed fighting knife, often with a cross- or knuckle guard, intended mainly for stabbing or throwing. Daggers are light weapons.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Silver Dagger",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "light",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 10,
+    "medium": 20,
+    "long": 30
+   },
+   "thrown": true,
+   "ammoType": "",
+   "rate": "",
+   "silver": true,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 25,
+   "weight": 0,
+   "description": "<p>A long 1-handed fighting knife, often with a cross- or knuckle guard, intended mainly for stabbing or throwing. Daggers are light weapons.</p><p>Silver weapons harm certain monsters immune to normal weapons.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Battle Axe",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 7,
+   "weight": 0,
+   "description": "<p>A normal, thin-bladed axe intended to be wielded in one hand by a man-sized warrior.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Hand Axe",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 10,
+    "medium": 20,
+    "long": 30
+   },
+   "thrown": true,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 3,
+   "weight": 0,
+   "description": "<p>A normal 1-handed axe equally useful for melee or for throwing.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Mace",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 5,
+   "weight": 0,
+   "description": "<p>A short metal haft ending in a heavy flanged head, wielded in 1 hand to bruise and crush.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Spear",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 10,
+    "medium": 20,
+    "long": 30
+   },
+   "thrown": true,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 2,
+   "weight": 0,
+   "description": "<p>A long wooden shaft fitted with a bladed point and sometimes a butt spike at the opposite end. Spears are versatile weapons which can be used in one or two hands, or thrown.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Short Sword",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 7,
+   "weight": 0,
+   "description": "<p>A short, heavy 1-handed blade, two- edged but primarily used in thrusting attacks.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Sword",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 10,
+   "weight": 0,
+   "description": "<p>A knightly weapon for 1 or 2-handed use, in a great variety of shapes: curved, double-edged, quillioned, basket-hilted, and many more.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "War Hammer",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 5,
+   "weight": 0,
+   "description": "<p>A normal all-metal 1-handed weapon with a double head ending in a hammer on one side and a pick on the other.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Quarterstaff",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 2,
+   "weight": 0,
+   "description": "<p>A heavy wooden staff used in 2 hands, about 6 feet long and often strengthened with iron bands along its length or at its ends.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Flail",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 8,
+   "weight": 0,
+   "description": "<p>A heavy weapon with a weighted, flanged metal head attached by a chain to a long 2-handed haft, delivering crushing blows.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Great Sword",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 15,
+   "weight": 0,
+   "description": "<p>A two-handed sword is a heavy weapon with a long blade and extended grip.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Halberd",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 7,
+   "weight": 0,
+   "description": "<p>A heavy 2-handed weapon combining an axe blade, back spike and spear head on a long haft.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Lance",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 4,
+   "weight": 0,
+   "description": "<p>A heavy 1-handed spear for use in the mounted cavalry charge.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Morning Star",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 6,
+   "weight": 0,
+   "description": "<p>A heavy, spiked metal ball mounted atop a 2-handed wooden haft, often reinforced with iron strips or leather binding.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Pike",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 5,
+   "weight": 0,
+   "description": "",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Pole Arm",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "melee",
+   "size": "heavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 0,
+    "medium": 0,
+    "long": 0
+   },
+   "thrown": false,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 7,
+   "weight": 0,
+   "description": "<p>A heavy weapon consisting of a long wooden haft fitted with any one of a wide variety of bladed, spiked and hooked heads, often improvised.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Javelin",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 20,
+    "medium": 40,
+    "long": 80
+   },
+   "thrown": true,
+   "ammoType": "",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 1,
+   "weight": 0,
+   "description": "<p>A balanced, 1-handed light spear specially designed for throwing.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Short Bow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 50,
+    "medium": 100,
+    "long": 150
+   },
+   "thrown": false,
+   "ammoType": "arrow",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 25,
+   "weight": 0,
+   "description": "<p>A small, short-ranged, all-wood bow.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Horse Bow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 60,
+    "medium": 120,
+    "long": 180
+   },
+   "thrown": false,
+   "ammoType": "arrow",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 30,
+   "weight": 0,
+   "description": "<p>A smaller type of composite bow (see above) suitable for use on horseback.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Long Bow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 70,
+    "medium": 140,
+    "long": 210
+   },
+   "thrown": false,
+   "ammoType": "arrow",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 40,
+   "weight": 0,
+   "description": "<p>A tall bow cut from a single piece of wood.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Composite Bow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 80,
+    "medium": 160,
+    "long": 240
+   },
+   "thrown": false,
+   "ammoType": "arrow",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 50,
+   "weight": 0,
+   "description": "<p>A long-ranged and powerful recurve bow made of laminated wood and animal sinew, vulnerable to water which weakens its glue.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Light Crossbow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 60,
+    "medium": 120,
+    "long": 180
+   },
+   "thrown": false,
+   "ammoType": "quarrel",
+   "rate": "Fires every 2 rounds",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 15,
+   "weight": 0,
+   "description": "<p>A smaller version of the heavy crossbow, less powerful but faster to cock.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Heavy Crossbow",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "extraheavy",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 80,
+    "medium": 160,
+    "long": 240
+   },
+   "thrown": false,
+   "ammoType": "quarrel",
+   "rate": "Fires every 3 rounds",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 25,
+   "weight": 0,
+   "description": "<p>A powerful weapon firing heavy quarrels, requiring a small winch to cock.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Sling",
+  "type": "weapon",
+  "img": "",
+  "folder": "Weapons",
+  "system": {
+   "category": "missile",
+   "size": "normal",
+   "damage": "1d6",
+   "hitBonus": 0,
+   "dmgBonus": 0,
+   "vs": [],
+   "magic": false,
+   "cursed": false,
+   "ability": "",
+   "range": {
+    "short": 60,
+    "medium": 120,
+    "long": 180
+   },
+   "thrown": false,
+   "ammoType": "stone",
+   "rate": "",
+   "silver": false,
+   "equipped": false,
+   "quantity": 1,
+   "cost": 1,
+   "weight": 0,
+   "description": "<p>An ancient and deceptively simple weapon consisting of a string with a central loop or pouch, used to hurl stones, bullets or other missiles.</p>",
+   "source": "Journeymanne Rules p.11-12"
+  }
+ },
+ {
+  "name": "Leather Armour",
+  "type": "armor",
+  "img": "",
+  "folder": "Armour",
+  "system": {
+   "kind": "armour",
+   "base": "leather",
+   "bonus": 0,
+   "cursed": false,
+   "equipped": false,
+   "magic": false,
+   "ability": "",
+   "description": "<p>The most common type of armour is made of tough, cured leather or similar materials like padded, quilted or waxed cloth.</p>",
+   "source": "Journeymanne Rules p.11-13",
+   "cost": 15,
+   "weight": 0
+  }
+ },
+ {
+  "name": "Mail Armour",
+  "type": "armor",
+  "img": "",
+  "folder": "Armour",
+  "system": {
+   "kind": "armour",
+   "base": "mail",
+   "bonus": 0,
+   "cursed": false,
+   "equipped": false,
+   "magic": false,
+   "ability": "",
+   "description": "<p>Mail is flexible but heavy armour made of small, interlinked metal rings backed with padding. It may also include (or even be entirely constructed from) small plates.</p>",
+   "source": "Journeymanne Rules p.11-13",
+   "cost": 30,
+   "weight": 0
+  }
+ },
+ {
+  "name": "Plate Armour",
+  "type": "armor",
+  "img": "",
+  "folder": "Armour",
+  "system": {
+   "kind": "armour",
+   "base": "plate",
+   "bonus": 0,
+   "cursed": false,
+   "equipped": false,
+   "magic": false,
+   "ability": "",
+   "description": "<p>Plate armour is an all-enclosing, jointed suit of metal plates fitted to the wearer. Only clerics and fighters may use this type of harness.</p>",
+   "source": "Journeymanne Rules p.11-13",
+   "cost": 50,
+   "weight": 0
+  }
+ },
+ {
+  "name": "Shield",
+  "type": "armor",
+  "img": "",
+  "folder": "Armour",
+  "system": {
+   "kind": "shield",
+   "base": "shield",
+   "bonus": 0,
+   "cursed": false,
+   "equipped": false,
+   "magic": false,
+   "ability": "",
+   "description": "<p>A shield is strapped to the combatant’s off-arm and is used to block incoming attacks, improving his armour class by 1.</p>",
+   "source": "Journeymanne Rules p.11-13",
+   "cost": 10,
+   "weight": 0
+  }
+ },
+ {
+  "name": "Helmet",
+  "type": "armor",
+  "img": "",
+  "folder": "Armour",
+  "system": {
+   "kind": "helmet",
+   "base": "helmet",
+   "bonus": 0,
+   "cursed": false,
+   "equipped": false,
+   "magic": false,
+   "ability": "",
+   "description": "<p>Helmets come in all shapes and materials, protecting the character’s head. Any class can wear helmets appropriate to their permitted armour. Without a helmet attacks from above are against AC9.</p>",
+   "source": "Journeymanne Rules p.11-13",
+   "cost": 10,
+   "weight": 0
+  }
+ },
+ {
+  "name": "Quiver for Arrows",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Arrows (20)",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 20,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "arrow",
+   "description": "<p>Arrows are fired from long bows, short bows, composite bows and horse bows. They come in quivers that hold 20 arrows. Arrows with silver heads are useful against some monsters like lycanthropes.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Silver Arrow",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "arrow",
+   "description": "<p>Arrows are fired from long bows, short bows, composite bows and horse bows. They come in quivers that hold 20 arrows. Arrows with silver heads are useful against some monsters like lycanthropes.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Case for Quarrels",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Quarrels (30)",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 30,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "quarrel",
+   "description": "<p>Quarrels are fired from light or heavy crossbows. They come in cases that hold 30 each. Quarrels with silver points are useful against certain monsters immune to normal weapons.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Silver Quarrel",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "quarrel",
+   "description": "<p>Quarrels are fired from light or heavy crossbows. They come in cases that hold 30 each. Quarrels with silver points are useful against certain monsters immune to normal weapons.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Pouch for Stones",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Sling Stones (30)",
+  "type": "gear",
+  "img": "",
+  "folder": "Ammunition",
+  "system": {
+   "quantity": 1,
+   "bundle": 30,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "stone",
+   "description": "<p>An ancient and deceptively simple weapon consisting of a string with a central loop or pouch, used to hurl stones, bullets or other missiles.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Backpack",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A leather or canvas satchel with straps to allow it to be carried securely on the back while leaving both hands free.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Small Sack",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Made of hemp, canvas, leather, or a similar material, a sack is handy for carrying extra treasure but occupies one of the character’s hands.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Large Sack",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 2,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Made of hemp, canvas, leather, or a similar material, a sack is handy for carrying extra treasure but occupies one of the character’s hands.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Wine Skin",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A waterproof container, usually made of some animal bladder. Can be used to hold water in an emergency if wine is not available.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Wine (1 quart)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A waterproof container, usually made of some animal bladder. Can be used to hold water in an emergency if wine is not available.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Rations (1 wk., std.)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Normal food, some dried but mostly fresh. Does not keep, and the last few days’ worth of a week’s rations will already be stale.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Rations (1 wk., iron)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 15,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Preserved food like cured meat, dried grains, and nuts set in cakes of fat. Will keep for a long time if kept dry.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Torches (6)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 6,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A wooden stick with the end covered in rags soaked in pitch or other flammable substance. May be used as a club in a pinch. Lights a 30’radius for 1 hour.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Lantern",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A metal, oil-burning lamp with shutters that casts light in a 30’ radius. A full lantern will burn for 4 hours. A lantern may spill if dropped, or even burst into flames (Part 5: Encounters).</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Oil (1 flask)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 2,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>About a pint of oil in a stoppered flask, enough to fuel a lantern for 4 hours. Also useful as a missile or for spreading a pool of slippery or burning oil upon the floor.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Tinder Box",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 3,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Steel, flint, and tinder for lighting fires, all in a waterproof case.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Rope (50’)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A 50’ hemp rope that can take the weight of 3-4 armoured, loaded characters. Silk or other materials may be used, but will be more costly.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Grappling Hook",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 25,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Fastened to the end of a rope, can be thrown to catch on battlements, projecting beams, or other features, allowing the character to climb up.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Pole (10’)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A multi-purpose tool for bridging gaps and detecting traps, awkward to manoeuvre around tight corners in the Underworld.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Pole (10’, collapsible)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Much more convenient than a normal 10’ pole, but it takes time to assemble for use or disassemble for transport.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Hammer",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 2,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A small metal-headed tool for driving iron spikes into cracks in rocks or stonework.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Iron Spikes (12)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 12,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>May be employed to spike doors open or shut, secure ropes to walls or cliffs, to interrogate prisoners, and a myriad of other uses.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Mallet",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 2,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A wooden mallet is equally handy for hammering tent pegs into the ground or driving a stake through the heart of a vampire.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Wooden Stakes (3)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 3,
+   "cost": 1,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Mainly useful for securing tent lines or destroying vampires.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Garlic",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Equally useful for repelling vampires and enhancing the adventuring cuisine.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Wolfsbane",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A dried herb which, its name notwithstanding, is repellent not only to werewolves but also all other forms of lycanthrope.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Mirror, steel",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Useful for seeing around corners or dealing with a medusa without being petrified. Similar to a cosmetic silver mirror, but larger and rather less reflective – but much cheaper.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Lock Picks",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A set of probes, hooks, and skeleton keys used by thieves to open locks. Attempts to open locks without lock picks are at –25%.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Holy Symbol, wood",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 2,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Wooden or silver varieties are used by clerics when praying for spells or turning undead. Evil clerics use unholy symbols in the same manner.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Holy Symbol, silver",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 25,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Wooden or silver varieties are used by clerics when praying for spells or turning undead. Evil clerics use unholy symbols in the same manner.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Holy Water (1 vial)",
+  "type": "gear",
+  "img": "",
+  "folder": "Adventuring Gear",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 25,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Holy water has a number of uses for clerics, such as harming the undead. A vial of it may be thrown like a missile.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Mule",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 20,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A beast of burden trained to carry packs of up to 250 pounds, even in the Underworld. Can also pull carts or wagons (2 mules per draft horse or oxen).</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Draft Horse",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 30,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A large, powerful horse bred for labour. Can be ridden, but only at a walk.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Light Horse",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 40,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A typical riding horse, trained for speed but not war or Underworld travel.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Medium Warhorse",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 100,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A typical horse, trained equally well for war or travel (Part 6: Creatures).</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Heavy Warhorse",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 200,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A large, powerful horse bred for war but not long-distance travel (Part 6: Creatures).</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Saddle",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 25,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A wood and leather construction to make riding and mounted combat more effective.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Pack Saddle",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 15,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Must be used to allow pack horses or mules carry their weight allowance (Part 6: Creatures).</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Saddle Bags",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Bags slung on either side behind the saddle, capable of holding up to 30 pounds each side.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Horse Barding",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 150,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>Provides AC5 at some cost in speed.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Cart",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 100,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A 2-wheeled wooden cart for transporting goods with a bench for 3 people and a capacity of 500 pounds per draft horse or ox; 1 or 2 draft animals may be used.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Wagon",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 200,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A 4-wheeled wooden wagon for transporting goods with a bench for 3 people and a capacity of 1,000 pounds per pair of draft horses or oxen; up to 4 pairs of draft animals may be used.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Boat",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 100,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A small boat that can be sailed or rowed, used on rivers or at sea. Crewed by 8 rowers or 2 sailors, it can carry a cargo of up to 2,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Longship",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 3000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>An open, ocean-going vessel built for sailing or rowing on rivers or the open sea. The 75-strong crew is trained to row, sail, or fight as needed. Can carry a cargo of 4,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Small Merchant",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 5000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A sailing ship built for ocean travel, with several masts and decks. Crewed by 15 sailors, and can carry a cargo of 10,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Large Merchant",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 20000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A sailing ship built for ocean travel, with several masts and decks. Crewed by 20 sailors, and can carry a cargo of 30,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Small Galley",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 10000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A coastal vessel built for sailing or rowing within sight of land. Crew consists of 10 sailors or 50 rowers, and can carry up to 20 marines plus a cargo of up to 2,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Large Galley",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 30000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A coastal vessel built for sailing or rowing within sight of land. Crew of 20 sailors or 100 rowers, and can carry up to 50 marines plus a cargo of 4,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ },
+ {
+  "name": "Warship",
+  "type": "gear",
+  "img": "",
+  "folder": "Transportation",
+  "system": {
+   "quantity": 1,
+   "bundle": 1,
+   "cost": 50000,
+   "weight": 0,
+   "ammoType": "",
+   "description": "<p>A large, ocean-going sailing ship built for war, with several masts and decks. Crewed by 15-20 sailors, and can carry 40-60 marines plus a cargo of up to 6,000 pounds.</p>",
+   "source": "Journeymanne Rules p.11-14"
+  }
+ }
+]

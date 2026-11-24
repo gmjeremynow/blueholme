@@ -1,0 +1,16 @@
+<div class="blueholme-card">
+  <header class="card-title">{{title}} <span class="sub">{{mode}}</span></header>
+  <div class="big-roll">{{roll}}{{#if (bh-eq nat 20)}} <span class="nat">natural 20</span>{{/if}}{{#if (bh-eq nat 1)}} <span class="nat">natural 1</span>{{/if}}</div>
+  {{#if mods}}<p class="mods">d20 {{mods}}</p>{{/if}}
+  <p class="small">{{matrix}} matrix</p>
+  {{#if noTargets}}
+    {{#if (bh-null hitsAC)}}<p class="verdict">Hits no armour class.</p>{{else}}<p class="verdict">Hits <strong>AC {{hitsAC}}</strong> or worse.</p>{{/if}}
+  {{else}}
+  <ul class="targets">
+    {{#each targets}}<li class="{{#if hit}}hit{{else}}miss{{/if}}"><strong>{{name}}</strong> <span class="gm-only">(AC {{ac}}, needs {{need}})</span>: {{#if hit}}HIT{{else}}miss{{/if}}</li>{{/each}}
+  </ul>
+  {{/if}}
+  {{#if note}}<p class="small">{{note}}</p>{{/if}}
+  {{#if rate}}<p class="small">{{rate}}</p>{{/if}}
+  {{#if damage}}<div class="card-buttons"><button type="button" data-card-action="damage"><i class="fa-solid fa-burst"></i> Damage {{damage}}</button></div>{{#if damageLabel}}<p class="small">{{damageLabel}}</p>{{/if}}{{/if}}
+</div>

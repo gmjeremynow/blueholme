@@ -1,0 +1,227 @@
+/* =====================================================================
+   BLUEHOLME Journeymanne: a record sheet in the blue-book manner.
+   Pale blue-white stock, navy ink, cobalt rules, small-caps headings.
+   ===================================================================== */
+@font-face { font-family: "IM Fell English SC"; src: url("../fonts/IMFeENsc28P.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "IM Fell English"; src: url("../fonts/IMFeENrm28P.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "IM Fell English"; font-style: italic; src: url("../fonts/IMFeENit28P.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("../fonts/AlegreyaSans-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("../fonts/AlegreyaSans-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; font-style: italic; src: url("../fonts/AlegreyaSans-Italic.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+
+.blueholme, .blueholme-card, .blueholme-dialog, .bh-encounter {
+  --paper: #eef2f7;
+  --paper-2: #e2e9f2;
+  --wash: #d5e0ee;
+  --ink: #142339;
+  --ink-2: #3d4f69;
+  --ink-3: #6f8098;
+  --rule: #a9bbd3;
+  --rule-strong: #1e3558;
+  --cobalt: #1f4fa0;
+  --cobalt-2: #3a6cc2;
+  --good: #2b6a3a;
+  --bad: #9a2a2a;
+  --bh-head: "IM Fell English SC", "IM Fell English", Georgia, serif;
+  --bh-serif: "IM Fell English", Georgia, serif;
+  --bh-body: "Alegreya Sans", "Signika", sans-serif;
+}
+
+/* ---------- window ---------- */
+.application.blueholme .window-content {
+  background: var(--paper);
+  background-image: radial-gradient(ellipse at 15% 0%, rgba(255,255,255,.6), transparent 60%), radial-gradient(ellipse at 100% 100%, rgba(31,79,160,.07), transparent 55%);
+  color: var(--ink); font-family: var(--bh-body); font-size: 13px; padding: 0;
+}
+.application.blueholme .window-header { background: #13284a; color: #eaf0f8; border-bottom: 2px solid var(--cobalt-2); }
+.blueholme .bh-sheet { display: flex; flex-direction: column; height: 100%; }
+.blueholme .tab-scroll { flex: 1; overflow-y: auto; padding: 10px 14px 16px; }
+
+/* ---------- inputs ---------- */
+/* Foundry's input styles set a line height for its own (taller) inputs; on these shorter
+   fields that pushed the text down and clipped it. Reset it, and use lining figures. */
+.blueholme .window-content input[type="text"], .blueholme .window-content input[type="number"] {
+  line-height: normal !important; padding-top: 0 !important; padding-bottom: 0 !important; box-sizing: border-box;
+  font-variant-numeric: lining-nums tabular-nums; min-height: 0;
+}
+.blueholme .window-content input[type="number"] { height: 24px; }
+.blueholme .save-num, .blueholme table.thief td.total, .blueholme-card .big-roll { font-family: var(--bh-body); font-weight: 700; font-variant-numeric: lining-nums; }
+.blueholme .window-content input[type="text"], .blueholme .window-content input[type="number"], .blueholme .window-content select {
+  background: transparent; color: var(--ink); border: none; border-bottom: 1px solid var(--rule); border-radius: 0;
+  height: 24px; padding: 0 2px; font-family: var(--bh-body); font-size: 13px; box-shadow: none;
+}
+.blueholme .window-content input:focus, .blueholme .window-content select:focus { outline: none; border-bottom-color: var(--cobalt); background: rgba(255,255,255,.55); box-shadow: none; }
+.blueholme .window-content input[type="number"] { text-align: center; }
+.blueholme input[type="number"]::-webkit-inner-spin-button { display: none; }
+.blueholme select option { color: #111; background: #fff; }
+.blueholme .window-content input[type="checkbox"] { accent-color: var(--cobalt); margin: 0; width: 14px; height: 14px; }
+.blueholme .w3 { width: 3em !important; }
+.blueholme .w5 { width: 5.5em !important; }
+.blueholme .window-content button:not([class*="fa-"]) { font-family: var(--bh-body); }
+.blueholme a.rollable, .blueholme [data-action] { cursor: pointer; }
+.blueholme a.rollable:hover { color: var(--cobalt); text-shadow: none; }
+
+/* ---------- header ---------- */
+.blueholme .sheet-head, .blueholme .item-head {
+  display: grid; grid-template-columns: 88px 1fr auto; gap: 14px; align-items: center;
+  padding: 12px 14px 10px; border-bottom: 3px double var(--rule-strong); background: linear-gradient(var(--paper-2), var(--paper));
+}
+.blueholme .item-head { grid-template-columns: 56px 1fr auto; }
+.blueholme .portrait { width: 88px; height: 88px; object-fit: cover; border: 1px solid var(--rule-strong); outline: 3px solid var(--paper); box-shadow: 0 0 0 4px var(--rule); background: #fff; }
+.blueholme .item-img { width: 52px; height: 52px; border: 1px solid var(--rule-strong); background: #fff; }
+.blueholme .title-line { display: flex; align-items: baseline; gap: 10px; }
+.blueholme .char-name { font-family: var(--bh-serif) !important; font-size: 24px !important; height: 32px !important; flex: 1; border-bottom: 1px solid var(--rule-strong) !important; }
+.blueholme .record-mark { font-family: var(--bh-head); color: var(--cobalt); letter-spacing: .06em; font-size: 13px; white-space: nowrap; }
+.blueholme .head-fields, .blueholme .xp-line, .blueholme .fields { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 6px; align-items: flex-end; }
+.blueholme .fld { display: flex; flex-direction: column; gap: 1px; min-width: 120px; flex: 1; }
+.blueholme .fld.narrow { min-width: 56px; flex: 0 0 auto; max-width: 92px; }
+.blueholme .fld.wide { flex: 1 1 100%; }
+.blueholme .fld.inline { flex-direction: row; align-items: center; gap: 6px; max-width: none; }
+.blueholme .fld > span { font-family: var(--bh-head); font-size: 11px; color: var(--ink-3); letter-spacing: .04em; }
+.blueholme .fld output { min-height: 22px; line-height: 22px; border-bottom: 1px dotted var(--rule); padding: 0 2px; }
+.blueholme .class-boxes { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; align-items: center; }
+.blueholme .chk { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.blueholme .vitals { display: flex; gap: 10px; }
+.blueholme .vital { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 96px; padding: 6px 8px; border: 1px solid var(--rule-strong); background: #fff; box-shadow: 2px 2px 0 var(--wash); }
+.blueholme .vital-label { font-family: var(--bh-head); font-size: 11px; letter-spacing: .06em; color: var(--cobalt); }
+.blueholme .hp-pair { display: flex; align-items: center; gap: 2px; }
+.blueholme .window-content .hp-pair input { width: 44px; font-size: 20px; height: 32px; font-family: var(--bh-body); font-weight: 700; }
+.blueholme .slash { color: var(--ink-3); font-size: 18px; }
+.blueholme .ac-value, .blueholme .window-content .ac-input { font-family: var(--bh-body); font-weight: 700; font-size: 30px; line-height: 1.1; width: 64px; text-align: center; height: 36px !important; }
+.blueholme .ac-sub { font-size: 10px; color: var(--ink-3); text-align: center; max-width: 110px; }
+.blueholme .mini-link { color: var(--ink-3); margin-left: 4px; }
+
+/* ---------- tabs ---------- */
+.blueholme .sheet-tabs { display: flex; gap: 2px; padding: 0 14px; border-bottom: 1px solid var(--rule-strong); background: var(--paper-2); align-items: flex-end; }
+.blueholme .sheet-tabs a { font-family: var(--bh-head); letter-spacing: .05em; padding: 6px 14px 4px; color: var(--ink-2); border: 1px solid transparent; border-bottom: none; margin-bottom: -1px; }
+.blueholme .sheet-tabs a.active { background: var(--paper); color: var(--ink); border-color: var(--rule-strong); border-top: 3px solid var(--cobalt); }
+.blueholme .quick-rolls { margin-left: auto; display: flex; gap: 4px; padding-bottom: 4px; }
+.blueholme .tab-body { display: none; }
+.blueholme .tab-body.active { display: block; }
+
+/* ---------- boxes ---------- */
+.blueholme .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.blueholme .box { border: 1px solid var(--rule-strong); background: rgba(255,255,255,.55); padding: 6px 10px 8px; margin-bottom: 10px; box-shadow: 2px 2px 0 var(--wash); }
+.blueholme .box h3 { font-family: var(--bh-head); font-size: 15px; letter-spacing: .05em; color: var(--rule-strong); margin: 0 0 6px; padding-bottom: 2px; border-bottom: 1px solid var(--cobalt-2); display: flex; align-items: center; gap: 8px; }
+.blueholme .box h4 { font-family: var(--bh-head); font-size: 13px; margin: 8px 0 2px; color: var(--ink-2); display: flex; gap: 10px; align-items: baseline; }
+.blueholme .box h3 .add { margin-left: auto; font-size: 12px; color: var(--cobalt); }
+.blueholme .hint { font-family: var(--bh-body); font-size: 11px; color: var(--ink-3); font-weight: normal; letter-spacing: 0; }
+.blueholme .small { font-size: 11.5px; color: var(--ink-2); margin: 4px 0; }
+.blueholme .mini { width: auto; min-width: 24px; height: 22px; line-height: 20px; padding: 0 6px; font-size: 11px; border: 1px solid var(--rule); background: #fff; color: var(--ink-2); border-radius: 2px; }
+.blueholme .mini-text { white-space: nowrap; }
+.blueholme .btn-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
+.blueholme .btn-row button { width: auto; height: 26px; line-height: 24px; padding: 0 10px; border: 1px solid var(--rule-strong); background: #fff; color: var(--ink); border-radius: 2px; font-size: 12px; }
+.blueholme .btn-row button:hover, .blueholme .mini:hover { background: var(--wash); }
+.blueholme .btn-row button.hot { background: var(--cobalt); color: #fff; border-color: var(--cobalt); }
+
+/* ---------- record ---------- */
+.blueholme .window-content table { border-collapse: collapse; width: 100%; margin: 0; background: transparent; border: none; }
+.blueholme table tr:nth-child(even) { background: transparent; }
+.blueholme th, .blueholme td { padding: 2px 4px; border: none; text-align: left; }
+.blueholme table.abilities th { font-family: var(--bh-head); font-weight: normal; width: 34%; }
+.blueholme .window-content table.abilities td.score input { width: 46px; font-size: 18px; height: 28px; font-family: var(--bh-body); font-weight: 700; }
+.blueholme table.abilities td.note { font-size: 11px; color: var(--ink-3); }
+.blueholme table.abilities tr.prime th { color: var(--cobalt); }
+.blueholme table.abilities tr.prime th::after { content: " ★"; font-size: 10px; }
+.blueholme .xpbar { height: 5px; background: var(--wash); margin: 6px 0; }
+.blueholme .xpbar > div { height: 100%; background: var(--cobalt-2); }
+.blueholme .species-notes { margin: 4px 0 0 16px; padding: 0; font-size: 11.5px; color: var(--ink-2); }
+.blueholme ul.saves { list-style: none; margin: 0 0 6px; padding: 0; }
+.blueholme ul.saves li { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--rule); padding: 3px 2px; }
+.blueholme .save-num { font-family: var(--bh-serif); font-size: 17px; min-width: 2em; text-align: right; }
+.blueholme table.matrix { margin: 4px 0; }
+.blueholme table.matrix th, .blueholme table.matrix td { text-align: center; font-size: 12px; border: 1px solid var(--rule); padding: 1px 2px; }
+.blueholme table.matrix th { background: var(--wash); font-family: var(--bh-head); font-weight: normal; }
+.blueholme .move-line { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; }
+.blueholme table.thief th { font-weight: normal; }
+.blueholme table.thief td input { width: 3.5em; }
+.blueholme table.thief td.total { font-family: var(--bh-serif); font-size: 15px; }
+
+/* ---------- item lists ---------- */
+.blueholme table.items th { font-family: var(--bh-head); font-weight: normal; color: var(--ink-3); font-size: 11px; border-bottom: 1px solid var(--rule); }
+.blueholme table.items td { border-bottom: 1px dotted var(--rule); vertical-align: middle; }
+.blueholme table.items td.name { width: 45%; }
+.blueholme table.items td.name img { width: 22px; height: 22px; vertical-align: middle; border: none; margin-right: 4px; }
+.blueholme table.items td.ctl { text-align: right; white-space: nowrap; width: 1%; }
+.blueholme table.items td.ctl a { margin-left: 6px; color: var(--ink-3); }
+.blueholme table.items td.ctl a:hover { color: var(--cobalt); }
+.blueholme table.items tr.equipped td.name { font-weight: bold; }
+.blueholme table.items tr.unknown td.name { opacity: .55; }
+.blueholme table.items td.mem { white-space: nowrap; text-align: center; }
+.blueholme table.items td.mem a { padding: 0 4px; color: var(--cobalt); font-weight: bold; }
+.blueholme table.attacks input[type="text"] { width: 100%; }
+.blueholme table.attacks td.name { display: flex; gap: 4px; align-items: center; }
+.blueholme tr.or-row td { text-align: center; font-style: italic; color: var(--ink-3); font-size: 11px; border-bottom: none; }
+.blueholme .slots { font-family: var(--bh-body); font-size: 11.5px; color: var(--cobalt); }
+.blueholme .slots.over { color: var(--bad); font-weight: bold; }
+.blueholme .coins { display: flex; gap: 8px; }
+.blueholme .coins .fld { min-width: 50px; }
+.blueholme .vs-list, .blueholme .roll-def { flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: flex-end; border-top: 1px dotted var(--rule); padding-top: 4px; }
+.blueholme .vs-list .lbl, .blueholme .roll-def .lbl { flex: 1 1 100%; font-family: var(--bh-head); font-size: 12px; color: var(--ink-2); }
+.blueholme .vs-row { display: flex; gap: 6px; align-items: center; flex: 1 1 100%; }
+.blueholme .item-body { padding: 10px 14px; overflow-y: auto; flex: 1; }
+.blueholme .box.description { min-height: 200px; }
+.blueholme .bh-table, .blueholme-card .bh-table { font-size: 12px; line-height: 1.45; padding-left: 8px; border-left: 2px solid var(--rule); }
+.blueholme table.bh-tbl, .blueholme-card table.bh-tbl { width: auto; margin: 4px 0 8px; }
+.blueholme table.bh-tbl th, .blueholme table.bh-tbl td, .blueholme-card table.bh-tbl th, .blueholme-card table.bh-tbl td { border: 1px solid var(--rule); padding: 1px 6px; font-size: 12px; }
+.blueholme table.bh-tbl th, .blueholme-card table.bh-tbl th { background: var(--wash); }
+.blueholme prose-mirror { min-height: 120px; }
+
+/* ---------- chat cards ---------- */
+.blueholme-card { background: var(--paper); border: 1px solid var(--rule-strong); padding: 6px 8px; color: var(--ink); font-family: var(--bh-body); }
+.blueholme-card .card-title { font-family: var(--bh-head); font-size: 15px; color: var(--rule-strong); border-bottom: 1px solid var(--cobalt-2); margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.blueholme-card .card-title img { width: 24px; height: 24px; border: none; }
+.blueholme-card .card-title .sub { font-family: var(--bh-body); font-size: 11px; color: var(--ink-3); margin-left: auto; }
+.blueholme-card .big-roll { font-family: var(--bh-serif); font-size: 28px; text-align: center; line-height: 1.2; }
+.blueholme-card .big-roll.good { color: var(--good); }
+.blueholme-card .big-roll.bad { color: var(--bad); }
+.blueholme-card .nat { font-size: 12px; font-family: var(--bh-body); color: var(--ink-3); }
+.blueholme-card .mods { font-size: 11.5px; color: var(--ink-2); text-align: center; margin: 2px 0; }
+.blueholme-card .verdict { text-align: center; font-family: var(--bh-head); font-size: 14px; margin: 4px 0; }
+.blueholme-card .small { font-size: 11.5px; color: var(--ink-2); margin: 2px 0; }
+.blueholme-card ul.targets, .blueholme-card ul.plain { list-style: none; margin: 4px 0; padding: 0; }
+.blueholme-card ul.targets li { padding: 1px 4px; border-left: 3px solid var(--rule); margin: 2px 0; }
+.blueholme-card ul.targets li.hit { border-left-color: var(--good); }
+.blueholme-card ul.targets li.miss { border-left-color: var(--bad); color: var(--ink-2); }
+.blueholme-card .card-buttons { display: flex; gap: 4px; margin-top: 4px; }
+.blueholme-card .card-buttons button { flex: 1; font-size: 12px; line-height: 22px; height: 26px; background: #fff; border: 1px solid var(--rule-strong); color: var(--ink); }
+.blueholme-card .card-desc { font-size: 12.5px; max-height: 260px; overflow-y: auto; }
+.blueholme-card .card-desc p { margin: 3px 0; }
+
+/* ---------- dialogs ---------- */
+.blueholme-dialog .bh-dialog { display: flex; flex-direction: column; gap: 6px; font-family: var(--bh-body, sans-serif); }
+.blueholme-dialog .bh-dialog .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.blueholme-dialog .bh-dialog .row.check { justify-content: flex-start; }
+.blueholme-dialog .bh-dialog .row input[type="number"] { width: 5em; }
+.blueholme-dialog .bh-dialog .hint { font-size: 11px; opacity: .75; margin: 0; }
+
+/* ---------- sidebar ---------- */
+.bh-encounter { display: flex; flex-direction: column; gap: 2px; padding: 4px 6px; }
+.bh-encounter button { font-size: 12px; }
+.bh-encounter .hint { font-size: 10px; opacity: .7; }
+button.bh-treasure { font-size: 12px; }
+
+/* ---------- window header controls ----------
+   The close, menu and other header controls (and the controls dropdown) are Font Awesome icons:
+   keep every sheet font and button style away from them. */
+.application.blueholme .window-header .header-control,
+.application.blueholme .window-header .header-control::before,
+.application.blueholme .window-header [class*="fa-"]::before,
+.application.blueholme .controls-dropdown .header-control::before,
+.application.blueholme .controls-dropdown [class*="fa-"]::before {
+  font-family: var(--fa-family, "Font Awesome 7 Pro"), "Font Awesome 7 Pro", "Font Awesome 6 Pro", "Font Awesome 7 Free", "Font Awesome 6 Free" !important;
+  font-weight: 900 !important; font-style: normal !important;
+}
+.application.blueholme .window-header .header-control { color: #eaf0f8; background: transparent; border: none; }
+.application.blueholme .window-header .window-title { color: #eaf0f8; }
+.application.blueholme .controls-dropdown .header-control { font-family: var(--font-primary, "Signika", sans-serif); }
+
+/* ---------- text editors ----------
+   ProseMirror inherits the theme's text colour (near white in the dark theme), invisible on the paper. */
+.blueholme prose-mirror { display: block; background: rgba(255,255,255,.35); color: var(--ink); }
+.blueholme prose-mirror, .blueholme prose-mirror .editor-content, .blueholme prose-mirror .ProseMirror,
+.blueholme prose-mirror .editor-content :where(p, li, td, th, h1, h2, h3, h4, span, strong, em, div) { color: var(--ink) !important; caret-color: var(--ink) !important; }
+.blueholme prose-mirror .editor-menu, .blueholme prose-mirror .editor-menu * { color: #eaf0f8 !important; }
+
+/* page reference under compendium summaries */
+.blueholme .bh-ref, .blueholme-card .bh-ref { font-size: 11px; font-style: italic; color: var(--ink-3); margin-top: 6px; }

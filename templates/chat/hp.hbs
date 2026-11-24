@@ -1,0 +1,7 @@
+<div class="blueholme-card">
+  <header class="card-title">Hit Points, level {{level}}</header>
+  <ul class="plain">{{#each parts}}<li>{{this}}</li>{{/each}}</ul>
+  {{#if avg}}<p class="small">Average of the classes: {{avg}}</p>{{/if}}
+  {{#if con}}<p class="small">Constitution {{con}}</p>{{/if}}
+  <div class="big-roll good">+{{gained}}</div>
+</div>

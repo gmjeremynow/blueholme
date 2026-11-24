@@ -1,0 +1,1402 @@
+{
+ "MAGIC ACCOUTREMENTS": {
+  "label": "Magic Accoutrements",
+  "rows": [
+   [
+    1,
+    4,
+    "Amulet of Inescapable Location"
+   ],
+   [
+    5,
+    8,
+    "Amulet of Proof against Detection and Scrying"
+   ],
+   [
+    9,
+    12,
+    "Boots of Dancing"
+   ],
+   [
+    13,
+    16,
+    "Boots, Elven"
+   ],
+   [
+    17,
+    20,
+    "Boots of Levitation"
+   ],
+   [
+    21,
+    24,
+    "Boots of Striding and Springing"
+   ],
+   [
+    25,
+    28,
+    "Boots of Travelling"
+   ],
+   [
+    29,
+    32,
+    "Bracers of Defence"
+   ],
+   [
+    33,
+    36,
+    "Bracers of Defencelessness"
+   ],
+   [
+    37,
+    40,
+    "Circlet of Brilliance"
+   ],
+   [
+    41,
+    44,
+    "Circlet of Languages and Magic"
+   ],
+   [
+    45,
+    48,
+    "Circlet of Misalignment"
+   ],
+   [
+    49,
+    52,
+    "Circlet of Teleportation"
+   ],
+   [
+    53,
+    54,
+    "Circlet of Telepathy"
+   ],
+   [
+    55,
+    56,
+    "Cloak of Displacement"
+   ],
+   [
+    57,
+    58,
+    "Cloak, Elven"
+   ],
+   [
+    59,
+    60,
+    "Cloak of Poison"
+   ],
+   [
+    61,
+    62,
+    "Gauntlets of Ogre Power"
+   ],
+   [
+    63,
+    64,
+    "Gauntlets of Swimming and Climbing"
+   ],
+   [
+    65,
+    66,
+    "Gloves of Dexterity"
+   ],
+   [
+    67,
+    68,
+    "Gloves of Fumbling"
+   ],
+   [
+    69,
+    70,
+    "Girdle of Giant Strength"
+   ],
+   [
+    71,
+    72,
+    "Girdle of the Opposite Sex"
+   ],
+   [
+    73,
+    74,
+    "Lenses of Charming"
+   ],
+   [
+    75,
+    76,
+    "Lenses of Petrification"
+   ],
+   [
+    77,
+    78,
+    "Medallion of Thought Projection"
+   ],
+   [
+    79,
+    80,
+    "Medallion of Thought Projection"
+   ],
+   [
+    81,
+    82,
+    "Necklace of Fire Balls"
+   ],
+   [
+    83,
+    84,
+    "Necklace of Strangulation"
+   ],
+   [
+    85,
+    86,
+    "Robe of the Archimage"
+   ],
+   [
+    87,
+    88,
+    "Robe of Blending"
+   ],
+   [
+    89,
+    90,
+    "Robe of Eyes"
+   ],
+   [
+    91,
+    92,
+    "Robe of Powerlessness"
+   ],
+   [
+    93,
+    94,
+    "Scarab of Death"
+   ],
+   [
+    95,
+    96,
+    "Scarab of Insanity"
+   ],
+   [
+    97,
+    98,
+    "Scarab of Protection"
+   ],
+   [
+    99,
+    100,
+    "Scarab of Rage"
+   ]
+  ]
+ },
+ "MAGIC RINGS": {
+  "label": "Magic Rings",
+  "rows": [
+   [
+    1,
+    4,
+    "Ring of Charm Creature"
+   ],
+   [
+    5,
+    8,
+    "Ring of Charm Person"
+   ],
+   [
+    9,
+    12,
+    "Ring of Clumsiness"
+   ],
+   [
+    13,
+    16,
+    "Ring of Comfort"
+   ],
+   [
+    17,
+    20,
+    "Ring of Contradiction"
+   ],
+   [
+    21,
+    24,
+    "Ring of Control Plants"
+   ],
+   [
+    25,
+    28,
+    "Ring of Delusion"
+   ],
+   [
+    29,
+    32,
+    "Ring of the Djinni"
+   ],
+   [
+    33,
+    36,
+    "Ring of Elemental Command"
+   ],
+   [
+    37,
+    40,
+    "Ring of Feather Falling"
+   ],
+   [
+    41,
+    44,
+    "Ring of Fire Resistance"
+   ],
+   [
+    45,
+    48,
+    "Ring of Free Movement"
+   ],
+   [
+    49,
+    52,
+    "Ring of Invisibility"
+   ],
+   [
+    53,
+    56,
+    "Ring of Protection +1"
+   ],
+   [
+    57,
+    60,
+    "Ring of Protection +2"
+   ],
+   [
+    61,
+    64,
+    "Ring of Protection +4"
+   ],
+   [
+    65,
+    68,
+    "Ring of Regeneration"
+   ],
+   [
+    69,
+    72,
+    "Ring of Shooting Stars"
+   ],
+   [
+    73,
+    76,
+    "Ring of Spell Storing"
+   ],
+   [
+    77,
+    80,
+    "Ring of Spell Turning"
+   ],
+   [
+    81,
+    84,
+    "Ring of Telekinesis"
+   ],
+   [
+    85,
+    88,
+    "Ring of Three Wishes"
+   ],
+   [
+    89,
+    92,
+    "Ring of Water Walking"
+   ],
+   [
+    93,
+    96,
+    "Ring of Wizardry"
+   ],
+   [
+    97,
+    100,
+    "Ring of Vision"
+   ]
+  ]
+ },
+ "MAGIC WRITINGS": {
+  "label": "Magic Writings",
+  "rows": [
+   [
+    1,
+    1,
+    "Book of Blankness"
+   ],
+   [
+    2,
+    2,
+    "Book of Infinite Spells"
+   ],
+   [
+    3,
+    3,
+    "Book of Golems"
+   ],
+   [
+    4,
+    4,
+    "Grimoire of Eldritch Magic"
+   ],
+   [
+    5,
+    5,
+    "Grimoire of Vacuousness"
+   ],
+   [
+    6,
+    6,
+    "Libram of Fighting Skill"
+   ],
+   [
+    7,
+    7,
+    "Libram of Perfect Theft"
+   ],
+   [
+    8,
+    8,
+    "Libram of Unshakeable Faith"
+   ],
+   [
+    9,
+    9,
+    "Manual of Bodily Health"
+   ],
+   [
+    10,
+    10,
+    "Manual of Gainful Exercise"
+   ],
+   [
+    11,
+    11,
+    "Manual of Quickness of Action"
+   ],
+   [
+    12,
+    19,
+    "Scroll, Cursed"
+   ],
+   [
+    20,
+    24,
+    "Scroll, Protection from Lycanthropes"
+   ],
+   [
+    25,
+    32,
+    "Scroll, Protection from Magic"
+   ],
+   [
+    33,
+    39,
+    "Scroll, Protection from Undead"
+   ],
+   [
+    40,
+    48,
+    "Scroll, Spell (Magic-User x 1d4)"
+   ],
+   [
+    49,
+    58,
+    "Scroll, Spell (Magic-User x 1)"
+   ],
+   [
+    59,
+    66,
+    "Scroll, Spell (Magic-User x 3)"
+   ],
+   [
+    67,
+    74,
+    "Scroll, Spell (Magic-User x 5)"
+   ],
+   [
+    75,
+    82,
+    "Scroll, Spell (Other x 1)"
+   ],
+   [
+    83,
+    90,
+    "Scroll, Spell (Other x 3)"
+   ],
+   [
+    91,
+    97,
+    "Scroll, Spell (Other x 1d4)"
+   ],
+   [
+    98,
+    98,
+    "Tome of Clear Thought"
+   ],
+   [
+    99,
+    99,
+    "Tome of Leadership and Influence"
+   ],
+   [
+    100,
+    100,
+    "Tome of Understanding"
+   ]
+  ]
+ },
+ "MAGIC POTIONS": {
+  "label": "Magic Potions",
+  "rows": [
+   [
+    1,
+    4,
+    "Acid"
+   ],
+   [
+    5,
+    6,
+    "Dust of Appearance"
+   ],
+   [
+    7,
+    8,
+    "Dust of Disappearance"
+   ],
+   [
+    9,
+    10,
+    "Dust of Sneezing and Choking"
+   ],
+   [
+    11,
+    16,
+    "Poison"
+   ],
+   [
+    17,
+    20,
+    "Potion of Control"
+   ],
+   [
+    21,
+    24,
+    "Potion of Defence"
+   ],
+   [
+    25,
+    28,
+    "Potion of Delusion"
+   ],
+   [
+    29,
+    32,
+    "Potion of Diminution"
+   ],
+   [
+    33,
+    36,
+    "Potion of Ether"
+   ],
+   [
+    37,
+    40,
+    "Potion of Extra Healing"
+   ],
+   [
+    41,
+    44,
+    "Potion of Giant Strength"
+   ],
+   [
+    45,
+    48,
+    "Potion of Growth"
+   ],
+   [
+    49,
+    52,
+    "Potion of Healing"
+   ],
+   [
+    53,
+    56,
+    "Potion of Heroism"
+   ],
+   [
+    57,
+    60,
+    "Potion of Invulnerability"
+   ],
+   [
+    61,
+    64,
+    "Potion of Longevity"
+   ],
+   [
+    65,
+    68,
+    "Potion of Resistance"
+   ],
+   [
+    69,
+    72,
+    "Potion of Speed"
+   ],
+   [
+    73,
+    76,
+    "Potion, Spell (Level 1)"
+   ],
+   [
+    77,
+    80,
+    "Potion, Spell (Level 2)"
+   ],
+   [
+    81,
+    84,
+    "Potion, Spell (Level 3)"
+   ],
+   [
+    85,
+    88,
+    "Potion, Spell (Level 4)"
+   ],
+   [
+    89,
+    92,
+    "Potion, Spell (Level 5)"
+   ],
+   [
+    93,
+    96,
+    "Potion, Spell (Level 6)"
+   ],
+   [
+    97,
+    100,
+    "Potion, Spell (Level 7)"
+   ]
+  ]
+ },
+ "MAGICAL PARAPHERNALIA": {
+  "label": "Magical Paraphernalia",
+  "rows": [
+   [
+    1,
+    2,
+    "Animated Broom"
+   ],
+   [
+    3,
+    4,
+    "Bag of Beans"
+   ],
+   [
+    5,
+    6,
+    "Bag of Devouring"
+   ],
+   [
+    7,
+    8,
+    "Bag of Holding"
+   ],
+   [
+    9,
+    10,
+    "Bag of Transmutation"
+   ],
+   [
+    11,
+    12,
+    "Bag of Tricks"
+   ],
+   [
+    13,
+    14,
+    "Beaker of Potions"
+   ],
+   [
+    15,
+    15,
+    "Bowl of Water"
+   ],
+   [
+    16,
+    17,
+    "Bowl of Drowning"
+   ],
+   [
+    18,
+    18,
+    "Brazier of Fire"
+   ],
+   [
+    19,
+    20,
+    "Brazier of Sleep"
+   ],
+   [
+    21,
+    22,
+    "Broom of Flying"
+   ],
+   [
+    23,
+    23,
+    "Censer of Air"
+   ],
+   [
+    24,
+    25,
+    "Censer of Whirlwinds"
+   ],
+   [
+    26,
+    27,
+    "Chime of Opening"
+   ],
+   [
+    28,
+    29,
+    "Crystal Ball"
+   ],
+   [
+    30,
+    31,
+    "Cube of Force"
+   ],
+   [
+    32,
+    33,
+    "Decanter of Endless Water"
+   ],
+   [
+    34,
+    35,
+    "Deck of Many Things"
+   ],
+   [
+    36,
+    37,
+    "Drums of Deafness"
+   ],
+   [
+    38,
+    39,
+    "Drums of Panic"
+   ],
+   [
+    40,
+    41,
+    "Efreeti Bottle"
+   ],
+   [
+    42,
+    42,
+    "Figurines of Wondrous Power"
+   ],
+   [
+    43,
+    44,
+    "Flask of Curses"
+   ],
+   [
+    45,
+    46,
+    "Flying Carpet"
+   ],
+   [
+    47,
+    48,
+    "Gem of Brightness"
+   ],
+   [
+    49,
+    50,
+    "Gem of Seeing"
+   ],
+   [
+    51,
+    53,
+    "Horn of Blasting"
+   ],
+   [
+    54,
+    55,
+    "Horn of Collapsing"
+   ],
+   [
+    56,
+    57,
+    "Horn of War"
+   ],
+   [
+    58,
+    60,
+    "Horseshoes of Speed"
+   ],
+   [
+    61,
+    62,
+    "Jewel of Combat"
+   ],
+   [
+    63,
+    64,
+    "Jug of Fluids"
+   ],
+   [
+    65,
+    66,
+    "Loadstone"
+   ],
+   [
+    67,
+    68,
+    "Luckstone"
+   ],
+   [
+    69,
+    70,
+    "Lyre of Building"
+   ],
+   [
+    71,
+    72,
+    "Mattock of the Titans"
+   ],
+   [
+    73,
+    74,
+    "Mirror of Mental Prowess"
+   ],
+   [
+    75,
+    76,
+    "Mirror of Life Trapping"
+   ],
+   [
+    77,
+    78,
+    "Mirror of Opposition"
+   ],
+   [
+    79,
+    80,
+    "Pipes of the Sewers"
+   ],
+   [
+    81,
+    82,
+    "Portable Hole"
+   ],
+   [
+    83,
+    84,
+    "Rope of Climbing"
+   ],
+   [
+    85,
+    86,
+    "Rope of Constriction"
+   ],
+   [
+    87,
+    88,
+    "Rope of Entanglement"
+   ],
+   [
+    89,
+    90,
+    "Rug of Asphyxiation"
+   ],
+   [
+    91,
+    92,
+    "Saw of Might"
+   ],
+   [
+    93,
+    94,
+    "Spade of Colossal Excavation"
+   ],
+   [
+    95,
+    95,
+    "Sphere of Annihilation"
+   ],
+   [
+    96,
+    96,
+    "Stone of Earth Elementals"
+   ],
+   [
+    97,
+    97,
+    "Talisman of Pure Good"
+   ],
+   [
+    98,
+    98,
+    "Talisman of the Sphere"
+   ],
+   [
+    99,
+    99,
+    "Talisman of Ultimate Evil"
+   ],
+   [
+    100,
+    100,
+    "Wings of Flying"
+   ]
+  ]
+ },
+ "MAGIC RODS, STAVES, AND WANDS": {
+  "label": "Magic Rods, Staves, And Wands",
+  "rows": [
+   [
+    1,
+    4,
+    "Rod of Absorption"
+   ],
+   [
+    5,
+    8,
+    "Rod of Charming"
+   ],
+   [
+    9,
+    12,
+    "Rod of Cancellation"
+   ],
+   [
+    13,
+    16,
+    "Rod of Lordly Might"
+   ],
+   [
+    17,
+    20,
+    "Rod of Resurrection"
+   ],
+   [
+    21,
+    24,
+    "Rod of Rulership"
+   ],
+   [
+    25,
+    28,
+    "Staff of Ageing"
+   ],
+   [
+    29,
+    32,
+    "Staff of Clouting"
+   ],
+   [
+    33,
+    36,
+    "Staff of Constriction"
+   ],
+   [
+    37,
+    40,
+    "Staff of Control"
+   ],
+   [
+    41,
+    44,
+    "Staff of Healing"
+   ],
+   [
+    45,
+    48,
+    "Staff of Power"
+   ],
+   [
+    49,
+    52,
+    "Staff of Wizardry"
+   ],
+   [
+    53,
+    56,
+    "Wand of Cone of Cold"
+   ],
+   [
+    57,
+    60,
+    "Wand of Detect Magic"
+   ],
+   [
+    61,
+    64,
+    "Wand of Detect Traps"
+   ],
+   [
+    65,
+    68,
+    "Wand of Dispel Magic"
+   ],
+   [
+    69,
+    72,
+    "Wand of Flesh to Stone"
+   ],
+   [
+    73,
+    76,
+    "Wand of Fire Ball"
+   ],
+   [
+    77,
+    80,
+    "Wand of Hold Creature"
+   ],
+   [
+    81,
+    84,
+    "Wand of Inflict Fear"
+   ],
+   [
+    85,
+    88,
+    "Wand of Locate Object"
+   ],
+   [
+    89,
+    92,
+    "Wand of Lightning Bolt"
+   ],
+   [
+    93,
+    96,
+    "Wand of Passwall"
+   ],
+   [
+    97,
+    100,
+    "Wand of Prismatic Spray"
+   ]
+  ]
+ },
+ "MAGIC ARMOUR": {
+  "label": "Magic Armour",
+  "rows": [
+   [
+    1,
+    4,
+    "Armour −4"
+   ],
+   [
+    5,
+    8,
+    "Armour −3"
+   ],
+   [
+    9,
+    12,
+    "Armour −2"
+   ],
+   [
+    13,
+    16,
+    "Armour −1"
+   ],
+   [
+    17,
+    20,
+    "Armour −1, Cursed"
+   ],
+   [
+    21,
+    24,
+    "Shield −1"
+   ],
+   [
+    25,
+    28,
+    "Shield −1, Arrow Catching"
+   ],
+   [
+    29,
+    32,
+    "Armour +1"
+   ],
+   [
+    33,
+    36,
+    "Armour +1, Invisibility"
+   ],
+   [
+    37,
+    40,
+    "Armour +1, Protection from Fire"
+   ],
+   [
+    41,
+    44,
+    "Armour +1, Stealth"
+   ],
+   [
+    45,
+    48,
+    "Shield +1"
+   ],
+   [
+    49,
+    52,
+    "Shield +1, Mirror"
+   ],
+   [
+    53,
+    56,
+    "Shield +1, Protection from Arrows"
+   ],
+   [
+    57,
+    60,
+    "Armour +2"
+   ],
+   [
+    61,
+    64,
+    "Shield +2"
+   ],
+   [
+    65,
+    68,
+    "Shield +2, Protection from Evil"
+   ],
+   [
+    69,
+    72,
+    "Armour +3"
+   ],
+   [
+    73,
+    76,
+    "Armour +3, Gaseous Form"
+   ],
+   [
+    77,
+    80,
+    "Shield +3"
+   ],
+   [
+    81,
+    84,
+    "Armour +4"
+   ],
+   [
+    85,
+    88,
+    "Shield +4"
+   ],
+   [
+    89,
+    92,
+    "Armour +5"
+   ],
+   [
+    93,
+    96,
+    "Armour +5, Cursed"
+   ],
+   [
+    97,
+    100,
+    "Shield +5"
+   ]
+  ]
+ },
+ "MAGIC SWORDS": {
+  "label": "Magic Swords",
+  "rows": [
+   [
+    1,
+    4,
+    "Sword −2, Cursed"
+   ],
+   [
+    5,
+    8,
+    "Sword −1, Cursed"
+   ],
+   [
+    9,
+    12,
+    "Sword +1, Cursed"
+   ],
+   [
+    13,
+    16,
+    "Sword +1"
+   ],
+   [
+    17,
+    20,
+    "Sword +1, +2 vs. Lycanthropes"
+   ],
+   [
+    21,
+    24,
+    "Sword +1, +2 vs. Mages & Summoned Creatures"
+   ],
+   [
+    25,
+    28,
+    "Sword +1, +2 vs. Summoned Creatures"
+   ],
+   [
+    29,
+    32,
+    "Sword +1, +3 vs. Clerics & Trolls"
+   ],
+   [
+    33,
+    36,
+    "Sword +1, +3 vs. Dragons"
+   ],
+   [
+    37,
+    40,
+    "Sword +1, Draining"
+   ],
+   [
+    41,
+    44,
+    "Sword +1, Flaming"
+   ],
+   [
+    45,
+    48,
+    "Sword +1, Holy"
+   ],
+   [
+    49,
+    52,
+    "Sword +1, Keen"
+   ],
+   [
+    53,
+    56,
+    "Sword +1, Locate Object"
+   ],
+   [
+    57,
+    60,
+    "Sword +1, Speed"
+   ],
+   [
+    61,
+    64,
+    "Sword +1, Wishes"
+   ],
+   [
+    65,
+    68,
+    "Sword +2"
+   ],
+   [
+    69,
+    72,
+    "Sword +2, Charming"
+   ],
+   [
+    73,
+    76,
+    "Sword +2, Nine Lives Stealer"
+   ],
+   [
+    77,
+    80,
+    "Sword +2, Vorpal"
+   ],
+   [
+    81,
+    84,
+    "Sword +3"
+   ],
+   [
+    85,
+    88,
+    "Sword +3, Cold"
+   ],
+   [
+    89,
+    92,
+    "Sword +3, Dancing"
+   ],
+   [
+    93,
+    96,
+    "Sword +4"
+   ],
+   [
+    97,
+    100,
+    "Sword +4, Cursed"
+   ]
+  ]
+ },
+ "MAGIC WEAPONS": {
+  "label": "Magic Weapons",
+  "rows": [
+   [
+    1,
+    4,
+    "Weapon −2, Cursed"
+   ],
+   [
+    5,
+    8,
+    "Weapon −1, Cursed"
+   ],
+   [
+    9,
+    12,
+    "Weapon +1, Cursed"
+   ],
+   [
+    13,
+    16,
+    "Weapon +1"
+   ],
+   [
+    17,
+    20,
+    "Weapon +1, +2 vs. Goblinoids"
+   ],
+   [
+    21,
+    24,
+    "Weapon +1, +2 vs. Humanoids"
+   ],
+   [
+    25,
+    28,
+    "Weapon +1, +3 vs. Kobolds"
+   ],
+   [
+    29,
+    32,
+    "Weapon +1, +3 vs. Orcs"
+   ],
+   [
+    33,
+    36,
+    "Weapon +1, +4 vs. Reptiles"
+   ],
+   [
+    37,
+    40,
+    "Weapon +1, +5 vs. Undead"
+   ],
+   [
+    41,
+    44,
+    "Weapon +1, Assassin"
+   ],
+   [
+    45,
+    48,
+    "Weapon +1, Longing"
+   ],
+   [
+    49,
+    52,
+    "Weapon +1, Reach"
+   ],
+   [
+    53,
+    56,
+    "Weapon +1, Returning"
+   ],
+   [
+    57,
+    60,
+    "Weapon +1, Sleep"
+   ],
+   [
+    61,
+    64,
+    "Weapon +1, Speed"
+   ],
+   [
+    65,
+    68,
+    "Weapon +1, Thunder"
+   ],
+   [
+    69,
+    72,
+    "Weapon +1, Warning"
+   ],
+   [
+    73,
+    76,
+    "Weapon +2"
+   ],
+   [
+    77,
+    80,
+    "Weapon +2, Backstabber"
+   ],
+   [
+    81,
+    84,
+    "Weapon +2, Lightning"
+   ],
+   [
+    85,
+    86,
+    "Weapon +2, Submission"
+   ],
+   [
+    87,
+    88,
+    "Weapon +2, Terror"
+   ],
+   [
+    89,
+    90,
+    "Weapon +3, Animal Charm"
+   ],
+   [
+    91,
+    92,
+    "Weapon +3, Dwarven"
+   ],
+   [
+    93,
+    94,
+    "Weapon +3, Luck"
+   ],
+   [
+    95,
+    96,
+    "Weapon +3, Slaying"
+   ],
+   [
+    97,
+    98,
+    "Weapon +4"
+   ],
+   [
+    99,
+    100,
+    "Weapon +4, Cursed"
+   ]
+  ]
+ }
+}

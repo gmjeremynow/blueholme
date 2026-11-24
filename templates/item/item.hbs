@@ -1,0 +1,102 @@
+<div class="bh-sheet item-sheet">
+  <header class="item-head">
+    <img class="item-img" src="{{item.img}}" data-action="editImage" data-edit="img" alt="{{item.name}}">
+    <div class="head-main">
+      <input class="char-name" type="text" name="name" value="{{item.name}}">
+      <span class="record-mark">{{typeLabel}}{{#if is_spell}} · {{levelLabel}} level {{#if (bh-eq system.list "cleric")}}cleric{{else}}magic-user{{/if}}{{/if}}</span>
+    </div>
+    <button type="button" class="mini" data-action="chat" title="Show in chat"><i class="fa-solid fa-comment"></i></button>
+  </header>
+
+  <div class="item-body">
+    <div class="box fields">
+    {{#if is_weapon}}
+      <label class="fld"><span>Type</span><select name="system.category">{{#each categories}}<option value="{{value}}" {{bh-selected value ../system.category}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld"><span>Weight class</span><select name="system.size">{{#each sizes}}<option value="{{value}}" {{bh-selected value ../system.size}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld narrow"><span>Damage</span><input type="text" name="system.damage" value="{{system.damage}}"></label>
+      <label class="fld narrow"><span>To hit</span><input type="number" name="system.hitBonus" value="{{system.hitBonus}}"></label>
+      <label class="fld narrow"><span>Damage +</span><input type="number" name="system.dmgBonus" value="{{system.dmgBonus}}"></label>
+      <label class="fld narrow"><span>Qty</span><input type="number" name="system.quantity" value="{{system.quantity}}"></label>
+      <label class="fld narrow"><span>Short</span><input type="number" name="system.range.short" value="{{system.range.short}}"></label>
+      <label class="fld narrow"><span>Medium</span><input type="number" name="system.range.medium" value="{{system.range.medium}}"></label>
+      <label class="fld narrow"><span>Long</span><input type="number" name="system.range.long" value="{{system.range.long}}"></label>
+      <label class="fld"><span>Ammunition</span><select name="system.ammoType">{{#each ammoTypes}}<option value="{{value}}" {{bh-selected value ../system.ammoType}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld"><span>Rate of fire</span><input type="text" name="system.rate" value="{{system.rate}}"></label>
+      <label class="chk"><input type="checkbox" name="system.thrown" {{bh-checked system.thrown}}> Can be thrown</label>
+      <label class="chk"><input type="checkbox" name="system.magic" {{bh-checked system.magic}}> Magic</label>
+      <label class="chk"><input type="checkbox" name="system.silver" {{bh-checked system.silver}}> Silver</label>
+      <label class="chk"><input type="checkbox" name="system.cursed" {{bh-checked system.cursed}}> Cursed</label>
+      <div class="vs-list">
+        <span class="lbl">Bonus against creatures <a data-action="vsAdd"><i class="fa-solid fa-plus"></i></a></span>
+        {{#each system.vs}}
+        <div class="vs-row"><input type="number" class="w3" value="{{bonus}}" data-vs-index="{{@index}}" data-vs-field="bonus"> vs. <input type="text" value="{{text}}" data-vs-index="{{@index}}" data-vs-field="text"> <a data-action="vsRemove" data-index="{{@index}}"><i class="fa-solid fa-trash"></i></a></div>
+        {{/each}}
+      </div>
+      <p class="hint wide">The default damage of every weapon is 1d6 (p.56). With the world setting <em>Variable damage</em>, a 1d6 weapon uses its weight class instead (p.58). Magic swords add their bonus to hit only; other magic weapons add it to hit and damage (p.94-95).</p>
+    {{/if}}
+
+    {{#if is_armor}}
+      <label class="fld"><span>Kind</span><select name="system.kind">{{#each kinds}}<option value="{{value}}" {{bh-selected value ../system.kind}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld"><span>Armour type</span><select name="system.base">{{#each bases}}<option value="{{value}}" {{bh-selected value ../system.base}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld narrow"><span>Magic +/−</span><input type="number" name="system.bonus" value="{{system.bonus}}"></label>
+      <label class="chk"><input type="checkbox" name="system.magic" {{bh-checked system.magic}}> Magic (includes helmet)</label>
+      <label class="chk"><input type="checkbox" name="system.cursed" {{bh-checked system.cursed}}> Cursed</label>
+      <label class="chk"><input type="checkbox" name="system.equipped" {{bh-checked system.equipped}}> Worn</label>
+    {{/if}}
+
+    {{#if is_spell}}
+      <label class="fld"><span>List</span><select name="system.list">{{#each lists}}<option value="{{value}}" {{bh-selected value ../system.list}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld narrow"><span>Level</span><input type="number" name="system.level" value="{{system.level}}" min="1" max="9"></label>
+      <label class="fld"><span>Range</span><input type="text" name="system.range" value="{{system.range}}"></label>
+      <label class="fld"><span>Duration</span><input type="text" name="system.duration" value="{{system.duration}}"></label>
+      <label class="fld"><span>Reverse</span><input type="text" name="system.reverse" value="{{system.reverse}}"></label>
+      <label class="fld"><span>Reverse of</span><input type="text" name="system.reverseOf" value="{{system.reverseOf}}"></label>
+      <label class="fld narrow"><span>Memorised</span><input type="number" name="system.memorized" value="{{system.memorized}}" min="0"></label>
+      <label class="fld narrow"><span>Cast</span><input type="number" name="system.cast" value="{{system.cast}}" min="0"></label>
+      <label class="chk"><input type="checkbox" name="system.known" {{bh-checked system.known}}> In the caster’s magic book</label>
+    {{/if}}
+
+    {{#if is_magic}}
+      <label class="fld"><span>Category</span><select name="system.category">{{#each magicCategories}}<option value="{{value}}" {{bh-selected value ../system.category}}>{{label}}</option>{{/each}}</select></label>
+      <label class="fld"><span>Usable by</span><input type="text" name="system.classes" value="{{system.classes}}"></label>
+      <label class="fld narrow"><span>Charges</span><input type="number" name="system.charges.value" value="{{system.charges.value}}" min="0"></label>
+      <label class="fld narrow"><span>of</span><input type="number" name="system.charges.max" value="{{system.charges.max}}" min="0"></label>
+      <label class="fld narrow"><span>Qty</span><input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+      <label class="fld narrow"><span>AC bonus</span><input type="number" name="system.acBonus" value="{{system.acBonus}}" title="Improves AC while worn (rings, bracers, cloaks)"></label>
+      <label class="fld narrow"><span>Save bonus</span><input type="number" name="system.saveBonus" value="{{system.saveBonus}}"></label>
+      <label class="chk"><input type="checkbox" name="system.noArmour" {{bh-checked system.noArmour}}> Only without armour (bracers)</label>
+      <label class="chk"><input type="checkbox" name="system.equipped" {{bh-checked system.equipped}}> Worn</label>
+    {{/if}}
+
+    {{#if is_gear}}
+      <label class="fld narrow"><span>Qty</span><input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+      <label class="fld narrow"><span>Per purchase</span><input type="number" name="system.bundle" value="{{system.bundle}}" min="1"></label>
+      <label class="fld"><span>Ammunition</span><select name="system.ammoType">{{#each ammoTypes}}<option value="{{value}}" {{bh-selected value ../system.ammoType}}>{{label}}</option>{{/each}}</select></label>
+    {{/if}}
+
+    {{#if is_treasure}}
+      <label class="fld narrow"><span>Value (gp)</span><input type="number" name="system.value" value="{{system.value}}" min="0"></label>
+      <label class="fld narrow"><span>Qty</span><input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+    {{/if}}
+
+    {{#unless is_spell}}
+      <label class="fld narrow"><span>Cost (gp)</span><input type="number" name="system.cost" value="{{system.cost}}" min="0"></label>
+      <label class="fld narrow"><span>Weight (lb)</span><input type="number" name="system.weight" value="{{system.weight}}" min="0" step="0.5"></label>
+    {{/unless}}
+
+    {{#if (bh-or is_spell is_magic)}}
+      <div class="roll-def wide">
+        <span class="lbl">Dice from the description</span>
+        <label class="fld"><span>Label</span><input type="text" name="system.roll.label" value="{{system.roll.label}}"></label>
+        <label class="fld narrow"><span>Formula</span><input type="text" name="system.roll.formula" value="{{system.roll.formula}}" title="@L is the caster level, @H half the caster level"></label>
+        <label class="fld narrow"><span>Kind</span><select name="system.roll.kind">{{#each rollKinds}}<option value="{{value}}" {{bh-selected value ../system.roll.kind}}>{{label}}</option>{{/each}}</select></label>
+      </div>
+    {{/if}}
+      <label class="fld wide"><span>Source</span><input type="text" name="system.source" value="{{system.source}}"></label>
+    </div>
+
+    <div class="box description">
+      <div class="pm-slot" data-pm-name="system.description" data-pm-enriched="description"><prose-mirror name="system.description" value="{{system.description}}" document-uuid="{{item.uuid}}" toggled>{{{description}}}</prose-mirror></div>
+    </div>
+  </div>
+</div>

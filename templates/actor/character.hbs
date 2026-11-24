@@ -1,0 +1,293 @@
+<div class="bh-sheet">
+  <header class="sheet-head">
+    <img class="portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" title="Change portrait">
+    <div class="head-main">
+      <div class="title-line">
+        <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="Character name">
+        <span class="record-mark">Character Record</span>
+      </div>
+      <div class="head-fields">
+        <label class="fld"><span>Species</span>
+          <select name="system.details.species">{{#each speciesOptions}}<option value="{{value}}" {{bh-selected value ../system.details.species}}>{{label}}</option>{{/each}}</select>
+        </label>
+        <label class="fld"><span>Alignment</span>
+          <select name="system.details.alignment"><option value=""></option>{{#each alignments}}<option value="{{value}}" {{bh-selected value ../system.details.alignment}}>{{label}}</option>{{/each}}</select>
+        </label>
+        <label class="fld narrow"><span>Level</span><input type="number" name="system.level" value="{{system.level}}" min="1" max="20"></label>
+        <label class="fld"><span>Class</span><output>{{system.classLabel}}</output></label>
+      </div>
+      <div class="class-boxes">
+        {{#each classBoxes}}<label class="chk" title="Prime requisite: {{prime}}"><input type="checkbox" name="system.classes.{{key}}" {{bh-checked checked}}> {{label}}</label>{{/each}}
+        <span class="hint">Tick more than one for a combination class (p.10).</span>
+      </div>
+    </div>
+    <div class="vitals">
+      <div class="vital hp">
+        <span class="vital-label">Hit Points</span>
+        <div class="hp-pair">
+          <input type="number" name="system.hp.value" value="{{system.hp.value}}">
+          <span class="slash">/</span>
+          <input type="number" name="system.hp.max" value="{{system.hp.max}}">
+        </div>
+      </div>
+      <div class="vital ac" title="Armour: {{#if system.ac.armour}}{{system.ac.armour}}{{else}}none{{/if}}{{#if system.ac.shield}}; shield: {{system.ac.shield}}{{/if}}">
+        <span class="vital-label">Armour Class</span>
+        <span class="ac-value">{{system.ac.value}}</span>
+        <span class="ac-sub">{{#unless system.ac.helmet}}no helmet: AC9 from above{{else}}helmet worn{{/unless}}</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs">
+    <a data-action="sheetTab" data-tab="record">Record</a>
+    <a data-action="sheetTab" data-tab="equipment">Equipment</a>
+    {{#if hasSpells}}<a data-action="sheetTab" data-tab="spells">Spells</a>{{/if}}
+    <a data-action="sheetTab" data-tab="notes">Notes</a>
+  </nav>
+
+  <div class="tab-scroll">
+  {{!-- ===================== RECORD ===================== --}}
+  <section class="tab-body" data-tab="record">
+    <div class="grid-2">
+      <div class="box">
+        <h3>Abilities <button type="button" class="mini" data-action="rollAbilities" title="Roll ability scores and starting gold (p.4)"><i class="fa-solid fa-dice"></i></button></h3>
+        <table class="abilities">
+          {{#each abilities}}
+          <tr class="{{#if isPrime}}prime{{/if}}">
+            <th>{{label}}</th>
+            <td class="score"><input type="number" name="system.abilities.{{key}}.value" value="{{value}}" min="1" max="25"></td>
+            <td class="note">{{note}}</td>
+          </tr>
+          {{/each}}
+        </table>
+      </div>
+      <div class="box">
+        <h3>Experience</h3>
+        <div class="xp-line">
+          <label class="fld"><span>XP</span><input type="number" name="system.xp" value="{{system.xp}}" min="0"></label>
+          <label class="fld"><span>Next level</span><output>{{xpNext}}</output></label>
+          <label class="fld narrow"><span>XP mod.</span><output title="Prime requisite modifier (p.5) plus species modifier">{{xpMod}}</output></label>
+        </div>
+        <div class="xpbar"><div style="width: {{xpPct}}%"></div></div>
+        <div class="btn-row">
+          <button type="button" data-action="awardXP"><i class="fa-solid fa-star"></i> Award XP</button>
+          {{#if system.canLevel}}<button type="button" class="hot" data-action="levelUp"><i class="fa-solid fa-arrow-up"></i> Rise to level {{bh-add system.level 1}}</button>{{/if}}
+          <button type="button" data-action="levelHP" title="Roll this level's hit points and add them"><i class="fa-solid fa-heart"></i> Roll Level HP</button>
+        </div>
+        <p class="small">Hit dice: {{hitDice}}</p>
+        <div class="xp-line">
+          {{#if isOtherSpecies}}
+          <label class="fld"><span>Species name</span><input type="text" name="system.details.speciesName" value="{{system.details.speciesName}}"></label>
+          <label class="fld narrow"><span>Creature HD</span><select name="system.details.speciesDie">{{#each dieOptions}}<option value="{{value}}" {{bh-selected value ../system.details.speciesDie}}>{{label}}</option>{{/each}}</select></label>
+          <label class="fld narrow"><span>Move</span><input type="number" name="system.details.speciesMove" value="{{system.details.speciesMove}}"></label>
+          <label class="fld narrow"><span>Save bonus</span><input type="number" name="system.details.speciesSave" value="{{system.details.speciesSave}}"></label>
+          {{/if}}
+          <label class="fld narrow"><span>Species XP %</span><input type="number" name="system.details.speciesXP" value="{{system.details.speciesXP}}" step="5" title="Referee's XP bonus or penalty for the species (p.62)"></label>
+          <label class="fld narrow"><span>Natural AC</span><input type="number" name="system.details.naturalAC" value="{{system.details.naturalAC}}" title="Natural armour; the better of natural and worn armour counts (p.63)"></label>
+        </div>
+        {{#if speciesNotes.length}}<ul class="species-notes">{{#each speciesNotes}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="box">
+        <h3>Saving Throws {{#if saveBonus}}<span class="hint">({{saveBonus}} to rolls)</span>{{/if}}</h3>
+        <ul class="saves">
+          {{#each saves}}
+          <li><a class="rollable" data-action="save" data-save="{{key}}" title="Roll (shift-click: no dialog)"><i class="fa-solid fa-dice-d20"></i> {{label}}</a><span class="save-num">{{value}}</span></li>
+          {{/each}}
+        </ul>
+        <label class="fld narrow inline"><span>Save adj.</span><input type="number" name="system.mods.save" value="{{system.mods.save}}"></label>
+      </div>
+      <div class="box">
+        <h3>Combat <span class="hint">{{system.attack.matrixLabel}} matrix</span></h3>
+        <table class="matrix">
+          <tr><th>AC</th>{{#each attackRow}}<th>{{ac}}</th>{{/each}}</tr>
+          <tr><th>Need</th>{{#each attackRow}}<td>{{need}}</td>{{/each}}</tr>
+        </table>
+        <div class="xp-line">
+          <label class="fld narrow"><span>To hit adj.</span><input type="number" name="system.mods.attack" value="{{system.mods.attack}}"></label>
+          <label class="fld narrow"><span>Damage adj.</span><input type="number" name="system.mods.damage" value="{{system.mods.damage}}"></label>
+          <label class="fld narrow"><span>AC adj.</span><input type="number" name="system.mods.ac" value="{{system.mods.ac}}" title="Positive improves (lowers) AC"></label>
+          {{#if system.fighterDamage}}<label class="fld narrow"><span>Fighter dmg</span><output>+{{system.fighterDamage}}</output></label>{{/if}}
+          {{#if system.backstab}}<label class="fld narrow"><span>Backstab</span><output>+4, ×{{system.backstab}}</output></label>{{/if}}
+        </div>
+        <div class="btn-row">
+          <button type="button" data-action="unarmed"><i class="fa-solid fa-hand-fist"></i> Attack</button>
+          <button type="button" data-action="listen" title="Listen at a door: 1 (or 1-2 for some species) on 1d6 (p.47)"><i class="fa-solid fa-ear-listen"></i> Listen</button>
+          <label class="fld narrow inline"><span>Listen on 1-</span><input type="number" name="system.listenChance" value="{{system.listenChance}}" min="0" max="6"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Movement</h3>
+      <div class="move-line">
+        <span><b>Combat</b> {{move.combat}} / round</span>
+        <span><b>Exploring</b> {{move.exploring}} / turn</span>
+        <span><b>Walking</b> {{move.walking}} / turn</span>
+        <span><b>Running</b> {{#if move.running}}{{move.running}} / turn{{else}}—{{/if}}</span>
+        <span class="hint">feet underground, yards outdoors · {{moveState}}</span>
+        {{#if encOn}}<label class="chk"><input type="checkbox" name="system.loaded" {{bh-checked system.loaded}}> Loaded (over 60 lb)</label>{{/if}}
+        <label class="fld narrow inline"><span>Move adj.</span><input type="number" name="system.mods.move" value="{{system.mods.move}}"></label>
+        <span class="hint">Drowning chance in this armour: {{system.drowning}}%</span>
+      </div>
+    </div>
+
+    {{#if thief}}
+    <div class="box">
+      <h3>Thieves’ Skills <span class="hint">d% at or under; 96-00 always fails</span></h3>
+      <table class="thief">
+        <tr><th></th><th>Base</th><th>Species</th><th>Adj.</th><th>Total</th></tr>
+        {{#each thief}}
+        <tr>
+          <th><a class="rollable" data-action="thief" data-skill="{{key}}"><i class="fa-solid fa-dice"></i> {{label}}</a></th>
+          <td>{{base}}%</td><td>{{species}}</td>
+          <td><input type="number" name="system.mods.thief.{{key}}" value="{{misc}}" step="5"></td>
+          <td class="total">{{value}}%</td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+    {{/if}}
+
+    {{#if turn}}
+    <div class="box">
+      <h3>Turning Undead <button type="button" class="mini mini-text" data-action="turn"><i class="fa-solid fa-sun"></i> Turn</button></h3>
+      <table class="matrix">
+        <tr><th>Undead HD</th>{{#each turn}}<th>{{col}}</th>{{/each}}</tr>
+        <tr><th>2d6</th>{{#each turn}}<td>{{v}}</td>{{/each}}</tr>
+      </table>
+      <p class="hint">T: 2d6 undead turned automatically. D: 2d6 destroyed. –: cannot be turned.</p>
+    </div>
+    {{/if}}
+  </section>
+
+  {{!-- ===================== EQUIPMENT ===================== --}}
+  <section class="tab-body" data-tab="equipment">
+    <div class="box">
+      <h3>Weapons <a class="add" data-action="itemCreate" data-type="weapon" data-label="Weapon" title="Add weapon"><i class="fa-solid fa-plus"></i></a></h3>
+      <table class="items">
+        <tr><th></th><th>Name</th><th>Damage</th><th>Bonus</th><th>Range</th><th>Qty</th><th></th></tr>
+        {{#each weapons}}
+        <tr data-item-id="{{id}}" class="{{#if equipped}}equipped{{/if}}">
+          <td><a data-action="itemToggle" title="Equipped"><i class="fa-{{#if equipped}}solid{{else}}regular{{/if}} fa-hand"></i></a></td>
+          <td class="name"><a class="rollable" data-action="weaponAttack" title="Attack (shift-click: no dialog)"><img src="{{img}}" alt=""> {{name}}</a>{{#if speed}} <span class="hint">{{speed}}</span>{{/if}}{{#if rate}} <span class="hint">{{rate}}</span>{{/if}}</td>
+          <td>{{damage}}</td><td>{{bonus}}</td><td>{{range}}</td>
+          <td><input type="number" data-item-field="system.quantity" data-dtype="Number" value="{{quantity}}" class="w3"></td>
+          <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+    <div class="box">
+      <h3>Armour <a class="add" data-action="itemCreate" data-type="armor" data-label="Armour" title="Add armour"><i class="fa-solid fa-plus"></i></a></h3>
+      <table class="items">
+        {{#each armour}}
+        <tr data-item-id="{{id}}" class="{{#if equipped}}equipped{{/if}}">
+          <td><a data-action="itemToggle" title="Worn"><i class="fa-{{#if equipped}}solid{{else}}regular{{/if}} fa-shirt"></i></a></td>
+          <td class="name"><a data-action="itemChat"><img src="{{img}}" alt=""> {{name}}</a></td><td>{{kind}}</td><td>{{bonus}}</td>
+          <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+    <div class="box">
+      <h3>Magic Items <a class="add" data-action="itemCreate" data-type="magic" data-label="Magic Item" title="Add magic item"><i class="fa-solid fa-plus"></i></a></h3>
+      <table class="items">
+        {{#each magic}}
+        <tr data-item-id="{{id}}" class="{{#if equipped}}equipped{{/if}}">
+          <td><a data-action="itemToggle" title="Worn / carried ready"><i class="fa-{{#if equipped}}solid{{else}}regular{{/if}} fa-gem"></i></a></td>
+          <td class="name"><a class="rollable" data-action="useItem" title="Use"><img src="{{img}}" alt=""> {{name}}</a></td>
+          <td>{{category}}</td>
+          <td>{{#if charges}}<a data-action="chargeAdjust" data-delta="-1">−</a> {{charges.value}}/{{charges.max}} <a data-action="chargeAdjust" data-delta="1">+</a>{{else}}<input type="number" data-item-field="system.quantity" data-dtype="Number" value="{{quantity}}" class="w3">{{/if}}</td>
+          <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+    <div class="grid-2">
+      <div class="box">
+        <h3>Gear <a class="add" data-action="itemCreate" data-type="gear" data-label="Gear" title="Add gear"><i class="fa-solid fa-plus"></i></a></h3>
+        <table class="items">
+          {{#each gear}}
+          <tr data-item-id="{{id}}">
+            <td class="name"><a data-action="itemChat"><img src="{{img}}" alt=""> {{name}}</a></td>
+            <td><input type="number" data-item-field="system.quantity" data-dtype="Number" value="{{quantity}}" class="w3"></td>
+            <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </table>
+      </div>
+      <div class="box">
+        <h3>Coins &amp; Treasure <a class="add" data-action="itemCreate" data-type="treasure" data-label="Treasure" title="Add treasure"><i class="fa-solid fa-plus"></i></a></h3>
+        <div class="coins">
+          {{#each (bh-coins) as |c|}}<label class="fld narrow"><span>{{c}}</span><input type="number" name="system.coins.{{c}}" value="{{lookup ../system.coins c}}" min="0"></label>{{/each}}
+        </div>
+        <p class="small">Coins worth {{system.wealth}} gp; they weigh {{system.coinWeight}} lb (10 coins a pound).</p>
+        <table class="items">
+          {{#each treasure}}
+          <tr data-item-id="{{id}}">
+            <td class="name"><a data-action="itemChat"><img src="{{img}}" alt=""> {{name}}</a></td>
+            <td>{{value}} gp</td>
+            <td><input type="number" data-item-field="system.quantity" data-dtype="Number" value="{{quantity}}" class="w3"></td>
+            <td class="ctl"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </table>
+        {{#if treasure.length}}<p class="small">Jewels and valuables: {{treasureValue}} gp.</p>{{/if}}
+      </div>
+    </div>
+  </section>
+
+  {{!-- ===================== SPELLS ===================== --}}
+  {{#if hasSpells}}
+  <section class="tab-body" data-tab="spells">
+    <div class="btn-row">
+      <button type="button" data-action="rest" title="A day studying the magic books: every memorised spell can be cast again (p.15)"><i class="fa-solid fa-book-open"></i> Study Magic Books</button>
+      <span class="hint">Drag spells from the spell compendia. Set how many slots each spell fills with the arrows; Cast uses one.</span>
+    </div>
+    {{#each spellLists}}
+    <div class="box">
+      <h3>{{label}} <a class="add" data-action="itemCreate" data-type="spell" data-list="{{list}}" data-label="Spell" title="Add spell"><i class="fa-solid fa-plus"></i></a></h3>
+      {{#each levels}}
+      <div class="spell-level">
+        <h4>{{ord}} level <span class="slots {{#if over}}over{{/if}}">{{used}} / {{slots}} slots</span> {{#if bookNote}}<span class="hint">{{bookNote}}</span>{{/if}}</h4>
+        <table class="items spells">
+          {{#each rows}}
+          <tr data-item-id="{{id}}" class="{{#unless known}}unknown{{/unless}}">
+            <td class="name"><a class="rollable" data-action="cast" title="Cast"><img src="{{img}}" alt=""> {{name}}</a> {{#if reverse}}<span class="hint">{{reverse}}</span>{{/if}}{{#unless known}} <span class="hint">not learned</span>{{/unless}}</td>
+            <td class="small">{{range}} · {{duration}}</td>
+            <td class="mem"><a data-action="memorize" data-delta="-1">−</a> <span title="memorised (cast)">{{memorized}}{{#if cast}} ({{left}} left){{/if}}</span> <a data-action="memorize" data-delta="1">+</a></td>
+            <td class="ctl">{{#if ../../isMU}}<a data-action="learn" title="Roll to learn (Spell Learning Table)"><i class="fa-solid fa-graduation-cap"></i></a>{{/if}}<a data-action="itemChat" title="Show in chat"><i class="fa-solid fa-comment"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </table>
+      </div>
+      {{/each}}
+    </div>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  {{!-- ===================== NOTES ===================== --}}
+  <section class="tab-body" data-tab="notes">
+    <div class="box">
+      <div class="xp-line">
+        <label class="fld"><span>Player</span><input type="text" name="system.details.player" value="{{system.details.player}}"></label>
+        <label class="fld narrow"><span>Age</span><input type="text" name="system.details.age" value="{{system.details.age}}"></label>
+        <label class="fld narrow"><span>Height</span><input type="text" name="system.details.height" value="{{system.details.height}}"></label>
+        <label class="fld narrow"><span>Weight</span><input type="text" name="system.details.weight" value="{{system.details.weight}}"></label>
+      </div>
+      <label class="fld wide"><span>Languages ({{system.bonuses.languages}} extra beyond native and common)</span><input type="text" name="system.details.languages" value="{{system.details.languages}}"></label>
+      <label class="fld wide"><span>Followers (maximum {{system.bonuses.followers}})</span><input type="text" name="system.followers" value="{{system.followers}}"></label>
+    </div>
+    <div class="box"><h3>Biography</h3>
+      <div class="pm-slot" data-pm-name="system.details.biography" data-pm-enriched="biography"><prose-mirror name="system.details.biography" value="{{system.details.biography}}" document-uuid="{{actor.uuid}}" toggled>{{{biography}}}</prose-mirror></div>
+    </div>
+    <div class="box"><h3>Notes</h3>
+      <div class="pm-slot" data-pm-name="system.details.notes" data-pm-enriched="notes"><prose-mirror name="system.details.notes" value="{{system.details.notes}}" document-uuid="{{actor.uuid}}" toggled>{{{notes}}}</prose-mirror></div>
+    </div>
+  </section>
+  </div>
+</div>
