@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+- "BLUEHOLME™" now appears above "Character Record" and "Creature" in the sheet headers.
+
 ## 0.2.1
 
 - Class is now a dropdown: the four classes, then every combination class (p.10). Level sits on the same row, with the prime requisites shown beside it.

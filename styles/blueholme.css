@@ -232,3 +232,7 @@ button.bh-treasure { font-size: 12px; }
 .blueholme .class-fld { flex: 2; }
 .blueholme table.items td.ready { text-align: center; white-space: nowrap; }
 .blueholme table.items td.ready.spent { color: var(--ink-3); }
+
+/* game name stacked above the sheet label */
+.blueholme .title-line .record-mark { display: flex; flex-direction: column; align-items: center; line-height: 1.15; align-self: flex-end; }
+.blueholme .record-mark .brand { font-family: var(--bh-serif); font-size: 17px; letter-spacing: .14em; color: var(--rule-strong); }
