@@ -225,3 +225,10 @@ button.bh-treasure { font-size: 12px; }
 
 /* page reference under compendium summaries */
 .blueholme .bh-ref, .blueholme-card .bh-ref { font-size: 11px; font-style: italic; color: var(--ink-3); margin-top: 6px; }
+
+/* the core icons (mystery man, item icons) are white glyphs: give them a dark ground so they show on the paper */
+.blueholme .portrait, .blueholme .item-img, .blueholme table.items td.name img, .blueholme-card .card-title img { background-color: var(--rule-strong); }
+.blueholme table.items td.name img { padding: 2px; border-radius: 2px; }
+.blueholme .class-fld { flex: 2; }
+.blueholme table.items td.ready { text-align: center; white-space: nowrap; }
+.blueholme table.items td.ready.spent { color: var(--ink-3); }

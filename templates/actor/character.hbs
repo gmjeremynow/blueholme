@@ -13,12 +13,19 @@
         <label class="fld"><span>Alignment</span>
           <select name="system.details.alignment"><option value=""></option>{{#each alignments}}<option value="{{value}}" {{bh-selected value ../system.details.alignment}}>{{label}}</option>{{/each}}</select>
         </label>
-        <label class="fld narrow"><span>Level</span><input type="number" name="system.level" value="{{system.level}}" min="1" max="20"></label>
-        <label class="fld"><span>Class</span><output>{{system.classLabel}}</output></label>
       </div>
-      <div class="class-boxes">
-        {{#each classBoxes}}<label class="chk" title="Prime requisite: {{prime}}"><input type="checkbox" name="system.classes.{{key}}" {{bh-checked checked}}> {{label}}</label>{{/each}}
-        <span class="hint">Tick more than one for a combination class (p.10).</span>
+      <div class="head-fields">
+        <label class="fld class-fld"><span>Class</span>
+          <select data-class-select title="A combination class needs the referee's agreement (p.10)">
+            {{#unless classChosen}}<option value="" selected>Choose a class</option>{{/unless}}
+            {{#each classSingles}}<option value="{{value}}" {{bh-selected value ../classValue}}>{{label}}</option>{{/each}}
+            <optgroup label="Combination classes (referee's agreement, p.10)">
+              {{#each classCombos}}<option value="{{value}}" {{bh-selected value ../classValue}}>{{label}}</option>{{/each}}
+            </optgroup>
+          </select>
+        </label>
+        <label class="fld narrow"><span>Level</span><input type="number" name="system.level" value="{{system.level}}" min="1" max="20"></label>
+        <label class="fld"><span>Prime requisite</span><output>{{primeLabel}}</output></label>
       </div>
     </div>
     <div class="vitals">
@@ -252,13 +259,15 @@
       <h3>{{label}} <a class="add" data-action="itemCreate" data-type="spell" data-list="{{list}}" data-label="Spell" title="Add spell"><i class="fa-solid fa-plus"></i></a></h3>
       {{#each levels}}
       <div class="spell-level">
-        <h4>{{ord}} level <span class="slots {{#if over}}over{{/if}}">{{used}} / {{slots}} slots</span> {{#if bookNote}}<span class="hint">{{bookNote}}</span>{{/if}}</h4>
+        <h4>{{ord}} level <span class="slots {{#if over}}over{{/if}}">{{used}} of {{slots}} slots memorised</span> {{#if bookNote}}<span class="hint">{{bookNote}}</span>{{/if}}</h4>
         <table class="items spells">
+          {{#if rows.length}}<tr><th>Spell</th><th>Range · Duration</th><th title="How many times the spell is memorised; each takes a slot">Memorised</th><th title="Memorised uses not yet cast today">Ready to cast</th><th></th></tr>{{/if}}
           {{#each rows}}
           <tr data-item-id="{{id}}" class="{{#unless known}}unknown{{/unless}}">
             <td class="name"><a class="rollable" data-action="cast" title="Cast"><img src="{{img}}" alt=""> {{name}}</a> {{#if reverse}}<span class="hint">{{reverse}}</span>{{/if}}{{#unless known}} <span class="hint">not learned</span>{{/unless}}</td>
             <td class="small">{{range}} · {{duration}}</td>
-            <td class="mem"><a data-action="memorize" data-delta="-1">−</a> <span title="memorised (cast)">{{memorized}}{{#if cast}} ({{left}} left){{/if}}</span> <a data-action="memorize" data-delta="1">+</a></td>
+            <td class="mem"><a data-action="memorize" data-delta="-1" title="Memorise one fewer">−</a> {{memorized}} <a data-action="memorize" data-delta="1" title="Memorise one more">+</a></td>
+            <td class="ready {{#unless left}}spent{{/unless}}">{{#if memorized}}{{left}} of {{memorized}}{{else}}—{{/if}}</td>
             <td class="ctl">{{#if ../../isMU}}<a data-action="learn" title="Roll to learn (Spell Learning Table)"><i class="fa-solid fa-graduation-cap"></i></a>{{/if}}<a data-action="itemChat" title="Show in chat"><i class="fa-solid fa-comment"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
           </tr>
           {{/each}}
@@ -274,10 +283,10 @@
   <section class="tab-body" data-tab="notes">
     <div class="box">
       <div class="xp-line">
-        <label class="fld"><span>Player</span><input type="text" name="system.details.player" value="{{system.details.player}}"></label>
-        <label class="fld narrow"><span>Age</span><input type="text" name="system.details.age" value="{{system.details.age}}"></label>
-        <label class="fld narrow"><span>Height</span><input type="text" name="system.details.height" value="{{system.details.height}}"></label>
-        <label class="fld narrow"><span>Weight</span><input type="text" name="system.details.weight" value="{{system.details.weight}}"></label>
+        <label class="fld"><span>Player name</span><input type="text" name="system.details.player" value="{{system.details.player}}"></label>
+        <label class="fld narrow"><span>Character age</span><input type="text" name="system.details.age" value="{{system.details.age}}"></label>
+        <label class="fld narrow"><span>Character height</span><input type="text" name="system.details.height" value="{{system.details.height}}"></label>
+        <label class="fld narrow"><span>Character weight</span><input type="text" name="system.details.weight" value="{{system.details.weight}}"></label>
       </div>
       <label class="fld wide"><span>Languages ({{system.bonuses.languages}} extra beyond native and common)</span><input type="text" name="system.details.languages" value="{{system.details.languages}}"></label>
       <label class="fld wide"><span>Followers (maximum {{system.bonuses.followers}})</span><input type="text" name="system.followers" value="{{system.followers}}"></label>

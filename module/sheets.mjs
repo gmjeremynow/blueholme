@@ -79,6 +79,11 @@ class BHActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     super._onRender(context, options);
     mountEditors(this.element, this.actor, context);
     this.#applyTab();
+    this.element.querySelector("[data-class-select]")?.addEventListener("change", ev => {
+      ev.stopPropagation();
+      const chosen = new Set(ev.currentTarget.value.split("+").filter(Boolean));
+      this.actor.update(Object.fromEntries(T.CLASS_KEYS.map(k => [`system.classes.${k}`, chosen.has(k)])));
+    });
     this.element.querySelectorAll("[data-item-field]").forEach(el => {
       el.addEventListener("change", ev => {
         ev.stopPropagation();
@@ -177,7 +182,16 @@ export class CharacterSheet extends BHActorSheet {
     ctx.speciesNotes = s.speciesDef.notes;
     ctx.dieOptions = [4, 6, 8, 10, 12].map(n => ({ value: n, label: `d${n}` }));
     ctx.alignments = T.ALIGNMENTS.map(v => ({ value: v, label: v }));
-    ctx.classBoxes = T.CLASS_KEYS.map(k => ({ key: k, label: T.CLASSES[k].label, checked: s.classes[k], prime: T.CLASSES[k].prime.toUpperCase() }));
+    // Class dropdown: the four classes, then every combination (p.10)
+    const combos = [];
+    for (let m = 1; m < 16; m++) combos.push(T.CLASS_KEYS.filter((k, i) => m & (1 << i)));
+    const opt = keys => ({ value: keys.join("+"), label: keys.map(k => T.CLASSES[k].label).join(" / ") });
+    ctx.classSingles = combos.filter(c => c.length === 1).map(opt);
+    ctx.classCombos = combos.filter(c => c.length > 1).sort((x, y) => x.length - y.length).map(opt);
+    ctx.classValue = s.classList.join("+");
+    ctx.classChosen = s.classList.length > 0;
+    const PR = { str: "Strength", int: "Intelligence", wis: "Wisdom", dex: "Dexterity" };
+    ctx.primeLabel = [...new Set(s.classList.map(k => PR[T.CLASSES[k].prime]))].join(", ") || "—";
     ctx.xpNext = s.xpNext === null ? "—" : s.xpNext.toLocaleString();
     ctx.xpPct = s.xpNext ? Math.max(0, Math.min(100, Math.round(100 * (s.xp - s.xpThis) / Math.max(1, s.xpNext - s.xpThis)))) : 100;
     ctx.xpMod = s.xpMod > 0 ? `+${s.xpMod}%` : s.xpMod < 0 ? `${s.xpMod}%` : "—";

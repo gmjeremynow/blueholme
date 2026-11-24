@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- Class is now a dropdown: the four classes, then every combination class (p.10). Level sits on the same row, with the prime requisites shown beside it.
+- Spell lists have column headings; "Memorised" (with − and +) and "Ready to cast" (for example "0 of 1") are now separate columns.
+- Notes tab labels now read "Player name" and "Character age / height / weight".
+- Portraits and item icons get a dark background, so Foundry's white default icons show on the pale sheet.
+
 ## 0.2.0
 
 - Prepared for public release under the BLUEHOLME™ Logo E-Licence: "Requires" line and Dreamscape Design credit in the system description, README and compendium import dialog.
