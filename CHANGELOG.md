@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.7
+
+Accuracy review against the printed book.
+
+- Creature page references now point to the page each creature is on. They were one page early because the book's own creature summary table is off by one (for example, the dwarf is on p.71, not p.70).
+- Species notes on the character sheet cite the correct pages: dwarf p.71, half-elf and halfling p.75. Natural armour now cites p.62.
+- Added the missing Medallion of Read Thoughts (Magic Accoutrements, 79-80). The book prints no description for it, so its entry says so; both table rows had pointed to the medallion of thought projection.
+- Large elementals are labelled Large instead of Huge.
+- Fixed words split by line-break hyphens in compendium text ("magic- user", "evil- aligned", "extra- dimensional" and others).
+- Checked against the book with no changes needed: XP and hit dice for all four classes, spells per level, fighter damage bonus, backstab, thieves' skills and species modifiers, ability modifiers, spell learning, species hit dice, attack and saving throw matrices, turning undead, equipment prices, missile ranges, variable damage, treasure tables, magic item tables, and spell levels, ranges and durations.
+- Compendia re-import when the world loads (data version 4).
+
 ## 0.2.6
 
 - Casting a spell rolls its dice automatically at the caster's level: damage (fire ball, cone of cold, flame strike...), healing, numbers affected, durations, and tables such as Summon Creature, Question, Reincarnation, Gate and Prismatic Spray. Magic missile rolls one damage die per missile for the caster's level.

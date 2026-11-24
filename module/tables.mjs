@@ -96,19 +96,19 @@ export const THIEF_SPECIES = {
 export const SPECIES = {
   human: { label: "Human", die: 8, move: 30, saveBonus: 0, darkvision: false, notes: [] },
   dwarf: { label: "Dwarf", die: 8, move: 25, saveBonus: 2, darkvision: true, notes: [
-    "+2 bonus to all saving throws (p.70).",
-    "Notices slanting passages, new construction, traps, shifting walls and the like on 1-2 on 1d6 (p.70).",
+    "+2 bonus to all saving throws (p.71).",
+    "Notices slanting passages, new construction, traps, shifting walls and the like on 1-2 on 1d6 (p.71).",
     "Finds mechanical traps on 1-4 on 1d6 when searching, 1-2 in passing (p.47)."] },
   elf: { label: "Elf", die: 6, move: 30, saveBonus: 0, darkvision: true, thief: "elf", notes: [
     "Notices secret doors on 1-2 on 1d6 in passing; a party with an elf finds them on 1-4 when searching (p.47, p.71).",
     "Immune to ghoulish paralysis, but not other types such as spells (p.71)."] },
   halfelf: { label: "Half-Elf", die: 8, move: 30, saveBonus: 0, darkvision: true, notes: [
-    "Notices secret doors on 1-2 on 1d6 without needing to search (p.74)."] },
+    "Notices secret doors on 1-2 on 1d6 without needing to search (p.75)."] },
   halfling: { label: "Halfling", die: 6, move: 25, saveBonus: 2, missileBonus: 1, small: true, darkvision: false, thief: "halfling", notes: [
-    "+1 to hit with all ranged weapons (p.74).",
-    "+2 bonus on all saving throws (p.74).",
-    "Treats light weapons as normal and normal weapons as heavy; cannot use heavy weapons, long bows, composite bows or heavy crossbows (p.74).",
-    "No darkvision (p.74)."] },
+    "+1 to hit with all ranged weapons (p.75).",
+    "+2 bonus on all saving throws (p.75).",
+    "Treats light weapons as normal and normal weapons as heavy; cannot use heavy weapons, long bows, composite bows or heavy crossbows (p.75).",
+    "No darkvision (p.75)."] },
   halforc: { label: "Half-Orc", die: 8, move: 30, saveBonus: 0, darkvision: true, thief: "orc", notes: [] },
   gnome: { label: "Gnome", die: 6, move: 25, saveBonus: 0, darkvision: true, notes: [] },
   feline: { label: "Feline", die: 8, move: 35, saveBonus: 0, darkvision: true, notes: [] },

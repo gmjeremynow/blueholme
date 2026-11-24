@@ -108,7 +108,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       magicuser: s.classes.magicuser ? T.spellSlots("magicuser", lvl) : null
     };
 
-    // Armour class from worn items (p.56); natural armour and worn armour do not stack (p.63)
+    // Armour class from worn items (p.56); natural armour and worn armour do not stack (p.62)
     const items = this.parent?.items?.contents ?? [];
     let armour = null, shield = null, helmet = false, magicAC = 0, magicSave = 0, unarmouredAC = 0, unarmouredSave = 0;
     for (const it of items) {

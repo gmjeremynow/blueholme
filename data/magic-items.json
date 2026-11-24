@@ -778,7 +778,7 @@
   "folder": "Accoutrements"
  },
  {
-  "name": "Medallion of Thought Projection",
+  "name": "Medallion of Read Thoughts",
   "type": "magic",
   "img": "",
   "system": {
@@ -789,8 +789,8 @@
     "max": 0
    },
    "uses": "",
-   "description": "<p>This device seems like a medallion of read thoughts. However, while the user thinks they are picking up the thoughts of others, the cursed medallion actually broadcasts their own thoughts to all creatures within a range of 60, regardless of language. A thin layer of lead or more than 2’ of stone blocks the effect.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.92.</p>",
-   "source": "Journeymanne Rules p.92",
+   "description": "<p><em>The Journeymanne Rules list this item on the Table of Magic Accoutrements (79-80) but print no description for it. The entry for the medallion of thought projection says that cursed item seems like a medallion of read thoughts, which suggests it lets the wearer pick up the thoughts of others. The referee decides how it works.</em></p><p class=\"bh-ref\">Table: Journeymanne Rules, p.91.</p>",
+   "source": "Journeymanne Rules p.91",
    "roll": {
     "formula": "",
     "kind": "",
@@ -2063,7 +2063,7 @@
     "max": 0
    },
    "uses": "",
-   "description": "<p>This book contains instructions, incantations, and the magical power to help a magic- user to craft a golem. Other characters that open it are subject to 5d6 points of damage, and clerics also lose 1 level of experience.</p><p>Each manual holds instructions needed for a specific golem, determined by rolling 1d10:</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.99.</p>",
+   "description": "<p>This book contains instructions, incantations, and the magical power to help a magic-user to craft a golem. Other characters that open it are subject to 5d6 points of damage, and clerics also lose 1 level of experience.</p><p>Each manual holds instructions needed for a specific golem, determined by rolling 1d10:</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.99.</p>",
    "source": "Journeymanne Rules p.99",
    "roll": {
     "formula": "",
@@ -3071,7 +3071,7 @@
     "max": 0
    },
    "uses": "",
-   "description": "<p>This potion has the effect of shrinking the user and gear down to a height of one- tenth normal size. Movement, damage, hit points, and so on are similarly affected.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.101.</p>",
+   "description": "<p>This potion has the effect of shrinking the user and gear down to a height of one-tenth normal size. Movement, damage, hit points, and so on are similarly affected.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.101.</p>",
    "source": "Journeymanne Rules p.101",
    "roll": {
     "formula": "",
@@ -8202,7 +8202,7 @@
    "quantity": 1,
    "cost": 0,
    "weight": 0,
-   "description": "<p>A magic weapon adds its bonus to attack and damage rolls. Choose the weapon type when it is found.</p><p>This weapon crackles with arcs of lightning, which do not harm its user. It causes an additional 1d6 electrical damage on a successful attack. Against lightning-using creatures it acts as a normal, non- magical weapon.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.94.</p>",
+   "description": "<p>A magic weapon adds its bonus to attack and damage rolls. Choose the weapon type when it is found.</p><p>This weapon crackles with arcs of lightning, which do not harm its user. It causes an additional 1d6 electrical damage on a successful attack. Against lightning-using creatures it acts as a normal, non-magical weapon.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.94.</p>",
    "source": "Journeymanne Rules p.94",
    "ammo": false
   },

@@ -1202,7 +1202,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil- aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
+   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil-aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
    "source": "Journeymanne Rules p.20",
    "rolls": []
   }
@@ -1226,7 +1226,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by good- aligned casters, as well as anyone of good alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
+   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by good-aligned casters, as well as anyone of good alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.20.</p>",
    "source": "Journeymanne Rules p.20",
    "rolls": []
   }
@@ -3004,7 +3004,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>A light springs forth from an object within range, illuminating a 30’ radius. The light shed by the magic- user spell is not equivalent to daylight. It will shed light forever unless dismissed by the caster or dispelled.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
+   "description": "<p>A light springs forth from an object within range, illuminating a 30’ radius. The light shed by the magic-user spell is not equivalent to daylight. It will shed light forever unless dismissed by the caster or dispelled.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.27.</p>",
    "source": "Journeymanne Rules p.27",
    "rolls": []
   }
@@ -3354,7 +3354,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>1d4 illusory, identical duplicates of the caster pop into being, making it difficult for enemies to know which target to attack. The mirror images mimic the magic- user’s actions exactly.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
+   "description": "<p>1d4 illusory, identical duplicates of the caster pop into being, making it difficult for enemies to know which target to attack. The mirror images mimic the magic-user’s actions exactly.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.28.</p>",
    "source": "Journeymanne Rules p.28",
    "rolls": [
     {
@@ -3914,7 +3914,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil- aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
+   "description": "<p>This spell protects the caster and anyone within 10’ against attacks from creatures summoned by evil-aligned casters, as well as anyone of evil alignment. The barrier moves with the caster and provides a +1 bonus to saving throws and AC against attacks by the affected creatures.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
    "source": "Journeymanne Rules p.30",
    "rolls": []
   }
@@ -3962,7 +3962,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>This spell causes one end of a 6’ to 24’ long rope to rise into the air until the whole length hangs perpendicular to the ground, affixed at the upper end to an extra- dimensional space.</p><p>The space holds as many as 3 creatures in complete safety.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
+   "description": "<p>This spell causes one end of a 6’ to 24’ long rope to rise into the air until the whole length hangs perpendicular to the ground, affixed at the upper end to an extra-dimensional space.</p><p>The space holds as many as 3 creatures in complete safety.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.30.</p>",
    "source": "Journeymanne Rules p.30",
    "rolls": []
   }
@@ -6437,7 +6437,7 @@
    "memorized": 0,
    "cast": 0,
    "known": true,
-   "description": "<p>This spell causes seven multi-coloured beams of light to spray from the caster’s hand. The spray covers a fan- shaped area 70’ long, 5’ wide at the start and 15’ wide at its end. Each beam has a different power; roll 1d8 to determine which colour hits the target:</p><p class=\"bh-table\">1d8 Colour Effect<br>1 Red 10 points damage<br>2 Orange 20 points damage<br>3 Yellow 40 points damage<br>4 Green Save vs. poison or die<br>5 Blue Save vs. gaze or turn to stone<br>6 Indigo Save vs. wand or freeze to death<br>7 Violet Save vs. spell or go insane<br>8 Any 2 As per colour above.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
+   "description": "<p>This spell causes seven multi-coloured beams of light to spray from the caster’s hand. The spray covers a fan-shaped area 70’ long, 5’ wide at the start and 15’ wide at its end. Each beam has a different power; roll 1d8 to determine which colour hits the target:</p><p class=\"bh-table\">1d8 Colour Effect<br>1 Red 10 points damage<br>2 Orange 20 points damage<br>3 Yellow 40 points damage<br>4 Green Save vs. poison or die<br>5 Blue Save vs. gaze or turn to stone<br>6 Indigo Save vs. wand or freeze to death<br>7 Violet Save vs. spell or go insane<br>8 Any 2 As per colour above.</p><p class=\"bh-ref\">Full text: Journeymanne Rules, p.38.</p>",
    "source": "Journeymanne Rules p.38",
    "rolls": [
     {
